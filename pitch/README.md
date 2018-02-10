@@ -16,4 +16,7 @@ we seek to model not just crowd behavior, but behavior of different individuals 
 Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions.
 
 ##### Why this is important:
-By exploring how physical spaces alter human behavior at the individual and crowd level, this work can inform the design of spaces as a means of motivating desired behaviors (e.g., safe evacuation, sustainable behavior, healthy behavior).
+By exploring how physical spaces alter human behavior at the individual and crowd level, this work can inform the design of spaces as a means of motivating desired behaviors. Potential applications include:
+* Safe evacuation/stampede prevention
+* Sustainable behavior (e.g., recycling)
+* Healthy behavior (e.g., being more physically active, preventing spread of disease)
