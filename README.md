@@ -1,7 +1,7 @@
 # IDS6145(SimTech 2018) - Research Plan (Template)
 (remember all text between brackets to be removed in proposal and final, like template above)
 
-> * Group Name: *2 Infinity & Beyond!*
+> * Group Name: *2 ∞ & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
 > * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
 
