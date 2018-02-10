@@ -3,7 +3,7 @@
 
 > * Group Name: *2 Infinity & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
-> * Project Title: (can be changed later - but change it everywhere)
+> * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
 
 (4 sentences: what is the topic (1), what do you want to do (2), why is important (1))
 
