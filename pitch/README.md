@@ -1,11 +1,8 @@
 # IDS6145(SimTech 2018) - Research Plan
-(remember all text between brackets to be removed in proposal and final, like template above)
 
 > * Group Name: *2 ∞ & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
 > * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
-
-(4 sentences: what is the topic (1), what do you want to do (2), why is important (1))
 
 ##### Topic:
 Our topic involves the impact of architecture on collective behavior.
