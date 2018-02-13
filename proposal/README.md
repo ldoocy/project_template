@@ -1,3 +1,63 @@
-copy in your main Readme.md once you are happy with it for the offical proposal submission so there is a record of it.
+# IDS6145(SimTech 2018) - Research Plan
+(remember all text between brackets to be removed in proposal and final, like template above)
 
-remove parts that should be removed at that time (this way you still know what you have to add the final)
+> * Group Name: *2 ∞ & Beyond!*
+> * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
+> * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
+
+(Abstract here - basically your pitch with some modification - but short overview)
+
+Our topic involves the impact of architecture on collective behavior. By integrating different approaches (e.g., social force model, OCEAN/Big Five personality model), 
+we seek to model not just crowd behavior, but behavior of different individuals within crowds, and how individual differences affect the degree to which environment influences behavior. 
+Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
+This topic is important because by exploring how physical spaces alter human behavior at the individual and crowd level, this work can inform the design of spaces as a means of motivating desired behaviors. Potential applications include:
+* Safe evacuation/stampede prevention
+* Sustainable behavior (e.g., recycling)
+* Healthy behavior (e.g., being more physically active, preventing spread of disease)
+
+(TEASER IMAGE HERE - should wow me to read your work)
+
+
+(directions, - remove)
+* (this Readme should "evolve" over time as you add and edit it)
+* (once you are happy with it - copy it into the proposal directory, and remove the obvious sections that should be removed - Future work, etc)
+
+
+## General Introduction
+
+(States your motivation clearly: why is it important / interesting to solve this problem?)
+(Add real-world examples, if any)
+(Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+
+(You should begin by introducing your topic. In this section, you should define the core terminology specific to the field, introduce the problem statement, and make clear the benefits (motivate!) of resolving that problem statement. The main difference between the ABSTRACT and Introduction sections is that the abstract summarizes the entire project, including results, whereas the introduc-tion only provides the motivation of the problem and an overview of the proposed solution.)
+
+(I tell sutdents to answer the questions, one paragaph each to start if you are lost)
+
+(Problem Statement. One paragraph to describe the prob-lem that you are tackling.)
+
+(Motivation. Why is this problem interesting and relevant to the research community?)
+
+(Proposed Solution. How do we propose to tackle this problem (that has been identified in the previous para-graphs, is interesting to the community, and has yet to be tackled by other researchers)?)
+
+(Contributions. An enumeration of the contributions of the senior design project)
+
+(This project makes the following contributions:)(you must have this!!)
+•	(Contribution 1)
+•	(Contribution 2)
+
+
+
+## The Model
+
+(Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
+
+(explicitly list your requirements of what the model will have and simulate for the proposal)
+
+## Fundamental Questions
+(At the end of the project you want to find the answer to these questions) (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
+
+## Expected Results
+(What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
+
+## References
+(Add the bibliographic references you intend to use)  (Code / Projects / blogs / websites / papers...)
