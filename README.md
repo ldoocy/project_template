@@ -6,6 +6,7 @@
 > * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
 
 (Abstract here - basically your pitch with some modification - but short overview)
+## Abstract
 
 Our topic involves the impact of architecture on collective behavior. By integrating different approaches (e.g., social force model, OCEAN/Big Five personality model), 
 we seek to model not just crowd behavior, but behavior of different individuals within crowds, and how individual differences affect the degree to which environment influences behavior. 
