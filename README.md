@@ -5,13 +5,9 @@
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
 > * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
 
-(Abstract here - basically your pitch with some modification - but short overview)
 ## Abstract
 
-Our topic involves the impact of architecture on collective behavior. By integrating different approaches (e.g., social force model, OCEAN/Big Five personality model), 
-we seek to model not just crowd behavior, but behavior of different individuals within crowds, and how individual differences affect the degree to which environment influences behavior. 
-Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
-This topic is important because by exploring how physical spaces alter human behavior at the individual and crowd level, this work can inform the design of spaces as a means of motivating desired behaviors. Potential applications include:
+Our topic involves the impact of architecture on collective behavior. By integrating different approaches (e.g., social force model, OCEAN/Big Five personality model), we seek to model not just crowd behavior, but behavior of different individuals within crowds, and how individual differences affect the degree to which environment influences behavior. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. This topic is important because by exploring how physical spaces alter human behavior at the individual and crowd level, this work can inform the design of spaces as a means of motivating desired behaviors. Potential applications include:
 * Safe evacuation/stampede prevention
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
@@ -19,33 +15,20 @@ This topic is important because by exploring how physical spaces alter human beh
 (TEASER IMAGE HERE - should wow me to read your work)
 
 
-(directions, - remove)
-* (this Readme should "evolve" over time as you add and edit it)
-* (once you are happy with it - copy it into the proposal directory, and remove the obvious sections that should be removed - Future work, etc)
-
-
 ## General Introduction
 
-(States your motivation clearly: why is it important / interesting to solve this problem?)
-(Add real-world examples, if any)
-(Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+It is understood that humans' feelings are affected by their environment, both the built environment and the people they interact with. It is also understood that humans perfrom tasks differently based on their personality type. The OCEAN model provides a layout for a particular personality types given five degrees of freedom. We aim to show the propogation of a feeling throughout a crowd. With a better understanding how individuals react to their evironment, we can build and environment that best encourages a group of people the way we want to. People with personalities that better react to the built environment will begin to influence those who are more affected by human to human interactions and so on. Here we apply self organization theories to understand the best method to promote a "good" feeling within a space.
 
-(You should begin by introducing your topic. In this section, you should define the core terminology specific to the field, introduce the problem statement, and make clear the benefits (motivate!) of resolving that problem statement. The main difference between the ABSTRACT and Introduction sections is that the abstract summarizes the entire project, including results, whereas the introduc-tion only provides the motivation of the problem and an overview of the proposed solution.)
+This type of propogation of feelings can also be applied to a space where safety is concerned. If we implement an initial condition of a dangerous event that sparks panic, such as a fire, bomb, or active shooter, we can understand how to build an environment to encourage the least amount of panic. This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenerio for all envolved.
 
-(I tell sutdents to answer the questions, one paragaph each to start if you are lost)
+We will begin by approaching the problem from a few different angles:
+* ?
+* ??
+* ???
 
-(Problem Statement. One paragraph to describe the prob-lem that you are tackling.)
-
-(Motivation. Why is this problem interesting and relevant to the research community?)
-
-(Proposed Solution. How do we propose to tackle this problem (that has been identified in the previous para-graphs, is interesting to the community, and has yet to be tackled by other researchers)?)
-
-(Contributions. An enumeration of the contributions of the senior design project)
-
-(This project makes the following contributions:)(you must have this!!)
+This project makes the following contributions:
 •	(Contribution 1)
 •	(Contribution 2)
-
 
 
 ## The Model
