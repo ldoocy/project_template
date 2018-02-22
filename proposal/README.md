@@ -24,11 +24,6 @@ People with personalities that better react to the built environment will begin 
 This type of propogation of feelings can also be applied to a space where safety is concerned. If we implement an initial condition of a dangerous event that sparks panic, such as a fire, bomb, or active shooter, we can understand how to build an environment to encourage the least amount of panic. 
 This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenerio for all envolved.
 
-We will begin by approaching the problem from a few different angles:
-* ?
-* ??
-* ???
-
 This project makes the following contributions:
 
 1. Scientific Implications
@@ -40,9 +35,6 @@ This project makes the following contributions:
 
 ## The Model
 
-(Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abstraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
-
-
 ![Proposal Object Diagram](../images/ProposalObjectDiagram.png)
 
 
@@ -52,7 +44,6 @@ This project makes the following contributions:
 (explicitly list your requirements of what the model will have and simulate for the proposal)
 
 ## Fundamental Questions
-(At the end of the project you want to find the answer to these questions) (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
 
 * **Research Question 1**: What theory or theories best explain and predict human behavior?
     * 1a. What individual parameters (e.g., OCEAN personality type, emotion, etc.) need to be included in an agent-based model to represent varying social behaviors dependent on physical structures?
@@ -70,8 +61,8 @@ This project makes the following contributions:
 ## Expected Results
 (What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
+
 ## References
-(Add the bibliographic references you intend to use)  (Code / Projects / blogs / websites / papers...)
 
 Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182.
 
