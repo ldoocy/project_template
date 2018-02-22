@@ -72,3 +72,9 @@ This project makes the following contributions:
 
 ## References
 (Add the bibliographic references you intend to use)  (Code / Projects / blogs / websites / papers...)
+
+Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182.
+
+Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41.
+
+Ulrich, R. S. (1979). Visual landscapes and psychological well‐being. *Landscape Research, 4*(1), 17-23.
