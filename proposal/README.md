@@ -45,6 +45,9 @@ This project makes the following contributions:
 
 ![Proposal Object Diagram](../images/ProposalObjectDiagram.png)
 
+
+![Proposal Behavior Diagram](../images/ProposalBehaviorDiagram.png)
+
 (explicitly list your requirements of what the model will have and simulate for the proposal)
 
 ## Fundamental Questions
