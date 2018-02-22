@@ -47,7 +47,7 @@ This project makes the following contributions:
 ## Fundamental Questions
 (At the end of the project you want to find the answer to these questions) (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
 
-* **Research Question 1**: What theory or theories best explain and predict agent behavior?
+* **Research Question 1**: What theory or theories best explain and predict human behavior?
     * 1a. What individual parameters (e.g., OCEAN personality type, emotion, etc.) need to be included in an agent-based model to represent varying social behaviors dependent on physical structures?
     * 1b. What *combination* of parameters is optimal for replicating and predicting real behavior patterns?
 
