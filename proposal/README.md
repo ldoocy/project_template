@@ -1,5 +1,4 @@
 # IDS6145(SimTech 2018) - Research Plan
-(remember all text between brackets to be removed in proposal and final, like template above)
 
 > * Group Name: *2 ∞ & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
@@ -17,9 +16,13 @@ Our topic involves the impact of architecture on collective behavior. By integra
 
 ## General Introduction
 
-It is understood that humans' feelings are affected by their environment, both the built environment and the people they interact with. It is also understood that humans perfrom tasks differently based on their personality type. The OCEAN model provides a layout for a particular personality types given five degrees of freedom. We aim to show the propogation of a feeling throughout a crowd. With a better understanding how individuals react to their evironment, we can build and environment that best encourages a group of people the way we want to. People with personalities that better react to the built environment will begin to influence those who are more affected by human to human interactions and so on. Here we apply self organization theories to understand the best method to promote a "good" feeling within a space.
+It is understood that humans' feelings are affected by their environment, both the built environment and the people they interact with. It is also understood that humans perform tasks differently based on individual differences, such as personality type. 
+The OCEAN model provides a layout for particular personality types given five degrees of freedom. We aim to show the propogation of a feeling throughout a crowd. 
+With a better understanding how individuals react to their evironment, we can build an environment that encourages a group of people to perform desired actions. 
+People with personalities that better react to the built environment will begin to influence those who are more affected by human to human interactions and so on. Here we apply self organization theories to understand the best method to promote a "good" feeling within a space.
 
-This type of propogation of feelings can also be applied to a space where safety is concerned. If we implement an initial condition of a dangerous event that sparks panic, such as a fire, bomb, or active shooter, we can understand how to build an environment to encourage the least amount of panic. This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenerio for all envolved.
+This type of propogation of feelings can also be applied to a space where safety is concerned. If we implement an initial condition of a dangerous event that sparks panic, such as a fire, bomb, or active shooter, we can understand how to build an environment to encourage the least amount of panic. 
+This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenerio for all envolved.
 
 We will begin by approaching the problem from a few different angles:
 * ?
@@ -27,17 +30,35 @@ We will begin by approaching the problem from a few different angles:
 * ???
 
 This project makes the following contributions:
-•	(Contribution 1)
-•	(Contribution 2)
+
+1. Scientific Implications
+    * Improving our understanding of social behavior using computational methods
+    * Integrating interdisciplinary research approaches to form a novel model of social behavior as a function of physical spaces and human characteristics
+2. Societal Implications
+    * Improved public safety through design of spaces
+    * Application of findings to real-world settings to enhance social interaction and collaboration among people
 
 ## The Model
 
-(Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abtraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
+(Provide structural and behavior diagrams of the system you wish to study.) (Why is your model a good abstraction of the problem you want to study?) (Are you capturing all the relevant aspects of the problem?) (Use the model to tell us what is going on.)
 
 (explicitly list your requirements of what the model will have and simulate for the proposal)
 
 ## Fundamental Questions
 (At the end of the project you want to find the answer to these questions) (Formulate a few, clear questions. Articulate them in sub-questions, from the more general to the more specific. )
+
+* **Research Question 1**: What theory or theories best explain and predict agent behavior?
+    * 1a. What individual parameters (e.g., OCEAN personality type, emotion, etc.) need to be included in an agent-based model to represent varying social behaviors dependent on physical structures?
+    * 1b. What *combination* of parameters is optimal for replicating and predicting real behavior patterns?
+
+* **Research Question 2**: How can physical structures be designed to facilitate desired group behavior?
+    * 2a. What features promote/hinder actions like collaboration?
+    * 2b. How do physical structures alter collective behavior?
+
+* **Research Question 3**: To what extent and how do individual differences in people affect how physical structures influence their actions?
+    * 3a. Which individual differences are likely to result in varying reactions to physical structures designed to elicit certain behaviors?
+    * 3b. How can we optimize building design to account for individual differences in people?
+
 
 ## Expected Results
 (What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
