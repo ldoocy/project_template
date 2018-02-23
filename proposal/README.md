@@ -10,6 +10,7 @@ Our topic involves the impact of architecture on collective behavior. By integra
 * Safe evacuation/stampede prevention
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
+* Improving quality of life through design features like elements from nature
 
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](../images/uber-office.jpg)
 
@@ -66,7 +67,9 @@ The below diagrams demonstrate potential applications of our work.
 (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) 
 (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
-We expect that given varying combinations of individual agent parameters, we will see patterns of collective behavior emerge (see Smaldino & Epstein, 2015<sup>[3](#references)</sup>). We also expect that design to nudge human behavior will have varying results based on individual differences.
+We expect that given input from different theories and varying combinations of individual agent parameters, we will see patterns of collective behavior emerge (see Smaldino & Epstein, 2015<sup>[3](#references)</sup>). 
+
+We also expect that design to nudge human behavior will have varying results based on individual differences.
 
 ![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](../images/crowd.jpg)
 
