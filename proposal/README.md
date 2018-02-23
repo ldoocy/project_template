@@ -74,7 +74,7 @@ We expect that given input from different theories and varying combinations of i
 
 We also expect that design to nudge human behavior will have varying results based on individual differences.
 
-![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](../images/crowd.jpg) 
+![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](../images/crowd.jpg)
 
 Below are examples of the type of data we expect to analyze.
 
@@ -84,10 +84,6 @@ Below are examples of the type of data we expect to analyze.
 
 
 ## References
-
-<sup>[[1]](#abstract)</sup> Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [Link](https://arxiv.org/pdf/cond-mat/9805244.pdf)
-
-<sup>[[2]](#abstract)</sup> Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the ocean personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [Link](https://doi.org/10.1109/MCG.2009.105)
 
 <sup>[[1]](#abstract)</sup> Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [Link](https://arxiv.org/pdf/cond-mat/9805244.pdf)
 

@@ -1,5 +1,4 @@
 # IDS6145(SimTech 2018) - Research Plan
-(remember all text between brackets to be removed in proposal and final, like template above)
 
 > * Group Name: *2 ∞ & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
@@ -14,7 +13,7 @@ Our topic involves the impact of architecture on collective behavior. By integra
 * Improving quality of life through design features like elements from nature<sup>[[3]](#references)[[4]](#references)</sup>
 * Collaboration<sup>[[5]](#references)</sup>
 
-![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](../images/uber-office.jpg)
+![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
 
 
 ## General Introduction
@@ -42,10 +41,10 @@ This project makes the following contributions:
 
 The below diagrams demonstrate potential applications of our work.
 
-![Proposal Object Diagram](../images/ProposalObjectDiagram.png)
+![Proposal Object Diagram](images/ProposalObjectDiagram.png)
 
 
-![Proposal Behavior Diagram](../images/ProposalBehaviorDiagram.png)
+![Proposal Behavior Diagram](images/ProposalBehaviorDiagram.png)
 
 ##### Requirements
 
@@ -75,13 +74,13 @@ We expect that given input from different theories and varying combinations of i
 
 We also expect that design to nudge human behavior will have varying results based on individual differences.
 
-![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](../images/crowd.jpg) 
+![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](images/crowd.jpg) 
 
 Below are examples of the type of data we expect to analyze.
 
-![Proposal Histogram](../images/ProposalHistogram.png)
+![Proposal Histogram](images/ProposalHistogram.png)
 
-![Proposal Bargraph](../images/ProposalBargraph.png)
+![Proposal Bargraph](images/ProposalBargraph.png)
 
 ## Research Methods
 (Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards) (Steps in the process)
@@ -96,10 +95,6 @@ Below are examples of the type of data we expect to analyze.
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
 
 ## References
-
-<sup>[[1]](#abstract)</sup> Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [Link](https://arxiv.org/pdf/cond-mat/9805244.pdf)
-
-<sup>[[2]](#abstract)</sup> Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the ocean personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [Link](https://doi.org/10.1109/MCG.2009.105)
 
 <sup>[[1]](#abstract)</sup> Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [Link](https://arxiv.org/pdf/cond-mat/9805244.pdf)
 
