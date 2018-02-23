@@ -70,6 +70,12 @@ We expect that given varying combinations of individual agent parameters, we wil
 
 ![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](../images/crowd.jpg)
 
+![Proposal Histogram](../images/ProposalHistogram.png)
+
+
+![Proposal Bargraph](../images/ProposalBargraph.png)
+
+
 ## References
 
 Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182.
