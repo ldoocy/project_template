@@ -11,7 +11,7 @@ Our topic involves the impact of architecture on collective behavior. By integra
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
 
-(TEASER IMAGE HERE - should wow me to read your work)
+![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](../images/uber-office.jpg)
 
 
 ## General Introduction
@@ -22,12 +22,12 @@ With a better understanding how individuals react to their evironment, we can bu
 People with personalities that better react to the built environment will begin to influence those who are more affected by human to human interactions and so on. Here we apply self organization theories to understand the best method to promote a "good" feeling within a space.
 
 This type of propogation of feelings can also be applied to a space where safety is concerned. If we implement an initial condition of a dangerous event that sparks panic, such as a fire, bomb, or active shooter, we can understand how to build an environment to encourage the least amount of panic. 
-This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenerio for all envolved.
+This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenerio for all involved.
 
 We will begin by approaching the problem from a few different angles:
-* ?
-* ??
-* ???
+* Social science
+* Computational methods
+
 
 This project makes the following contributions:
 
