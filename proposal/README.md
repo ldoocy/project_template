@@ -42,7 +42,6 @@ The below diagrams demonstrate potential applications of our work.
 ![Proposal Object Diagram](../images/ProposalObjectDiagram.png)
 
 
-
 ![Proposal Behavior Diagram](../images/ProposalBehaviorDiagram.png)
 
 (explicitly list your requirements of what the model will have and simulate for the proposal)
@@ -63,9 +62,13 @@ The below diagrams demonstrate potential applications of our work.
 
 
 ## Expected Results
-(What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
+(What are the answers to the above questions that you expect to find before starting your research?) 
+(This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) 
+(sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
-We expect that given varying combinations of individual agent parameters, we will see patterns of collective behavior emerge (see Smaldino & Epstein, 2015<sup>[3](#references)</sup>).
+We expect that given varying combinations of individual agent parameters, we will see patterns of collective behavior emerge (see Smaldino & Epstein, 2015<sup>[3](#references)</sup>). We also expect that design to nudge human behavior will have varying results based on individual differences.
+
+![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](../images/crowd.jpg)
 
 ## References
 
