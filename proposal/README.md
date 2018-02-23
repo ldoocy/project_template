@@ -18,20 +18,16 @@ Our topic involves the impact of architecture on collective behavior. By integra
 
 It is understood that humans' feelings are affected by their environment, both the built environment and the people they interact with. It is also understood that humans perform tasks differently based on individual differences, such as personality type. 
 The OCEAN model provides a layout for particular personality types given five degrees of freedom. We aim to show the propogation of a feeling throughout a crowd. 
-With a better understanding how individuals react to their evironment, we can build an environment that encourages a group of people to perform desired actions. 
+With a better understanding how individuals react to their environment, we can build an environment that encourages a group of people to perform desired actions. 
 People with personalities that better react to the built environment will begin to influence those who are more affected by human to human interactions and so on. Here we apply self organization theories to understand the best method to promote a "good" feeling within a space.
 
 This type of propogation of feelings can also be applied to a space where safety is concerned. If we implement an initial condition of a dangerous event that sparks panic, such as a fire, bomb, or active shooter, we can understand how to build an environment to encourage the least amount of panic. 
-This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenerio for all involved.
+This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenario for all involved.
 
-<<<<<<< HEAD
+By taking an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that can be used to inform the design of spaces.
 We will begin by approaching the problem from a few different angles:
-* Social science
-* Computational methods
 
 
-=======
->>>>>>> b3c514db0089e6dc268ba15a645a13d6fd6283a2
 This project makes the following contributions:
 
 1. Scientific Implications
@@ -42,6 +38,8 @@ This project makes the following contributions:
     * Application of findings to real-world settings to enhance social interaction and collaboration among people
 
 ## The Model
+
+The below diagrams demonstrate potential applications of our work.
 
 ![Proposal Object Diagram](../images/ProposalObjectDiagram.png)
 
@@ -69,6 +67,7 @@ This project makes the following contributions:
 ## Expected Results
 (What are the answers to the above questions that you expect to find before starting your research?) (This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) (sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
+We expect that given varying combinations of individual agent parameters, we will see patterns of collective behavior emerge (see Smaldino & Epstein, 2015<sup>[3](##References)</sup>).
 
 ## References
 
@@ -76,6 +75,6 @@ Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative fra
 
 Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41.
 
-Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
+<sup>[3](##Expected Results)</sup> Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
 
 Ulrich, R. S. (1979). Visual landscapes and psychological well‐being. *Landscape Research, 4*(1), 17-23. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
