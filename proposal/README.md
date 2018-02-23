@@ -46,7 +46,12 @@ The below diagrams demonstrate potential applications of our work.
 
 ![Proposal Behavior Diagram](../images/ProposalBehaviorDiagram.png)
 
-(explicitly list your requirements of what the model will have and simulate for the proposal)
+##### Requirements
+
+* The model shall produce agent behavior that replicates real observed behavior (assessed looking at past/historical events)
+* The model shall include individual characteristics that each agent will have (e.g., personality type)
+* Agents in the model shall behave according to both individual characteristics, as well as social factors
+* The model shall simulate collective behavior in different physical environments
 
 ## Fundamental Questions
 
