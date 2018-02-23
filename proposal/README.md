@@ -6,10 +6,12 @@
 
 ## Abstract
 
-Our topic involves the impact of architecture on collective behavior. By integrating different approaches (e.g., social force model, OCEAN/Big Five personality model), we seek to model not just crowd behavior, but behavior of different individuals within crowds, and how individual differences affect the degree to which environment influences behavior. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. This topic is important because by exploring how physical spaces alter human behavior at the individual and crowd level, this work can inform the design of spaces as a means of motivating desired behaviors. Potential applications include:
+Our topic involves the impact of architecture on collective behavior. By integrating different approaches (e.g., social force model<sup>[[1]](#references)</sup>, OCEAN/Big Five personality model<sup>[[2]](#references)</sup>), we seek to model not just crowd behavior, but behavior of different individuals within crowds, and how individual differences affect the degree to which environment influences behavior. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. This topic is important because by exploring how physical spaces alter human behavior at the individual and crowd level, this work can inform the design of spaces as a means of motivating desired behaviors. Potential applications include:
 * Safe evacuation/stampede prevention
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
+* Improving quality of life through design features like elements from nature<sup>[[3]](#references)[[4]](#references)</sup>
+* Collaboration<sup>[[5]](#references)</sup>
 
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](../images/uber-office.jpg)
 
@@ -44,7 +46,12 @@ The below diagrams demonstrate potential applications of our work.
 
 ![Proposal Behavior Diagram](../images/ProposalBehaviorDiagram.png)
 
-(explicitly list your requirements of what the model will have and simulate for the proposal)
+##### Requirements
+
+* The model shall produce agent behavior that replicates real observed behavior (assessed looking at past/historical events)
+* The model shall include individual characteristics that each agent will have (e.g., personality type)
+* Agents in the model shall behave according to both individual characteristics, as well as social factors
+* The model shall simulate collective behavior in different physical environments
 
 ## Fundamental Questions
 
@@ -62,26 +69,37 @@ The below diagrams demonstrate potential applications of our work.
 
 
 ## Expected Results
-(What are the answers to the above questions that you expect to find before starting your research?) 
-(This changes from Expected (Proposal) to just Results (final report)) (you should verbally define them) 
-(sketch a few graphs of what you are roughly going for - not the data but histogram of this, line graph of that, screenshot of an agent - use paper and pencil sketches)
 
-We expect that given varying combinations of individual agent parameters, we will see patterns of collective behavior emerge (see Smaldino & Epstein, 2015<sup>[3](#references)</sup>). We also expect that design to nudge human behavior will have varying results based on individual differences.
+We expect that given input from different theories and varying combinations of individual agent parameters, we will see patterns of collective behavior emerge<sup>[[6]](#references)</sup>. 
+
+We also expect that design to nudge human behavior will have varying results based on individual differences.
 
 ![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](../images/crowd.jpg)
 
-![Proposal Histogram](../images/ProposalHistogram.png)
+Below are examples of the type of data we expect to analyze.
 
+![Proposal Histogram](../images/ProposalHistogram.png)
 
 ![Proposal Bargraph](../images/ProposalBargraph.png)
 
 
 ## References
 
-Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182.
+<sup>[[1]](#abstract)</sup> Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [Link](https://arxiv.org/pdf/cond-mat/9805244.pdf)
 
-Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41.
+<sup>[[2]](#abstract)</sup> Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the ocean personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [Link](https://doi.org/10.1109/MCG.2009.105)
 
-<sup>[3](#expected-results)</sup> Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
+<sup>[[3]](#abstract)</sup> Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182. [Link](https://pdfs.semanticscholar.org/a506/f60e29b6aa386a381f6aa213b89c30ecdda9.pdf)
 
-Ulrich, R. S. (1979). Visual landscapes and psychological well‐being. *Landscape Research, 4*(1), 17-23. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
+<sup>[[4]](#abstract)</sup> Ulrich, R. S. (1979). Visual landscapes and psychological well‐being. *Landscape Research, 4*(1), 17-23. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
+
+<sup>[[5]](#abstract)</sup> Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41. [Link](https://pinterwollmanlab.eeb.ucla.edu/wp-content/uploads/sites/86/2016/05/Pinter-Wollman-et-al-2017-NEE.pdf)
+
+<sup>[[6]](#expected-results)</sup> Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
+<sup>[[3]](#abstract)</sup> Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182. [Link](https://pdfs.semanticscholar.org/a506/f60e29b6aa386a381f6aa213b89c30ecdda9.pdf)
+
+<sup>[[4]](#abstract)</sup> Ulrich, R. S. (1979). Visual landscapes and psychological well‐being. *Landscape Research, 4*(1), 17-23. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
+
+<sup>[[5]](#abstract)</sup> Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41. [Link](https://pinterwollmanlab.eeb.ucla.edu/wp-content/uploads/sites/86/2016/05/Pinter-Wollman-et-al-2017-NEE.pdf)
+
+<sup>[[6]](#expected-results)</sup> Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
