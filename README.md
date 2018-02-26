@@ -74,13 +74,14 @@ We expect that given input from different theories and varying combinations of i
 
 We also expect that design to nudge human behavior will have varying results based on individual differences.
 
-![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](images/crowd.jpg) 
+![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](images/crowd.jpg)
 
 Below are examples of the type of data we expect to analyze.
 
 ![Proposal Histogram](images/ProposalHistogram.png)
 
 ![Proposal Bargraph](images/ProposalBargraph.png)
+
 
 ## Research Methods
 (Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards) (Steps in the process)
