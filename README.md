@@ -5,8 +5,9 @@
 > * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
 
 ## Abstract
+It is shown by Helbing's Social Force Model<sup>[[1]](#references)</sup> that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and disucss how individual personality differences affect movements within a system. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. The Social Force Model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
 
-Our topic involves the impact of architecture on collective behavior. By integrating different approaches (e.g., social force model<sup>[[1]](#references)</sup>, OCEAN/Big Five personality model<sup>[[2]](#references)</sup>), we seek to model not just crowd behavior, but behavior of different individuals within crowds, and how individual differences affect the degree to which environment influences behavior. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. This topic is important because by exploring how physical spaces alter human behavior at the individual and crowd level, this work can inform the design of spaces as a means of motivating desired behaviors. Potential applications include:
+Recently, we have become more conscious in designing spaces with an explicit intent (e.g., environmentally friendly, cost effective heating and cooling), and we intend to explore how physical spaces alter human behavior to motivate a desired behavior. Once we understand human behavior at the individual level, potential applications can include:
 * Safe evacuation/stampede prevention
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
@@ -18,15 +19,9 @@ Our topic involves the impact of architecture on collective behavior. By integra
 
 ## General Introduction
 
-It is understood that humans' feelings are affected by their environment, both the built environment and the people they interact with. It is also understood that humans perform tasks differently based on individual differences, such as personality type. 
-The OCEAN model provides a layout for particular personality types given five degrees of freedom. We aim to show the propogation of a feeling throughout a crowd. 
-With a better understanding how individuals react to their environment, we can build an environment that encourages a group of people to perform desired actions. 
-People with personalities that better react to the built environment will begin to influence those who are more affected by human to human interactions and so on. Here we apply self organization theories to understand the best method to promote a "good" feeling within a space.
+Decades ago, people believed human behavior is unpredictable due to the unreliable behavior or humans. However, it has been shown by numerous scientists that, in fact, the movements of pedestrians can be modeled by already studied substances such as gases and fluids. Helbing took the approach that pedestrians will move with the influence of social forces. He defines such forces as the ultimate goal of the pedestrian in combination with the idea that humans will keep a certain distance from walls and boarders as well as strange people, and will be formally attracted to other pedestrians which the consider a friend<sup>[[1]](#references)</sup>. This causes pedestians to travel and pair and keep a predictable distance from strange groups of people.
 
-This type of propogation of feelings can also be applied to a space where safety is concerned. If we implement an initial condition of a dangerous event that sparks panic, such as a fire, bomb, or active shooter, we can understand how to build an environment to encourage the least amount of panic. 
-This can help usher the most amount of people to safety as possible. Reactions to extreme events will rely heavily on the personalities of the individuals involved, and we seek to understand the best scenario for all involved.
-
-By taking an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that can be used to inform the design of spaces.
+It is understood that humans perform tasks differently based on individual differences, such as personality type. Personality influences, along with the social force model, must determine the choice path of pedestrians within a system. With a better understanding how individuals react to their environment, we can build an environment that encourages a group of people to perform desired actions. This desired action can include preffered evacuation methods, encouragement of collaboration, or optimal "good vibes" within a space. By taking an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that can be used to inform the design of spaces.
 
 This project makes the following contributions:
 
@@ -38,6 +33,20 @@ This project makes the following contributions:
     * Application of findings to real-world settings to enhance social interaction and collaboration among people
 
 ## The Model
+### Social Force Model
+
+The Social Force Model<sup>[[1]](#references)</sup>, describes pedestrian behavior by four actions:
+
+1. Desired direction of movement
+2. Repulsive social forces
+3. Replusive forces from walls or any obstacles
+4. Attractive social forces
+
+This is described by the equation:
+
+The social force model takes into account random behaviors with a fluctuation term. This could be desired velocities, movements, or personal space preferences based on ones personality or random behaviors based on individual decisons to avoid obstacles.
+
+### Our Model
 
 The below diagrams demonstrate potential applications of our work.
 
