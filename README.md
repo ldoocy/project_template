@@ -44,6 +44,26 @@ The Social Force Model<sup>[[1]](#references)</sup>, describes pedestrian behavi
 
 This is described by the equation:
 
+![Social Force](images/socialforceeq.png)
+
+Desired Direction:
+
+![Social Force](images/desired.png)
+
+Repulsive Social Forces:
+
+![Social Force](images/repulsive.png)
+
+Desired distance from walls/boarders:
+
+![Social Force](images/boarders.png)
+
+Social Attraction Forces:
+
+![Social Force](images/friends.png)
+
+
+
 The social force model takes into account random behaviors with a fluctuation term. This could be desired velocities, movements, or personal space preferences based on ones personality or random behaviors based on individual decisons to avoid obstacles.
 
 ### Our Model
