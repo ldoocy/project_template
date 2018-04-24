@@ -50,7 +50,7 @@ This is described by the equation:
 ### Desired Direction:
 ![Social Force](images/desired.png)
 
-The first term in the social force equation takes into account the pedestrians desired movement. Each entity will have a defined goal to reach in the shortest distance possible. This term depends on the entities desired velocity and the entities actual velocity.
+The first term in the social force equation takes into account the pedestrians desired movement. Each entity will have a defined goal to reach in the shortest distance possible. This term depends on the entity's desired velocity and the entity's actual velocity.
 
 ### Repulsive Social Forces:
 ![Social Force](images/repulsive.png)
@@ -60,7 +60,8 @@ The second term is a summation of repulsive forces given from other pedestrians 
 ### Desired distance from walls/borders:
 ![Social Force](images/boarders.png)
 
-The third term stands as a summation of the effects of all boarders and obsticals present. Each pedeistrian will desire to keep a certain distance from walls, furnature, decorations, and other boarders. This term takes into account each pedestrian's desired direction and his or her distance from the boarder. Since boarders and walls are typically larger than a single point, the point used to calculate distance from boarder will change dymamically as the closest point to the pedestrian.
+The third term stands as a summation of the effects of all boarders and obstacles present. Each pedestrian will desire to keep a certain distance from walls, furniture, decorations, and other boarders. This term takes into account each pedestrian's desired direction and his or her distance from the border. 
+Since borders and walls are typically larger than a single point, the point used to calculate distance from border will change dynamically as the closest point to the pedestrian.
 
 ### Social Attraction Forces:
 ![Social Force](images/friends.png)
