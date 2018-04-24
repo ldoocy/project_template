@@ -62,7 +62,7 @@ The second term is a summation of repulsive forces given from other pedestrians 
 
 The third term stands as a summation of the effects of all boarders and obsticals present. Each pedeistrian will desire to keep a certain distance from walls, furnature, decorations, and other boarders. This term takes into account each pedestrian's desired direction and his or her distance from the boarder. Since boarders and walls are typically larger than a single point, the point used to calculate distance from boarder will change dymamically as the closest point to the pedestrian.
 
-###Social Attraction Forces:
+### Social Attraction Forces:
 ![Social Force](images/friends.png)
 
 The fourth and final defined term in the social force model is the attractive forces. This takes into account that given a shared goal, pedestrians will travel with friends. This term takes into account desired direction, distance from a friendly pedestrian, and time.
