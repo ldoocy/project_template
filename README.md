@@ -5,7 +5,8 @@
 > * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
 
 ## Abstract
-It is shown by Helbing's Social Force Model<sup>[[1]](#references)</sup> that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and disucss how individual personality differences affect movements within a system. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. The Social Force Model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
+Helbing's Social Force Model<sup>[[1]](#references)</sup> proposes that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and discuss how individual personality differences affect movements within a system. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
+The Social Force Model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
 
 Recently, we have become more conscious in designing spaces with an explicit intent (e.g., environmentally friendly, cost effective heating and cooling), and we intend to explore how physical spaces alter human behavior to motivate a desired behavior. Once we understand human behavior at the individual level, potential applications can include:
 * Safe evacuation/stampede prevention
@@ -21,7 +22,7 @@ Recently, we have become more conscious in designing spaces with an explicit int
 
 Decades ago, people believed human behavior is unpredictable due to the unreliable behavior or humans. However, it has been shown by numerous scientists that, in fact, the movements of pedestrians can be modeled by already studied substances such as gases and fluids. Helbing took the approach that pedestrians will move with the influence of social forces. He defines such forces as the ultimate goal of the pedestrian in combination with the idea that humans will keep a certain distance from walls and boarders as well as strange people, and will be formally attracted to other pedestrians which the consider a friend<sup>[[1]](#references)</sup>. This causes pedestians to travel and pair and keep a predictable distance from strange groups of people.
 
-It is understood that humans perform tasks differently based on individual differences, such as personality type. Personality influences, along with the social force model, must determine the choice path of pedestrians within a system. With a better understanding how individuals react to their environment, we can build an environment that encourages a group of people to perform desired actions. This desired action can include preffered evacuation methods, encouragement of collaboration, or optimal "good vibes" within a space. By taking an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that can be used to inform the design of spaces.
+Humans perform tasks differently based on individual differences, such as personality type. Personality influences, along with the social force model, must determine the choice path of pedestrians within a system. With a better understanding how individuals react to their environment, we can build an environment that encourages a group of people to perform desired actions. This desired action can include preffered evacuation methods, encouragement of collaboration, or optimal "good vibes" within a space. By taking an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that can be used to inform the design of spaces.
 
 This project makes the following contributions:
 
@@ -39,7 +40,7 @@ The Social Force Model<sup>[[1]](#references)</sup>, describes pedestrian behavi
 
 1. Desired direction of movement
 2. Repulsive social forces
-3. Replusive forces from walls or any obstacles
+3. Repulsive forces from walls or any obstacles
 4. Attractive social forces
 
 This is described by the equation:
@@ -117,16 +118,25 @@ Below are examples of the type of data we expect to analyze.
 
 
 ## Research Methods
-(Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic) (If you are not sure here: 1. Consult your colleagues, 2. ask the teachers, 3. remember that you can change it afterwards) (Steps in the process)
+
+To explore our research questions, we utilized agent based modeling and AnyLogic.
+
+(Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic)  (Steps in the process)
 
 ## (Other)
 (change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
 
 ## Discussion
-(final only - remove whole section for proposal Readme) (What would you have done differently) (What are the contributions summerize)(what is the big take away)(what did you learn)
+(final only - remove whole section for proposal Readme) 
+(What would you have done differently) 
+What are the contributions summarize)
+(what is the big take away)
+(what did you learn)
 
 ## Future Work
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
+
+While relatively simple models can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human motivations, personality, and other factors influencing actions.
 
 ## References
 
@@ -141,6 +151,7 @@ Below are examples of the type of data we expect to analyze.
 <sup>[[5]](#abstract)</sup> Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41. [Link](https://pinterwollmanlab.eeb.ucla.edu/wp-content/uploads/sites/86/2016/05/Pinter-Wollman-et-al-2017-NEE.pdf)
 
 <sup>[[6]](#expected-results)</sup> Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
+
 <sup>[[3]](#abstract)</sup> Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182. [Link](https://pdfs.semanticscholar.org/a506/f60e29b6aa386a381f6aa213b89c30ecdda9.pdf)
 
 <sup>[[4]](#abstract)</sup> Ulrich, R. S. (1979). Visual landscapes and psychological well‐being. *Landscape Research, 4*(1), 17-23. [Link](http://rsos.royalsocietypublishing.org/content/2/3/140437)
