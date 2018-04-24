@@ -67,7 +67,8 @@ The third term stands as a summation of the effects of all boarders and obstical
 
 The fourth and final defined term in the social force model is the attractive forces. This takes into account that given a shared goal, pedestrians will travel with friends. This term takes into account desired direction, distance from a friendly pedestrian, and time.
 
-The social force model takes into account random behaviors with a fluctuation term. This could be desired velocities, movements, or personal space preferences based on ones personality or random behaviors based on individual decisons to avoid obstacles. We believe that personailty differences, namely introversion and extroversion, should play a part in the behaviors of pedestrians. Now this type of behavior is generally covered by the fluctuation term, but we beleive the addition of personality differences will increase the accuracy of this model.
+The social force model takes into account random behaviors with a fluctuation term. This could be desired velocities, movements, or personal space preferences based on ones personality or random behaviors based on individual decisions to avoid obstacles. 
+We predict that personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing on the effect of introversion and extroversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to enhance the Social Force Model by identifying and integrating individual variables that influence real human behavior.
 
 ### Our Model
 The below diagrams demonstrate potential applications of our work.
