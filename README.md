@@ -57,7 +57,7 @@ The first term in the social force equation takes into account the pedestrians d
 
 The second term is a summation of repulsive forces given from other pedestrians in the system. This is known as a repulsive social force. This term depends on the pedestrian's desired direction and the distance from the other pedestrian. Pedestrians desire to keep a distance from strange people and will change directions and velocity to account for this.
 
-### Desired distance from walls/borders:
+### Desired Distance from Walls/Borders:
 ![Social Force](images/boarders.png)
 
 The third term stands as a summation of the effects of all boarders and obstacles present. Each pedestrian will desire to keep a certain distance from walls, furniture, decorations, and other boarders. This term takes into account each pedestrian's desired direction and his or her distance from the border. 
@@ -131,6 +131,8 @@ To explore our research questions, we utilized agent based modeling and AnyLogic
 What are the contributions summarize)
 (what is the big take away)
 (what did you learn)
+
+Our results suggest ___
 
 ## Future Work
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
