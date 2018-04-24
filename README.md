@@ -48,31 +48,28 @@ This is described by the equation:
 ![Social Force](images/socialforceeq.png)
 
 ### Desired Direction:
-
 ![Social Force](images/desired.png)
+
 The first term in the social force equation takes into account the pedestrians desired movement. Each entity will have a defined goal to reach in the shortest distance possible. This term depends on the entities desired velocity and the entities actual velocity.
 
 ### Repulsive Social Forces:
-
 ![Social Force](images/repulsive.png)
+
 The second term is a summation of repulsive forces given from other pedestrians in the system. This is known as a repulsive social force. This term depends on the pedestrian's desired direction and the distance from the other pedestrian. Pedestrians desire to keep a distance from strange people and will change directions and velocity to account for this.
 
-### Desired distance from walls/boarders:
-
+### Desired distance from walls/borders:
 ![Social Force](images/boarders.png)
+
 The third term stands as a summation of the effects of all boarders and obsticals present. Each pedeistrian will desire to keep a certain distance from walls, furnature, decorations, and other boarders. This term takes into account each pedestrian's desired direction and his or her distance from the boarder. Since boarders and walls are typically larger than a single point, the point used to calculate distance from boarder will change dymamically as the closest point to the pedestrian.
 
 ###Social Attraction Forces:
-
 ![Social Force](images/friends.png)
+
 The fourth and final defined term in the social force model is the attractive forces. This takes into account that given a shared goal, pedestrians will travel with friends. This term takes into account desired direction, distance from a friendly pedestrian, and time.
-
-
 
 The social force model takes into account random behaviors with a fluctuation term. This could be desired velocities, movements, or personal space preferences based on ones personality or random behaviors based on individual decisons to avoid obstacles. We believe that personailty differences, namely introversion and extroversion, should play a part in the behaviors of pedestrians. Now this type of behavior is generally covered by the fluctuation term, but we beleive the addition of personality differences will increase the accuracy of this model.
 
 ### Our Model
-
 The below diagrams demonstrate potential applications of our work.
 
 ![Proposal Object Diagram](images/ProposalObjectDiagram.png)
