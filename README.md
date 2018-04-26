@@ -1,12 +1,12 @@
-# IDS6145(SimTech 2018) - Research Plan
+# IDS6145 (SimTech 2018) - Research Plan
 
 > * Group Name: *2 ∞ & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
 > * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
 
 ## Abstract
-Helbing's Social Force Model<sup>[[1]](#references)</sup> proposes that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and discuss how individual personality differences affect movements within a system. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
-The Social Force Model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
+Helbing's social force model<sup>[[1]](#references)</sup> proposes that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and discuss how individual personality differences affect movements within a system. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
+The social force model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
 
 Recently, we have become more conscious in designing spaces with an explicit intent (e.g., environmentally friendly, cost effective heating and cooling), and we intend to explore how physical spaces alter human behavior to motivate a desired behavior. Once we understand human behavior at the individual level, potential applications can include:
 * Safe evacuation/stampede prevention
@@ -33,10 +33,19 @@ This project makes the following contributions:
     * Improved public safety through design of spaces
     * Application of findings to real-world settings to enhance social interaction and collaboration among people
 
+## Background
+
+TO DO:
+
+- [ ] Personality theories - OCEAN
+- [ ] Social behavior - psych research
+- [ ] Building design and human factors
+- [ ] ABM and human social behavior - related work
+
 ## The Model
 ### Social Force Model
 
-The Social Force Model<sup>[[1]](#references)</sup>, describes pedestrian behavior by four actions:
+The social force model<sup>[[1]](#references)</sup>, describes pedestrian behavior by four actions:
 
 1. Desired direction of movement
 2. Repulsive social forces
@@ -50,17 +59,17 @@ This is described by the equation:
 ### Desired Direction:
 ![Social Force](images/desired.png)
 
-The first term in the social force equation takes into account the pedestrians desired movement. Each entity will have a defined goal to reach in the shortest distance possible. This term depends on the entity's desired velocity and the entity's actual velocity.
+The first term in the social force equation takes into account the pedestrians' desired movement. Each entity will have a defined goal to reach in the shortest distance possible. This term depends on the entity's desired velocity and the entity's actual velocity.
 
 ### Repulsive Social Forces:
 ![Social Force](images/repulsive.png)
 
-The second term is a summation of repulsive forces given from other pedestrians in the system. This is known as a repulsive social force. This term depends on the pedestrian's desired direction and the distance from the other pedestrian. Pedestrians desire to keep a distance from strange people and will change directions and velocity to account for this.
+The second term is a summation of repulsive forces given from other pedestrians in the system. This is known as a repulsive social force. This term depends on the pedestrian's desired direction and the distance from the other pedestrians. Pedestrians desire to keep a distance from strange people and will change directions and velocity to account for this.
 
 ### Desired Distance from Walls/Borders:
 ![Social Force](images/boarders.png)
 
-The third term stands as a summation of the effects of all boarders and obstacles present. Each pedestrian will desire to keep a certain distance from walls, furniture, decorations, and other boarders. This term takes into account each pedestrian's desired direction and his or her distance from the border. 
+The third term stands as a summation of the effects of all borders and obstacles present. Each pedestrian will desire to keep a certain distance from walls, furniture, decorations, and other borders. This term takes into account each pedestrian's desired direction and his or her distance from the border. 
 Since borders and walls are typically larger than a single point, the point used to calculate distance from border will change dynamically as the closest point to the pedestrian.
 
 ### Social Attraction Forces:
@@ -68,8 +77,9 @@ Since borders and walls are typically larger than a single point, the point used
 
 The fourth and final defined term in the social force model is the attractive forces. This takes into account that given a shared goal, pedestrians will travel with friends. This term takes into account desired direction, distance from a friendly pedestrian, and time.
 
-The social force model takes into account random behaviors with a fluctuation term. This could be desired velocities, movements, or personal space preferences based on ones personality or random behaviors based on individual decisions to avoid obstacles. 
-We predict that personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing on the effect of introversion and extroversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to enhance the Social Force Model by identifying and integrating individual variables that influence real human behavior.
+### Other Influences
+The social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
+We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extroversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
 
 ### Our Model
 The below diagrams demonstrate potential applications of our work.
