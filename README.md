@@ -159,7 +159,9 @@ Our results suggest ___
 ## Future Work
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
 
-While relatively simple models can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human motivations, personality, and other factors influencing actions.
+We sought to determine whether the social force model could be extended by defining additional variables. To this end, our initial study focused on one personality variable. 
+While relatively simple models can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human behavior, personality, and other factors influencing actions. 
+Future research should explore the degree to which the behavior of increasingly complex agents approaches that of humans, and if there are certain variables or optimal combinations of variables that improve the accuracy of an agent-based model of human social behavior.
 
 ## References
 
