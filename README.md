@@ -35,7 +35,7 @@ This project makes the following contributions:
 
 ## Background
 
-TO DO:
+**TO DO:**
 
 - [ ] Personality theories - OCEAN
 - [ ] Social behavior - psych research
@@ -130,10 +130,22 @@ Below are examples of the type of data we expect to analyze.
 
 To explore our research questions, we utilized agent based modeling and AnyLogic.
 
-(Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic)  (Steps in the process)
+(Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic)  
+
+(Steps in the process)
 
 ## (Other)
 (change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
+
+
+## Results
+
+**TO DO:**
+
+- [ ] Describe methods (in methods section)
+- [ ] Data analysis
+- [ ] Data visualization
+
 
 ## Discussion
 (final only - remove whole section for proposal Readme) 
