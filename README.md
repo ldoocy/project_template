@@ -23,7 +23,7 @@ Drawing from Helbing's work on pedestrian simulation, we not only further valida
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
 
 
-## General Introduction
+## Introduction
 
 Decades ago, people believed human behavior is unpredictable due to the unreliable behavior or humans. However, it has been shown by numerous scientists that, in fact, the movements of pedestrians can be modeled by already studied substances such as gases and fluids. Helbing took the approach that pedestrians will move with the influence of social forces. He defines such forces as the ultimate goal of the pedestrian in combination with the idea that humans will keep a certain distance from walls and boarders as well as strange people, and will be formally attracted to other pedestrians which the consider a friend<sup>[[1]](#references)</sup>. This causes pedestians to travel and pair and keep a predictable distance from strange groups of people.
 
@@ -91,9 +91,13 @@ We predict personality differences influence pedestrian behaviors. In the presen
 Previous research has replicated Helbing's original work using agent based modeling [(Helbing, Buzna, Johansson, & Werner, 2005)](#references). 
 Additionally, the social force model has been validated using real human motion data [(Seer, Rudloff, Matyus, & Brändle, 2014)](#references).
 
+![helb](images/helbing_2005_fig3.png)
+
+<sup>*Figure from [Helbing et al. (2005)](#references) depicting self-organized lanes among pedestrians.*</sup>
+
 ![seer](images/seer_fig1.png)
 
-<sup>Figure from Seer et al., 2014<sup>[[X]](#references)</sup></sup>
+<sup>*Figure from [Seer et al. (2014)](#references) depicting navigation patterns in real human motion.*</sup>
 
 ### Our Model
 The below diagrams demonstrate potential applications of our work.
