@@ -57,8 +57,7 @@ This project makes the following contributions:
 - [ ] Building design and human factors
 - [ ] ABM and human social behavior - related work
 
-## The Model
-### Social Force Model
+## Social Force Model
 
 The social force model<sup>[[1]](#references)</sup>, describes pedestrian behavior by four actions:
 
@@ -153,9 +152,11 @@ Below are examples of the type of data we expect to analyze.
 
 ## Research Methods
 
-To explore our research questions, we utilized agent based modeling and AnyLogic.
+We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
+To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic software.
 
-(Cellular Automata, Agent-Based Model, Discrete Event Continuous Modeling...)(Python or Anylogic)  
+First, we created a simplified simulation of a hallway pedestrian scenario to replicate Helbing's work. To build upon this model, we added an additional variable to consider individual personality. 
+Specifically, we focused on introversion and extraversion, two diametrically opposed constructs referring to the degree to which
 
 (Steps in the process)
 
@@ -208,3 +209,5 @@ Future research should explore the degree to which the behavior of increasingly 
 <sup>[[6]](#expected-results)</sup> Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [DOI](https://doi.org/10.1098/rsos.140437)
 
 <sup>[[X]](#background)</sup> Seer, S., Rudloff, C., Matyus, T., & Brändle, N. (2014). Validating social force based models with comprehensive real world motion data. *Transportation Research Procedia, 2*, 724-732. [DOI](https://doi.org/10.1016/j.trpro.2014.09.080)
+
+<sup>[[X]](#research-methods)</sup> Eysenck, H. J. (1952). The scientific study of personality. Oxford, England: Macmillan.
