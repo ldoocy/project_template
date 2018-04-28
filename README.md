@@ -100,8 +100,8 @@ We predict personality differences influence pedestrian behaviors. In the presen
 
 ## Related Work
 
-Previous research has replicated Helbing's work [**TODO: CITE**] using agent based modeling. 
-Additionally, the social force model has been validated using real human motion data<sup>[[X]](#references)</sup>.
+Previous research has replicated Helbing's original work using agent based modeling [(Helbing, Buzna, Johansson, & Werner, 2005)](#references). 
+Additionally, the social force model has been validated using real human motion data [(Seer, Rudloff, Matyus, & Brändle, 2014)](#references).
 
 ![seer](images/seer_fig1.png)
 
@@ -220,6 +220,7 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 [^](#research-methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
 
+[^](#background) Helbing, D., Buzna, L., Johansson, A., & Werner, T. (2005). Self-organized pedestrian crowd dynamics: Experiments, simulations, and design solutions. *Transportation Science, 39*(1), 1-24.
 [^](#abstract) Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [DOI](https://doi.org/10.1103/PhysRevE.51.4282)
 
 [^](#abstract) Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182. [DOI](https://doi.org/10.1016/0272-4944(95)90001-2)
