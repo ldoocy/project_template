@@ -20,6 +20,7 @@ Using agent based modeling, we seek to simulate the effect of physical spaces on
 * Collaboration [(Pinter-Wollman, Fiore, & Theraulaz, 2017)](#references); see Figure 1 for example
 
 Drawing from Helbing's work on pedestrian simulation, we not only further validate Helbing's social force model, but extend it by adding a new variable to account for personality differences.
+
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
 
 <sup>*Figure 1. Uber office space designed for collaboration.*</sup>
