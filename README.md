@@ -155,6 +155,21 @@ To explore our research questions, we utilized agent based modeling. Our model w
 
 First, we created a simplified simulation of a hallway pedestrian scenario to replicate Helbing's work. To build upon this model, we added an additional variable to consider individual personality. 
 Specifically, we focused on introversion and extraversion, two diametrically opposed constructs referring to the degree to which
+To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all pedestrians have the same personality or have mixed personality types). From this, we created the following conditions:
+
+* Control (baseline): Basic social force model in a hallway of width 200.
+  * This condition was used to determine the effect of various manipulations on agent behavior.
+
+Personality | Environment
+:---: | :---:
+Baseline | Baseline hallway
+Baseline | Wide hallway
+Baseline | Narrow hallway
+All extraverted | Baseline hallway
+All introverted | Baseline hallway
+Mixed - one side introverted, one side extraverted | Baseline hallway
+Mixed - dispersed | Baseline hallway
+
 
 (Steps in the process)
 
