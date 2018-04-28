@@ -10,7 +10,6 @@ Select forks to compare | ![del](delete/delete_4_selectfork.png)
 New pull request | ![del](delete/delete_5_pullreq.png)
 Merge options | ![del](delete/delete_6_mergeoptions.png)
 
-
 # IDS6145 (SimTech 2018) - Research Plan
 
 > * Group Name: *2 ∞ & Beyond!*
@@ -22,14 +21,16 @@ Helbing's social force model<sup>[[1]](#references)</sup> proposes that the list
 The social force model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. 
 In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
 
-This research has practical implications for building design to influence collective behavior. There has been considerable interest in designing spaces with an explicit intent (e.g., environmentally friendly, cost effective heating and cooling). Using agent based modeling, we seek to simulate the effect of physical spaces on human behavior as a function of personality. Potential real-world applications can include:
+This research has practical implications for building design to influence collective behavior. 
+There has been considerable interest in designing spaces with an explicit intent (e.g., environmental sustainability, safety, enjoyment). 
+Using agent based modeling, we seek to simulate the effect of physical spaces on human behavior as a function of personality. Potential real-world applications include:
 * Safe evacuation/stampede prevention
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
 * Improving quality of life through design features like elements from nature<sup>[[3]](#references)[[4]](#references)</sup>
 * Collaboration<sup>[[5]](#references)</sup>
 
-Drawing from Helbing's work on pedestrian simulation, we not only further validate Helbing's social force model, but to extend it by adding a new variable to account for personality differences.
+Drawing from Helbing's work on pedestrian simulation, we not only further validate Helbing's social force model, but extend it by adding a new variable to account for personality differences.
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
 
 
@@ -37,7 +38,8 @@ Drawing from Helbing's work on pedestrian simulation, we not only further valida
 
 Decades ago, people believed human behavior is unpredictable due to the unreliable behavior or humans. However, it has been shown by numerous scientists that, in fact, the movements of pedestrians can be modeled by already studied substances such as gases and fluids. Helbing took the approach that pedestrians will move with the influence of social forces. He defines such forces as the ultimate goal of the pedestrian in combination with the idea that humans will keep a certain distance from walls and boarders as well as strange people, and will be formally attracted to other pedestrians which the consider a friend<sup>[[1]](#references)</sup>. This causes pedestians to travel and pair and keep a predictable distance from strange groups of people.
 
-Humans perform tasks differently based on individual differences, such as personality type. Personality influences, along with the social force model, must determine the choice path of pedestrians within a system. With a better understanding how individuals react to their environment, we can build an environment that encourages a group of people to perform desired actions. This desired action can include preffered evacuation methods, encouragement of collaboration, or optimal "good vibes" within a space. By taking an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that can be used to inform the design of spaces.
+Humans perform tasks differently based on individual differences, such as personality type. Personality influences, along with the social force model, must determine the choice path of pedestrians within a system. With a better understanding how individuals react to their environment, we can build an environment that encourages groups of people to perform desired actions. This desired action can include preferred evacuation methods, encouragement of collaboration, or optimal user experience within a space. 
+By utilizing an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that can be used to inform the design of spaces.
 
 This project makes the following contributions:
 
@@ -59,7 +61,7 @@ This project makes the following contributions:
 
 ## Social Force Model
 
-The social force model<sup>[[1]](#references)</sup>, describes pedestrian behavior by four actions:
+The social force model<sup>[[1]](#references)</sup> describes pedestrian behavior by four actions:
 
 1. Desired direction of movement
 2. Repulsive social forces
@@ -104,7 +106,6 @@ Additionally, the social force model has been validated using real human motion 
 
 <sup>Figure from Seer et al., 2014<sup>[[X]](#references)</sup></sup>
 
-
 ### Our Model
 The below diagrams demonstrate potential applications of our work.
 
@@ -115,12 +116,13 @@ The below diagrams demonstrate potential applications of our work.
 
 ##### Requirements
 
-* The model shall produce agent behavior that replicates real observed behavior (assessed looking at past/historical events)
+* The model shall produce agent behavior that replicates real observed behavior (assessed looking at real human behavior data)
 * The model shall include individual characteristics that each agent will have (e.g., personality type)
 * Agents in the model shall behave according to both individual characteristics, as well as social factors
 * The model shall simulate collective behavior in different physical environments
 
 ## Fundamental Questions
+Our overarching goal is to answer several related research questions.
 
 * **Research Question 1**: What theory or theories best explain and predict human behavior?
     * 1a. What individual parameters (e.g., OCEAN personality type, emotion, etc.) need to be included in an agent-based model to represent varying social behaviors dependent on physical structures?
@@ -134,6 +136,7 @@ The below diagrams demonstrate potential applications of our work.
     * 3a. Which individual differences are likely to result in varying reactions to physical structures designed to elicit certain behaviors?
     * 3b. How can we optimize building design to account for individual differences in people?
 
+The present study serves as a starting point by examining a single personality variable in combination with the social force model, and how this extended model influences collective behavior differently based on the physical environment.
 
 ## Expected Results
 
