@@ -10,8 +10,7 @@ Select forks to compare | ![del](delete/delete_4_selectfork.png)
 New pull request | ![del](delete/delete_5_pullreq.png)
 Merge options | ![del](delete/delete_6_mergeoptions.png)
 
-# *If You Build It, They Will <s>Come</s> Do What?:*
-## *Extending Helbing's Social Force Model to Examine how Personality Influences Collective Behavior in Built Spaces*
+# *If You Build It, They Will <s>Come</s> Do What? Extending Helbing's Social Force Model to Examine how Personality Influences Collective Behavior in Built Spaces*
 
 > * Group Name: *2 ∞ & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
