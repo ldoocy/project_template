@@ -157,9 +157,6 @@ First, we created a simplified simulation of a hallway pedestrian scenario to re
 Specifically, we focused on introversion and extraversion, two diametrically opposed constructs referring to the degree to which
 To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all pedestrians have the same personality or have mixed personality types). From this, we created the following conditions:
 
-* Control (baseline): Basic social force model in a hallway of width 200.
-  * This condition was used to determine the effect of various manipulations on agent behavior.
-
 Personality | Environment
 :---: | :---:
 Baseline | Baseline hallway
