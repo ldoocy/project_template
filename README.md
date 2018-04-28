@@ -1,3 +1,7 @@
+# DELETE: Editing same file from different locations
+
+
+
 # IDS6145 (SimTech 2018) - Research Plan
 
 > * Group Name: *2 ∞ & Beyond!*
