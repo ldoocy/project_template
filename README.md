@@ -10,11 +10,12 @@ Select forks to compare | ![del](delete/delete_4_selectfork.png)
 New pull request | ![del](delete/delete_5_pullreq.png)
 Merge options | ![del](delete/delete_6_mergeoptions.png)
 
-# IDS6145 (SimTech 2018) - Research Plan
+# *If You Build It, They Will <s>Come</s> Do What?:*
+## *Extending Helbing's Social Force Model to Examine how Personality Influences Collective Behavior in Built Spaces*
 
 > * Group Name: *2 ∞ & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
-> * Project Title: *If You Build It, They Will <s>Come</s> Do What?: Extending Helbing's Social Force Model to Examine how Personality Influences Collective Social Behavior in Built Spaces*
+> * IDS 6145 (SimTech 2018)
 
 ## Abstract
 Helbing's social force model<sup>[[1]](#references)</sup> proposes that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and discuss how individual personality differences affect movements within a system. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
