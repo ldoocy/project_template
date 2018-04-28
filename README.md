@@ -163,7 +163,7 @@ Control | Baseline parameters to compare other conditions
 All extraverted |  All agents are high in extraversion
 All introverted | All agents are high in introversion
 Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted
-Mixed - dispersed | Introversion/extraversion are randomly distributed among all agents
+Mixed - dispersed | Introversion/extraversion are normally distributed among all agents (i.e., most people are closer to center, with fewer people at extremes)
 
 
 (Steps in the process)
