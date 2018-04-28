@@ -15,19 +15,21 @@ Merge options | ![del](delete/delete_6_mergeoptions.png)
 
 > * Group Name: *2 ∞ & Beyond!*
 > * Group participants names: Lauren Doocy, Jihye Song, Jonathan Valderrama
-> * Project Title: *If You Build It, They Will <s>Come</s> Do What?*
+> * Project Title: *If You Build It, They Will <s>Come</s> Do What?: Extending Helbing's Social Force Model to Examine how Personality Influences Collective Social Behavior in Built Spaces*
 
 ## Abstract
 Helbing's social force model<sup>[[1]](#references)</sup> proposes that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and discuss how individual personality differences affect movements within a system. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
-The social force model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
+The social force model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. 
+In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
 
-Recently, we have become more conscious in designing spaces with an explicit intent (e.g., environmentally friendly, cost effective heating and cooling), and we intend to explore how physical spaces alter human behavior to motivate a desired behavior. Once we understand human behavior at the individual level, potential applications can include:
+This research has practical implications for building design to influence collective behavior. There has been considerable interest in designing spaces with an explicit intent (e.g., environmentally friendly, cost effective heating and cooling). Using agent based modeling, we seek to simulate the effect of physical spaces on human behavior as a function of personality. Potential real-world applications can include:
 * Safe evacuation/stampede prevention
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
 * Improving quality of life through design features like elements from nature<sup>[[3]](#references)[[4]](#references)</sup>
 * Collaboration<sup>[[5]](#references)</sup>
 
+Drawing from Helbing's work on pedestrian simulation, we not only further validate Helbing's social force model, but to extend it by adding a new variable to account for personality differences.
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
 
 
@@ -93,6 +95,14 @@ The fourth and final defined term in the social force model is the attractive fo
 ### Other Influences
 The social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
 We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extroversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
+
+## Related Work
+
+Previous research has replicated Helbing's work [**TODO: CITE**] using agent based modeling. 
+Additionally, the social force model has been validated using real human motion data [CITE SEER].
+
+![seer](images/seer_fig1.png)
+<sup>Figure from Seer, 2014</sup>
 
 ### Our Model
 The below diagrams demonstrate potential applications of our work.
