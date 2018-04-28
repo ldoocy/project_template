@@ -17,11 +17,12 @@ Using agent based modeling, we seek to simulate the effect of physical spaces on
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
 * Improving quality of life through design features like elements from nature [(Kaplan, 1995; Ulrich, 1979)](#references)
-* Collaboration [(Pinter-Wollman, Fiore, & Theraulaz, 2017)](#references)
+* Collaboration [(Pinter-Wollman, Fiore, & Theraulaz, 2017)](#references); see Figure 1 for example
 
 Drawing from Helbing's work on pedestrian simulation, we not only further validate Helbing's social force model, but extend it by adding a new variable to account for personality differences.
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
 
+<sup>*Figure 1. Uber office space designed for collaboration.*</sup>
 
 ## Introduction
 
@@ -88,16 +89,16 @@ We predict personality differences influence pedestrian behaviors. In the presen
 
 ## Related Work
 
-Previous research has replicated Helbing's original work using agent based modeling [(Helbing, Buzna, Johansson, & Werner, 2005)](#references). 
-Additionally, the social force model has been validated using real human motion data [(Seer, Rudloff, Matyus, & Brändle, 2014)](#references).
+Previous research has replicated Helbing's original work using agent based modeling ([Helbing, Buzna, Johansson, & Werner, 2005](#references); see Figure 2). 
+Additionally, the social force model has been validated using real human motion data ([Seer, Rudloff, Matyus, & Brändle, 2014](#references); see Figure 3).
 
 ![helb](images/helbing_2005_fig3.png)
 
-<sup>*Figure from [Helbing et al. (2005)](#references) depicting self-organized lanes among pedestrians.*</sup>
+<sup>*Figure 2. Self-organized lanes among pedestrians [(Helbing et al., 2005)](#references).*</sup>
 
 ![seer](images/seer_fig1.png)
 
-<sup>*Figure from [Seer et al. (2014)](#references) depicting navigation patterns in real human motion.*</sup>
+<sup>*Figure 3. Navigation patterns in real human motion [Seer et al. (2014)](#references).*</sup>
 
 ### Our Model
 The below diagrams demonstrate potential applications of our work.
