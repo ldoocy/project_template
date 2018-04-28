@@ -99,10 +99,12 @@ We predict personality differences influence pedestrian behaviors. In the presen
 ## Related Work
 
 Previous research has replicated Helbing's work [**TODO: CITE**] using agent based modeling. 
-Additionally, the social force model has been validated using real human motion data [CITE SEER].
+Additionally, the social force model has been validated using real human motion data<sup>[[X]](#references)</sup>.
 
 ![seer](images/seer_fig1.png)
-<sup>Figure from Seer, 2014</sup>
+
+<sup>Figure from Seer et al., 2014<sup>[[X]](#references)</sup></sup>
+
 
 ### Our Model
 The below diagrams demonstrate potential applications of our work.
