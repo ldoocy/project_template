@@ -175,18 +175,32 @@ Specifically, we focused on introversion and extraversion, two diametrically opp
 ## Discussion
 (final only - remove whole section for proposal Readme) 
 (What would you have done differently) 
-What are the contributions summarize)
+
 (what is the big take away)
 (what did you learn)
 
+
 Our results suggest ___
 
-## Future Work
+### Limitations and Future Work
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
 
 We sought to determine whether the social force model could be extended by defining additional variables. To this end, our initial study focused on one personality variable. 
 While relatively simple models can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human behavior, personality, and other factors influencing actions. 
 Future research should explore the degree to which the behavior of increasingly complex agents approaches that of humans, and if there are certain variables or optimal combinations of variables that improve the accuracy of an agent-based model of human social behavior.
+
+## Conclusion
+In sum, this study serves as a starting point to inform future work using agent based modeling for building design. 
+
+## Author Contributions
+All authors contributed to concept formation and study design.
+
+JS developed research questions, JV developed conceptual models, and LD developed mathematical functions to inform agent behavior. 
+
+All authors contributed to final version of the project.
+
+## Acknowledgements
+We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throughout the semester while conceptualizing and completing this project.
 
 ## Supplemental Materials
 (change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
@@ -213,4 +227,4 @@ Future research should explore the degree to which the behavior of increasingly 
 
 <sup>[[X]](#background)</sup> Seer, S., Rudloff, C., Matyus, T., & Brändle, N. (2014). Validating social force based models with comprehensive real world motion data. *Transportation Research Procedia, 2*, 724-732. [DOI](https://doi.org/10.1016/j.trpro.2014.09.080)
 
-<sup>[[X]](#research-methods)</sup> Eysenck, H. J. (1952). The scientific study of personality. Oxford, England: Macmillan.
+<sup>[[X]](#research-methods)</sup> Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
