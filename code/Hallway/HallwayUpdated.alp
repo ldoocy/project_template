@@ -114,7 +114,7 @@
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_HOUR]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[20]]></Code>
+							<Code><![CDATA[40]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -163,7 +163,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[200]]></Code>
+							<Code><![CDATA[150]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1524936853906</Id>
@@ -187,7 +187,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[5]]></Code>
+							<Code><![CDATA[50]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1524938960367</Id>
@@ -474,7 +474,7 @@
 				<RectangleNode>
 					<Id>1524531061789</Id>
 					<Name><![CDATA[node]]></Name>
-					<X>80</X><Y>150</Y>
+					<X>80</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -490,13 +490,13 @@
 					<AttractorsLayout>random</AttractorsLayout>
 
 					<Width>20</Width>
-					<Height>100</Height>
+					<Height>80</Height>
 					<Rotation>0.0</Rotation>
 				</RectangleNode>
 				<RectangleNode>
 					<Id>1524531072582</Id>
 					<Name><![CDATA[node1]]></Name>
-					<X>900</X><Y>150</Y>
+					<X>900</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -512,7 +512,7 @@
 					<AttractorsLayout>random</AttractorsLayout>
 
 					<Width>20</Width>
-					<Height>100</Height>
+					<Height>80</Height>
 					<Rotation>0.0</Rotation>
 				</RectangleNode>
 				<Ground>
@@ -529,7 +529,7 @@
 				<Wall>
 					<Id>1524937402600</Id>
 					<Name><![CDATA[wallTopD]]></Name>
-					<X>80</X><Y>150</Y>
+					<X>80</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -554,7 +554,7 @@
 				<Wall>
 					<Id>1524937415534</Id>
 					<Name><![CDATA[wallBottomD]]></Name>
-					<X>80</X><Y>250</Y>
+					<X>80</X><Y>260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -606,6 +606,7 @@
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<StartupCode><![CDATA[forces.add(100.0);]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1524241613328</Id>
@@ -700,7 +701,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1524939630079</Id>
 					<Name><![CDATA[minWallDist]]></Name>
-					<X>340</X><Y>200</Y>
+					<X>340</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -712,7 +713,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1524939969891</Id>
 					<Name><![CDATA[agentDist]]></Name>
-					<X>340</X><Y>240</Y>
+					<X>340</X><Y>210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -725,9 +726,24 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1524943758664</Id>
-					<Name><![CDATA[relLoc]]></Name>
-					<X>340</X><Y>280</Y>
+					<Id>1524947966472</Id>
+					<Name><![CDATA[forces]]></Name>
+					<X>340</X><Y>240</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[ArrayList<Double>]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[new ArrayList<>();]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1524948008295</Id>
+					<Name><![CDATA[forcesSum]]></Name>
+					<X>340</X><Y>270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -735,7 +751,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[0]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -771,27 +787,30 @@ minWallDist = min(abs(getY() - main.wallTop), abs(getY() - main.wallBottom));
 
 if(getConnectionsNumber() == 0)
 {
-	agentDist = 100;
+	forces = new ArrayList<>();
+	forces.add(100.0);	
 }
 
-if(agentDist < 0)
+forcesSum = 0;
+for(Double f : forces)
 {
-	relLoc = -1;
-	agentDist = abs(agentDist);
+	if(f < 0)
+	{
+		forcesSum -= exp(f/main.R);
+	}
+	else
+	{		
+		forcesSum += exp(-f/main.R);
+	}
 }
-else
-{
-	relLoc = 1;
-}
-
 
 if(getY() < 200)
 {
-	moveTo(1100, 200 + relLoc * exp(-agentDist/main.R) * main.scaleCoeff + exp(-minWallDist/main.wallR) * main.wallCoeff);
+	moveTo(1100, 200 + forcesSum * main.scaleCoeff + exp(-minWallDist/main.wallR) * main.wallCoeff);
 }
 else
 {
-	moveTo(1100, 200 + relLoc *  exp(-agentDist/main.R) * main.scaleCoeff - exp(-minWallDist/main.wallR) * main.wallCoeff);
+	moveTo(1100, 200 + forcesSum * main.scaleCoeff - exp(-minWallDist/main.wallR) * main.wallCoeff);
 }]]></EntryAction>
 						<FillColor/>
 					</Properties>
@@ -832,8 +851,8 @@ if(other0 != p)
 */
 
 List<Agent> a = getConnections();
-
-
+ArrayList<Double> forces = new ArrayList<>();
+forces = new ArrayList<>();
 
 
 for (Agent ag : a)
@@ -843,6 +862,7 @@ for (Agent ag : a)
 	{
 		double dist = getY() - ag.getY();
 		agentDist = dist;
+		forces.add(dist);
 		/*
 		if (dist < 0)
 		{
@@ -1240,6 +1260,7 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
+			<StartupCode><![CDATA[forces.add(100.0);]]></StartupCode>
 			<Generic>false</Generic>
 			<GenericParameter>
 				<Id>1524241681114</Id>
@@ -1359,9 +1380,24 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1524944115797</Id>
-					<Name><![CDATA[relLoc]]></Name>
+					<Id>1524946644229</Id>
+					<Name><![CDATA[forces]]></Name>
 					<X>340</X><Y>190</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[ArrayList<Double>]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[new ArrayList<>();]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1524946928171</Id>
+					<Name><![CDATA[forcesSum]]></Name>
+					<X>340</X><Y>220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1369,7 +1405,7 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[0]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -1404,31 +1440,37 @@ main.applyNetwork();
 
 minWallDist = min(abs(getY() - main.wallTop), abs(getY() - main.wallBottom));
 
+
 if(getConnectionsNumber() == 0)
 {
-	agentDist = 100;
+	forces = new ArrayList<>();
+	forces.add(100.0);	
+}
+
+forcesSum = 0;
+for(Double f : forces)
+{
+	if(f < 0)
+	{
+		forcesSum -= exp(f/main.R);
+	}
+	else
+	{		
+		forcesSum += exp(-f/main.R);
+	}
 }
 
 
-if(agentDist < 0)
-{
-	relLoc = -1;
-	agentDist = abs(agentDist);
-}
-else
-{
-	relLoc = 1;
-}
 
 
 
 if(getY() < 200)
 {
-	moveTo(-100, 200 + relLoc * exp(-agentDist/main.R) * main.scaleCoeff + exp(-minWallDist/main.wallR) * main.wallCoeff);
+	moveTo(-100, 200 + forcesSum * main.scaleCoeff + exp(-minWallDist/main.wallR) * main.wallCoeff);
 }
 else
 {
-	moveTo(-100, 200 + relLoc * exp(-agentDist/main.R) * main.scaleCoeff - exp(-minWallDist/main.wallR) * main.wallCoeff);
+	moveTo(-100, 200 + forcesSum * main.scaleCoeff - exp(-minWallDist/main.wallR) * main.wallCoeff);
 }]]></EntryAction>
 						<FillColor/>
 					</Properties>
@@ -1457,13 +1499,14 @@ moveTo(-100,200);]]></EntryAction>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
 						<EntryAction><![CDATA[List<Agent> a = getConnections();
-
+forces = new ArrayList<>();
 for (Agent ag : a)
 {
 	if (ag.getName().contains("leftAgents"))
 	{
 		double dist = getY() - ag.getY();
 		agentDist = dist;
+		forces.add(dist);
 		/*
 		if (dist <= 0)
 		{
