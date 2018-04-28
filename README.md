@@ -158,7 +158,7 @@ Specifically, we focused on introversion and extraversion, two diametrically opp
 To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all pedestrians have the same personality or have mixed personality types). From this, we created the following conditions:
 
 Personality | Environment
-:---: | :---:
+:--- | :---
 Baseline | Baseline hallway
 Baseline | Wide hallway
 Baseline | Narrow hallway
