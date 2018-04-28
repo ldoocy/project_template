@@ -64,7 +64,7 @@
 					<NetworkType>DISTANCE_BASED</NetworkType>
 					<NetworkTypeApplyOnStartup>true</NetworkTypeApplyOnStartup>
 					<ConnectionsPerAgentCode><![CDATA[2]]></ConnectionsPerAgentCode>
-					<ConnectionsRangeCode><![CDATA[25]]></ConnectionsRangeCode>
+					<ConnectionsRangeCode><![CDATA[50]]></ConnectionsRangeCode>
 					<NeighborLinkFractionCode><![CDATA[0.95]]></NeighborLinkFractionCode>
 					<MCode><![CDATA[10]]></MCode>
 			</EnvironmentProperties>
@@ -114,7 +114,7 @@
 						<UnitOfValue Class="RateUnits"><![CDATA[PER_HOUR]]></UnitOfValue>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeUnitValue">
-							<Code><![CDATA[3]]></Code>
+							<Code><![CDATA[20]]></Code>
 							<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
 						</DefaultValue>
 						<ParameterEditor>
@@ -139,7 +139,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[25]]></Code>
+							<Code><![CDATA[20]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1524932556607</Id>
@@ -163,7 +163,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[2.1]]></Code>
+							<Code><![CDATA[200]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1524936853906</Id>
@@ -187,7 +187,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[30]]></Code>
+							<Code><![CDATA[5]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1524938960367</Id>
@@ -246,6 +246,30 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1524941665989</Id>
+					<Name><![CDATA[wallCoeff]]></Name>
+					<X>200</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[50]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1524941665987</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<AgentLinks>
 				<AgentLink>
@@ -294,7 +318,7 @@
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[20]]></Code>
+						<Code><![CDATA[50]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
@@ -361,7 +385,7 @@
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[20]]></Code>
+						<Code><![CDATA[50]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
@@ -558,6 +582,21 @@
 				</Ground>
 
 			</Shapes>
+			<Controls>
+				<Control Type="Window3D">
+					<Id>1524941223444</Id>
+					<Name><![CDATA[window3d]]></Name>
+					<X>80</X><Y>300</Y>
+					<Width>920</Width>
+					<Height>580</Height>
+					<MakeDefaultViewArea>true</MakeDefaultViewArea>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<FollowCamera>false</FollowCamera>
+					<NavigationType>full</NavigationType>
+					<FarClippingDistance>2000</FarClippingDistance>
+				</Control>
+			</Controls>
 
 		</ActiveObjectClass>
 		<!--   =========   Active Object Class   ========  -->
@@ -685,6 +724,21 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1524943758664</Id>
+					<Name><![CDATA[relLoc]]></Name>
+					<X>340</X><Y>280</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[1]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 			</Variables>
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -720,7 +774,25 @@ if(getConnectionsNumber() == 0)
 	agentDist = 100;
 }
 
-moveTo(1100, getY() - exp(-agentDist/main.R) * main.scaleCoeff + exp(-minWallDist/main.wallR));]]></EntryAction>
+if(agentDist < 0)
+{
+	relLoc = -1;
+	agentDist = abs(agentDist);
+}
+else
+{
+	relLoc = 1;
+}
+
+
+if(getY() < 200)
+{
+	moveTo(1100, 200 + relLoc * exp(-agentDist/main.R) * main.scaleCoeff + exp(-minWallDist/main.wallR) * main.wallCoeff);
+}
+else
+{
+	moveTo(1100, 200 + relLoc *  exp(-agentDist/main.R) * main.scaleCoeff - exp(-minWallDist/main.wallR) * main.wallCoeff);
+}]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -760,7 +832,7 @@ if(other0 != p)
 */
 
 List<Agent> a = getConnections();
-List<Double> forces = new ArrayList<>();
+
 
 
 
@@ -771,21 +843,26 @@ for (Agent ag : a)
 	{
 		double dist = getY() - ag.getY();
 		agentDist = dist;
+		/*
 		if (dist < 0)
 		{
 			moveTo(getX(), getY() - exp(dist/main.R) * main.scaleCoeff);
-			forces.add(dist);
+			
 		}
 		else
 		{
 			moveTo(getX(), getY() + exp(-dist/main.R) * main.scaleCoeff);
-			forces.add(dist);
+			
 		}
+		*/
+	}
+	else
+	{
+		agentDist = 100;
 	}
 	
 }
 
-System.out.println(forces);
 color = yellow;]]></EntryAction>
 						<FillColor/>
 					</Properties>
@@ -1010,7 +1087,6 @@ color = yellow;]]></EntryAction>
 						<ClassName><![CDATA[leftAgent]]></ClassName>
 						<ItemName><![CDATA[statechart]]></ItemName>
 					</StatechartReference>
-					<DrawLine>true</DrawLine>
 					<LineStyle>SOLID</LineStyle>
 					<LineWidth>1</LineWidth>
 					<LineColor>-16777216</LineColor>
@@ -1061,6 +1137,8 @@ color = yellow;]]></EntryAction>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<OnClickCode><![CDATA[System.out.println("x coord: " + getX());
+System.out.println("y coord: " + getY());]]></OnClickCode>
 					<AsObject>true</AsObject>
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
@@ -1107,6 +1185,51 @@ color = yellow;]]></EntryAction>
 			</Shapes>
 
 				</Group>
+				<Figure3D>
+					<Id>1524941210599</Id>
+					<Name><![CDATA[person1]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>0</X><Y>0</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<FileName><![CDATA[x3d/person.x3d]]></FileName>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[Material__3__Surf]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__5__Surf]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+							<Color>-65536</Color>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__6__Surf]]></Name>
+							<OriginalColor>-4083577</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__2__Surf]]></Name>
+							<OriginalColor>-13355980</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__4__Surf]]></Name>
+							<OriginalColor>-13355980</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__1__Surf]]></Name>
+							<OriginalColor>-5279952</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>0.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+				</Figure3D>
 			</Shapes>
 
 		</ActiveObjectClass>
@@ -1211,6 +1334,45 @@ color = yellow;]]></EntryAction>
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1524942810432</Id>
+					<Name><![CDATA[minWallDist]]></Name>
+					<X>340</X><Y>130</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1524942821102</Id>
+					<Name><![CDATA[agentDist]]></Name>
+					<X>340</X><Y>160</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1524944115797</Id>
+					<Name><![CDATA[relLoc]]></Name>
+					<X>340</X><Y>190</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[1]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 			</Variables>
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -1236,9 +1398,38 @@ color = green;]]></EntryAction>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[moveTo(-100,200);
+						<EntryAction><![CDATA[//moveTo(-100,200);
 color = green;
-main.applyNetwork();]]></EntryAction>
+main.applyNetwork();
+
+minWallDist = min(abs(getY() - main.wallTop), abs(getY() - main.wallBottom));
+
+if(getConnectionsNumber() == 0)
+{
+	agentDist = 100;
+}
+
+
+if(agentDist < 0)
+{
+	relLoc = -1;
+	agentDist = abs(agentDist);
+}
+else
+{
+	relLoc = 1;
+}
+
+
+
+if(getY() < 200)
+{
+	moveTo(-100, 200 + relLoc * exp(-agentDist/main.R) * main.scaleCoeff + exp(-minWallDist/main.wallR) * main.wallCoeff);
+}
+else
+{
+	moveTo(-100, 200 + relLoc * exp(-agentDist/main.R) * main.scaleCoeff - exp(-minWallDist/main.wallR) * main.wallCoeff);
+}]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -1272,6 +1463,8 @@ for (Agent ag : a)
 	if (ag.getName().contains("leftAgents"))
 	{
 		double dist = getY() - ag.getY();
+		agentDist = dist;
+		/*
 		if (dist <= 0)
 		{
 			moveTo(getX(), getY() - exp(dist/main.R) * main.scaleCoeff);
@@ -1280,6 +1473,11 @@ for (Agent ag : a)
 		{
 			moveTo(getX(), getY() + exp(-dist/main.R) * main.scaleCoeff);
 		}
+		*/
+	}
+	else
+	{
+		agentDist = 100;
 	}
 }]]></EntryAction>
 						<FillColor/>
@@ -1503,7 +1701,6 @@ for (Agent ag : a)
 						<ClassName><![CDATA[rightAgent]]></ClassName>
 						<ItemName><![CDATA[movement]]></ItemName>
 					</StatechartReference>
-					<DrawLine>true</DrawLine>
 					<LineStyle>SOLID</LineStyle>
 					<LineWidth>1</LineWidth>
 					<LineColor>-16777216</LineColor>
@@ -1600,6 +1797,51 @@ for (Agent ag : a)
 			</Shapes>
 
 				</Group>
+				<Figure3D>
+					<Id>1524942992686</Id>
+					<Name><![CDATA[person1]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<X>0</X><Y>0</Y><Z>0</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<FileName><![CDATA[x3d/person.x3d]]></FileName>
+					<ColorTable>
+						<ColorMapping>
+							<Name><![CDATA[Material__3__Surf]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__5__Surf]]></Name>
+							<OriginalColor>-3355444</OriginalColor>
+							<Color>-16744448</Color>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__6__Surf]]></Name>
+							<OriginalColor>-4083577</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__2__Surf]]></Name>
+							<OriginalColor>-13355980</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__4__Surf]]></Name>
+							<OriginalColor>-13355980</OriginalColor>
+						</ColorMapping>
+						<ColorMapping>
+							<Name><![CDATA[Material__1__Surf]]></Name>
+							<OriginalColor>-5279952</OriginalColor>
+						</ColorMapping>
+					</ColorTable>
+					<AutoScale>true</AutoScale>
+					<Scale>1.0</Scale>
+					<Rotation>180.0</Rotation>
+					<AxisOrder>YZX_AXIS_ORDER</AxisOrder>
+					<ApplyShading>true</ApplyShading>
+				</Figure3D>
 			</Shapes>
 
 		</ActiveObjectClass>
@@ -1737,6 +1979,9 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[wallBottom]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[wallCoeff]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
