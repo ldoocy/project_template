@@ -17,7 +17,8 @@ Merge options | ![del](delete/delete_6_mergeoptions.png)
 > * IDS 6145 (SimTech 2018)
 
 ## Abstract
-Helbing's social force model<sup>[[1]](#references)</sup> proposes that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and discuss how individual personality differences affect movements within a system. Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
+The social force model [(Helbing & Molnar, 1995)](#references) proposes that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and discuss how individual personality differences affect movements within a system. 
+Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
 The social force model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. 
 In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
 
@@ -27,8 +28,8 @@ Using agent based modeling, we seek to simulate the effect of physical spaces on
 * Safe evacuation/stampede prevention
 * Sustainable behavior (e.g., recycling)
 * Healthy behavior (e.g., being more physically active, preventing spread of disease)
-* Improving quality of life through design features like elements from nature<sup>[[3]](#references)[[4]](#references)</sup>
-* Collaboration<sup>[[5]](#references)</sup>
+* Improving quality of life through design features like elements from nature [(Kaplan, 1995; Ulrich, 1979)](#references)
+* Collaboration [(Pinter-Wollman, Fiore, & Theraulaz, 2017)](#references)
 
 Drawing from Helbing's work on pedestrian simulation, we not only further validate Helbing's social force model, but extend it by adding a new variable to account for personality differences.
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
@@ -61,7 +62,7 @@ This project makes the following contributions:
 
 ## Social Force Model
 
-The social force model<sup>[[1]](#references)</sup> describes pedestrian behavior by four actions:
+The social force model [(Helbing, 1995)](#references) describes pedestrian behavior by four actions:
 
 1. Desired direction of movement
 2. Repulsive social forces
@@ -213,18 +214,19 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 ## References
 
-<sup>[[1]](#abstract)</sup> Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [DOI](https://doi.org/10.1103/PhysRevE.51.4282)
+[^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the ocean personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
 
-<sup>[[2]](#abstract)</sup> Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the ocean personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
+[^](#research-methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
 
-<sup>[[3]](#abstract)</sup> Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182. [DOI](https://doi.org/10.1016/0272-4944(95)90001-2)
+[^](#abstract) Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [DOI](https://doi.org/10.1103/PhysRevE.51.4282)
 
-<sup>[[4]](#abstract)</sup> Ulrich, R. S. (1979). Visual landscapes and psychological well‐being. *Landscape Research, 4*(1), 17-23. [DOI](https://doi.org/10.1080/01426397908705892)
+[^](#abstract) Kaplan, S. (1995). The restorative benefits of nature: Toward an integrative framework. *Journal of Environmental Psychology, 15*(3), 169-182. [DOI](https://doi.org/10.1016/0272-4944(95)90001-2)
 
-<sup>[[5]](#abstract)</sup> Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41. [DOI](https://doi.org/10.1038/s41559-017-0111)
+[^](#abstract) Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41. [DOI](https://doi.org/10.1038/s41559-017-0111)
 
-<sup>[[6]](#expected-results)</sup> Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [DOI](https://doi.org/10.1098/rsos.140437)
+[^](#background) Seer, S., Rudloff, C., Matyus, T., & Brändle, N. (2014). Validating social force based models with comprehensive real world motion data. *Transportation Research Procedia, 2*, 724-732. [DOI](https://doi.org/10.1016/j.trpro.2014.09.080)
 
-<sup>[[X]](#background)</sup> Seer, S., Rudloff, C., Matyus, T., & Brändle, N. (2014). Validating social force based models with comprehensive real world motion data. *Transportation Research Procedia, 2*, 724-732. [DOI](https://doi.org/10.1016/j.trpro.2014.09.080)
+[^](#expected-results) Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [DOI](https://doi.org/10.1098/rsos.140437)
 
-<sup>[[X]](#research-methods)</sup> Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
+[^](#abstract) Ulrich, R. S. (1979). Visual landscapes and psychological well‐being. *Landscape Research, 4*(1), 17-23. [DOI](https://doi.org/10.1080/01426397908705892)
+
