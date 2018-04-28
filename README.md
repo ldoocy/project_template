@@ -157,15 +157,13 @@ First, we created a simplified simulation of a hallway pedestrian scenario to re
 Specifically, we focused on introversion and extraversion, two diametrically opposed constructs referring to the degree to which
 To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all pedestrians have the same personality or have mixed personality types). From this, we created the following conditions:
 
-Personality | Environment
+Condition | Description
 :--- | :---
-Baseline | Baseline hallway
-Baseline | Wide hallway
-Baseline | Narrow hallway
-All extraverted | Baseline hallway
-All introverted | Baseline hallway
-Mixed - one side introverted, one side extraverted | Baseline hallway
-Mixed - dispersed | Baseline hallway
+Control | Baseline parameters to compare other conditions
+All extraverted |  All agents are high in extraversion
+All introverted | All agents are high in introversion
+Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted
+Mixed - dispersed | Introversion/extraversion are randomly distributed among all agents
 
 
 (Steps in the process)
