@@ -1,3 +1,16 @@
+# DELETE: Editing same file simultaneously using GitHub
+
+Step | -
+:---: | :---:
+Menu | ![del](delete/delete_0_menu.png)
+Create new branch | ![del](delete/delete_1_newbranch.png)
+Publish to GitHub | ![del](delete/delete_2_publish.png)
+Compare versions | ![del](delete/delete_3_compare.png)
+Select forks to compare | ![del](delete/delete_4_selectfork.png)
+New pull request | ![del](delete/delete_5_pullreq.png)
+Merge options | ![del](delete/delete_6_mergeoptions.png)
+
+
 # IDS6145 (SimTech 2018) - Research Plan
 
 > * Group Name: *2 ∞ & Beyond!*
