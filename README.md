@@ -62,7 +62,7 @@ This project makes the following contributions:
 
 ## Social Force Model
 
-The social force model [(Helbing, 1995)](#references) describes pedestrian behavior by four actions:
+The social force model [(Helbing & Molnar, 1995)](#references) describes pedestrian behavior by four actions:
 
 1. Desired direction of movement
 2. Repulsive social forces
@@ -172,8 +172,16 @@ Below are examples of the type of data we expect to analyze.
 We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
 To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic software.
 
-First, we created a simplified simulation of a hallway pedestrian scenario to replicate Helbing's work. To build upon this model, we added an additional variable to consider individual personality. 
-Specifically, we focused on introversion and extraversion, two diametrically opposed constructs referring to the degree to which
+First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). 
+For the current study, we utilized AnyLogic simulation software to implement the model. 
+
+# TODO: *Insert methods here*
+
+* 
+
+
+Then, to build upon this model, we added an additional variable to consider individual personality. 
+Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). 
 To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all pedestrians have the same personality or have mixed personality types). From this, we created the following conditions:
 
 Condition | Description
@@ -181,7 +189,7 @@ Condition | Description
 Control | Baseline parameters to compare other conditions
 All extraverted |  All agents are high in extraversion
 All introverted | All agents are high in introversion
-Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted
+Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted (i.e., agent personality varies depending on direction of travel)
 Mixed - dispersed | Introversion/extraversion are normally distributed among all agents (i.e., most people are closer to center, with fewer people at extremes)
 
 
@@ -205,6 +213,10 @@ Mixed - dispersed | Introversion/extraversion are normally distributed among all
 
 
 Our results suggest ___
+
+First, we successfully replicated the social force model in AnyLogic and observed emergent patterns of pedestrian behavior in a hallway navigation scenario. 
+Additionally, varying agent parameters based on introversion and extraversion led to significant differences in both individual agent behavior, as well as patterns of collective behavior.
+Our results suggest that taking additional human traits into consideration can yield more accurate and realistic modeling and simulation of human behavior, both at the individual level, and on a larger scale.
 
 ### Limitations and Future Work
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
