@@ -23,21 +23,19 @@ The social force model includes influences of a desired goal, other pedestrians 
 In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
 
 This research has practical implications for building design to influence collective behavior. 
-There has been considerable interest in designing spaces with an explicit intent (e.g., environmental sustainability, safety, enjoyment). 
-Using agent based modeling, we seek to simulate the effect of physical spaces on human behavior as a function of personality. Potential real-world applications include:
-* Safe evacuation/stampede prevention
-* Sustainable behavior (e.g., recycling)
-* Healthy behavior (e.g., being more physically active, preventing spread of disease)
-* Improving quality of life through design features like elements from nature [(Kaplan, 1995; Ulrich, 1979)](#references)
-* Collaboration [(Pinter-Wollman, Fiore, & Theraulaz, 2017)](#references); see Figure 1 for example
+There has been considerable interest in designing spaces to influence human behavior. 
+Potential real-world applications include safe evacuation (e.g., stampede prevention), sustainable behavior (e.g., recycling), healthy behavior (e.g., being more physically active, preventing spread of disease), design to improve quality of life through design features like elements from nature ([Kaplan, 1995; Ulrich, 1979](#references)), and collaboration ([Pinter-Wollman, Fiore, & Theraulaz, 2017](#references); see Figure 1 for example).
+Using an interdisciplinary approach to integrate agent based modeling and social science, we seek to simulate the effect of physical spaces on human behavior as a function of personality. 
 
-Drawing from Helbing's work on pedestrian simulation, we not only further validate Helbing's social force model, but extend it by adding a new variable to account for personality differences.
+Drawing from Helbing's work on pedestrian simulation, we not only further validate the original social force model, but extend it by adding a new variable to account for personality differences.
 
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
 
 <sup>*Figure 1. Uber office space designed for collaboration.*</sup>
 
 ## Introduction
+
+Modeling large-scale human behavior has gained significant interest across disciplines, and 
 
 Decades ago, people believed human behavior is unpredictable due to the unreliable behavior or humans. However, it has been shown by numerous scientists that, in fact, the movements of pedestrians can be modeled by already studied substances such as gases and fluids. Helbing took the approach that pedestrians will move with the influence of social forces. He defines such forces as the ultimate goal of the pedestrian in combination with the idea that humans will keep a certain distance from walls and boarders as well as strange people, and will be formally attracted to other pedestrians which the consider a friend<sup>[[1]](#references)</sup>. This causes pedestians to travel and pair and keep a predictable distance from strange groups of people.
 
@@ -107,7 +105,7 @@ Finally, the fourth defined term in the social force model is the attractive for
 
 #### Other Influences
 In addition to the terms defined above, the social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
-We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extroversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
+We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extraversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
 
 ## Related Work
 
