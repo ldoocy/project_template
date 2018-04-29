@@ -75,29 +75,38 @@ This is described by the equation:
 
 ![Social Force](images/socialforceeq.png)
 
-### Desired Direction:
-![Social Force](images/desired.png)
+### Equation Terms
 
-The first term in the social force equation takes into account the pedestrians' desired movement. Each entity will have a defined goal to reach in the shortest distance possible. This term depends on the entity's desired velocity and the entity's actual velocity.
+Each agent will have a defined goal to reach in the shortest distance possible. This term depends on the agent's desired velocity and actual velocity. 
+Thus, the first term in the social force equation takes into account the agents' desired movement, defined as:
 
-### Repulsive Social Forces:
-![Social Force](images/repulsive.png)
+| Desired Direction |
+| :---: |
+| ![Social Force](images/desired.png) | 
 
-The second term is a summation of repulsive forces given from other pedestrians in the system. This is known as a repulsive social force. This term depends on the pedestrian's desired direction and the distance from the other pedestrians. Pedestrians desire to keep a distance from strange people and will change directions and velocity to account for this.
+The second term is a summation of repulsive forces given from other agents in the system. This term depends on the agent's desired direction and distance from other agents. 
+Agents desire to keep a minimum distance from strange people and will change directions and velocity to account for this. This is known as a repulsive social force:
 
-### Desired Distance from Walls/Borders:
-![Social Force](images/boarders.png)
+| Repulsive Social Forces |
+| :---: |
+| ![Social Force](images/repulsive.png) |
 
-The third term stands as a summation of the effects of all borders and obstacles present. Each pedestrian will desire to keep a certain distance from walls, furniture, decorations, and other borders. This term takes into account each pedestrian's desired direction and his or her distance from the border. 
-Since borders and walls are typically larger than a single point, the point used to calculate distance from border will change dynamically as the closest point to the pedestrian.
+The third term stands as a summation of the effects of all borders and obstacles present. Each agent desires to keep a certain distance from walls, furniture, decorations, and other borders. 
+This term takes into account each agent's desired direction and his or her distance from the border. 
+Since borders and walls are typically larger than a single point, the point used to calculate distance from border will change dynamically as the closest point to the agent. This term is defined as:
 
-### Social Attraction Forces:
-![Social Force](images/friends.png)
+| Desired Distance from Walls/Borders |
+| :---: |
+|![Social Force](images/boarders.png) |
 
-The fourth and final defined term in the social force model is the attractive forces. This takes into account that given a shared goal, pedestrians will travel with friends. This term takes into account desired direction, distance from a friendly pedestrian, and time.
+Finally, the fourth defined term in the social force model is the attractive forces. This takes into account that given a shared goal, agents will travel with friends. This term takes into account desired direction, distance from a friendly pedestrian, and time:
 
-### Other Influences
-The social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
+| Social Attraction Forces |
+| :---: |
+| ![Social Force](images/friends.png) |
+
+#### Other Influences
+In addition to the terms defined above, the social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
 We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extroversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
 
 ## Related Work
@@ -111,7 +120,7 @@ Additionally, the social force model has been validated using real human motion 
 
 ![seer](images/seer_fig1.png)
 
-<sup>*Figure 3. Navigation patterns in real human motion [Seer et al. (2014)](#references).*</sup>
+<sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup>
 
 ### Our Model
 The below diagrams demonstrate potential applications of our work.
@@ -123,7 +132,7 @@ The below diagrams demonstrate potential applications of our work.
 
 ##### Requirements
 
-* The model shall produce agent behavior that replicates real observed behavior (assessed looking at real human behavior data)
+* The model shall produce agent behavior that replicates human behavior under similar circumstances (assessed looking at real human behavior data)
 * The model shall include individual characteristics that each agent will have (e.g., personality type)
 * Agents in the model shall behave according to both individual characteristics, as well as social factors
 * The model shall simulate collective behavior in different physical environments
