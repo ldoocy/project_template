@@ -212,8 +212,6 @@ Mixed - dispersed | Introversion/extraversion are normally distributed among all
 (what did you learn)
 
 
-Our results suggest ___
-
 First, we successfully replicated the social force model in AnyLogic and observed emergent patterns of pedestrian behavior in a hallway navigation scenario. 
 Additionally, varying agent parameters based on introversion and extraversion led to significant differences in both individual agent behavior, as well as patterns of collective behavior.
 Our results suggest that taking additional human traits into consideration can yield more accurate and realistic modeling and simulation of human behavior, both at the individual level, and on a larger scale.
@@ -221,7 +219,7 @@ Our results suggest that taking additional human traits into consideration can y
 ### Limitations and Future Work
 (final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
 
-We sought to determine whether the social force model could be extended by defining additional variables. To this end, our initial study focused on one personality variable. 
+We sought to determine whether the social force model could be extended by defining additional variables. While there are numerous variables to consider, our initial study only focused on one personality variable (i.e., the introversion-extraversion continuum). 
 While relatively simple models can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human behavior, personality, and other factors influencing actions. 
 Future research should explore the degree to which the behavior of increasingly complex agents approaches that of humans, and if there are certain variables or optimal combinations of variables that improve the accuracy of an agent-based model of human social behavior.
 
