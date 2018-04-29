@@ -167,7 +167,7 @@ Below are examples of the type of data we expect to analyze.
 ![Proposal Bargraph](images/ProposalBargraph.png)
 
 
-## Research Methods
+## Methods
 
 We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
 To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic software.
@@ -229,7 +229,7 @@ In sum, this study serves as a starting point to inform future work using agent 
 ## Author Contributions
 All authors contributed to concept formation and study design.
 
-JS developed research questions, JV developed conceptual models, and LD developed mathematical functions to inform agent behavior. 
+JS refined research questions, JV developed conceptual models, and LD developed mathematical functions to inform agent behavior. 
 
 All authors contributed to final version of the project.
 
