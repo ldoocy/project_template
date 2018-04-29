@@ -112,6 +112,10 @@ Additionally, the social force model has been validated using real human motion 
 <sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup>
 
 ### Our Model
+Our model pulls much of its influence from Helbings social force model [(Helbing, 1995)](#references). As stated before, the social force model is a summation of four different types of forces, desired goal, social repulsion, social attraction, and repulsion from walls and boarders. For simplicity, we will eliminate the attractive forces in this model. This leaves our model as stated by the following:
+
+![our model](images/ourmodel.png)
+
 The first term represents the desired movement term. This force will represent the force moving the agent toward their desired destination. This term depends on initial velocity, desired velocity, as well as the agent's distance from goal.
 
 The second term represents a change in an agent's behaviors due to other agents within a certain radius. This term depends on the desired direction of another agent and the distance from the other agent. This accounts for the repulsive social force of another agent which future behavior may be unknown. This term is a summation of individually calculated terms with respect to all agents within some defined radius.
