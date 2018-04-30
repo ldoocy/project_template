@@ -112,11 +112,13 @@ Additionally, the social force model has been validated using real human motion 
 <sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup>
 
 ### Our Model
-Our model pulls much of its influence from Helbings social force model [(Helbing, 1995)](#references). As stated before, the social force model is a summation of four different types of forces, desired goal, social repulsion, social attraction, and repulsion from walls and boarders. For simplicity, we will eliminate the attractive forces in this model. This leaves our model as stated by the following:
+Our model pulls much of its influence from Helbing's social force model [(Helbing & Molnar, 1995)](#references). 
+As described above, the social force model is a summation of four different types of forces: desired goal, social repulsion, social attraction, and repulsion from walls and borders. 
+For simplicity, we will eliminate the attractive forces in this preliminary model. This leaves our model as stated by the following:
 
 ![our model](images/ourmodel.png)
 
-The first term represents the desired movement term. This force will represent the force moving the agent toward their desired destination. This term depends on initial velocity, desired velocity, as well as the agent's distance from goal.
+The first term represents the desired movement term. This force will represent the force moving the agent toward their desired destination. This term depends on initial velocity, desired velocity, as well as the agent's distance from their goal.
 
 The second term represents a change in an agent's behaviors due to other agents within a certain radius. This term depends on the desired direction of another agent and the distance from the other agent. This accounts for the repulsive social force of another agent which future behavior may be unknown. This term is a summation of individually calculated terms with respect to all agents within some defined radius.
 
@@ -124,19 +126,25 @@ This term is where personality differences may vary. The Helbing model defines t
 
 ![social repulsion](images/repulsiveH.png)
 
-where as the repulsion force is smaller for small distance r. As agents move away from each other, the force decays expontentially. In the current Social Force model, the scale R is held constant. We propose that this parameter is defined by the personality type of the agent. A small value for R will cause less of a repulsive force for pedestrians with an extroverted personality. On the other hand, pedestrians with an introverted personality will be more likely to move way from strangers, requiring a larger value of R.
+where as the repulsion force is smaller for small distance R. As agents move away from each other, the force decays exponentially. 
+In the original social force model, the scale R is held constant. We propose that this parameter is defined by the personality type of the agent. 
+Specifically, a small value for R will reduce repulsive force for agents high in extraversion. On the other hand, highly introverted agents will be more likely to move way from strangers, requiring a larger value of R.
 
-The final term of the modified Social force model is the repulsive force of walls and boarders. Pedestrians are less likely to walk close to a wall, therefore this will be dependent on the agent's distance from the closest point on the wall or boarder.
+The final term of the modified social force model is the repulsive force of walls and borders. Pedestrians are less likely to walk close to a wall, therefore this will be dependent on the agent's distance from the closest point on the wall or boarder.
 
 ![wall repulsion](images/repulsiveWall.png)
 
 Here, both constants C and W are held constant as personality type does not affect behavior towards wall avoidance.
 
-The Social Force Model accounts for changes in desired velocities, movements and personal preferences with a catch all team identified by fluctuations. We propose that personality type plays a significant role in movement preferences that can be more accuratley accounted for outside of a fluctuation term. Personality type will affect individual pedestrian's desired velocity and personal space preferences.
+The social force model accounts for changes in desired velocities, movements, and personal preferences, with a catch all team identified by fluctuations. 
+We propose that personality type plays a significant role in movement preferences that can be more accurateley accounted for outside of a general fluctuation term. 
+Personality type will affect individual agents' desired velocity and personal space preferences.
 
 The social force model describes desired velocity as chosen from a random distribution. While it is true that a crowd of people will have desired velocities chosen from some distribution, we suggest that it is, in fact, related to the individual's personality.
 
-On the other hand, the notion of personal space is accounted for in the fluctionations term. This also is suggested to correlate with personality type. Some individuals are more likely to let strangers approach them where as others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. This would allow the more fearful individuals to react more strongly to other agents, and the agents with a less sensive personal space to react less strongly.
+On the other hand, the notion of personal space is accounted for in the fluctuations term. This is also suggested to correlate with personality type. 
+Some individuals are more likely to let strangers approach them whereas others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. 
+This would allow agents requiring more personal space to react more strongly to other nearby agents, while agents requiring less personal space will react less strongly.
 
 ##### Requirements
 
@@ -203,7 +211,6 @@ Mixed by direction | All agents from the left are introverted; all agents from t
 Mixed - dispersed | Introversion/extraversion are normally distributed among all agents (i.e., most people are closer to center, with fewer people at extremes)
 
 
-(Steps in the process)
 
 ## Results
 
