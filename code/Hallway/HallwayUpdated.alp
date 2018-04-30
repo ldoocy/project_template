@@ -100,6 +100,36 @@
 			<DefaultGround>1524937407266</DefaultGround>
 			<ConnectionsId>1524240884240</ConnectionsId>
 			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1525046384374</Id>
+					<Name><![CDATA[mixedByDir]]></Name>
+					<X>250</X><Y>400</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1525046465428</Id>
+					<Name><![CDATA[mixedDis]]></Name>
+					<X>250</X><Y>430</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1524684358602</Id>
 					<Name><![CDATA[arrival]]></Name>
@@ -139,7 +169,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[20]]></Code>
+							<Code><![CDATA[30]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1524932556607</Id>
@@ -235,7 +265,7 @@
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[250]]></Code>
+							<Code><![CDATA[350]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1524939134498</Id>
@@ -270,7 +300,103 @@
 						</ParameterEditor>
 					</Properties>                 
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1525049512145</Id>
+					<Name><![CDATA[extraversion]]></Name>
+					<X>460</X><Y>420</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[10]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1525049512143</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1525049549282</Id>
+					<Name><![CDATA[introversion]]></Name>
+					<X>460</X><Y>390</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[60]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1525049549280</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1525046524786</Id>
+					<Name><![CDATA[SetConditionBools]]></Name>
+					<X>250</X><Y>460</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[setBools]]></Name>
+						<Type><![CDATA[boolean]]></Type>
+					</Parameter>
+					<Body><![CDATA[if(setBools)
+{
+	
+	if(mixedByDir)
+	{
+		mixedDis = !mixedByDir;
+	}
+	else
+	{
+		mixedByDir = !mixedDis;
+	}
+	
+}
+else
+{
+	mixedByDir = false;
+	mixedDis = false;
+}]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1525049764308</Id>
+					<Name><![CDATA[MixTraits]]></Name>
+					<X>460</X><Y>450</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[//normal(min,max,mean,std)
+return normal(10.0,60.0,35.0,12.5);]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1524240884240</Id>
@@ -315,6 +441,9 @@
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
 					<Parameters>
+						<Parameter>
+							<Name><![CDATA[localR]]></Name>
+						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
@@ -382,6 +511,9 @@
 						</GenericParameterSubstituteReference>
 					</GenericParameterSubstitute>
 					<Parameters>
+						<Parameter>
+							<Name><![CDATA[localR]]></Name>
+						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
@@ -490,7 +622,7 @@
 					<AttractorsLayout>random</AttractorsLayout>
 
 					<Width>20</Width>
-					<Height>80</Height>
+					<Height>180</Height>
 					<Rotation>0.0</Rotation>
 				</RectangleNode>
 				<RectangleNode>
@@ -512,7 +644,7 @@
 					<AttractorsLayout>random</AttractorsLayout>
 
 					<Width>20</Width>
-					<Height>80</Height>
+					<Height>180</Height>
 					<Rotation>0.0</Rotation>
 				</RectangleNode>
 				<Ground>
@@ -554,7 +686,7 @@
 				<Wall>
 					<Id>1524937415534</Id>
 					<Name><![CDATA[wallBottomD]]></Name>
-					<X>80</X><Y>260</Y>
+					<X>80</X><Y>360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -581,12 +713,34 @@
 					<Z>0</Z>
 				</Ground>
 
+				<Text>
+					<Id>1525045727716</Id>
+					<Name><![CDATA[text]]></Name>
+					<X>80</X><Y>380</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-16777216</Color>
+					<Text><![CDATA[Conditions]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>14</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
 			</Shapes>
 			<Controls>
 				<Control Type="Window3D">
 					<Id>1524941223444</Id>
 					<Name><![CDATA[window3d]]></Name>
-					<X>80</X><Y>300</Y>
+					<X>80</X><Y>560</Y>
 					<Width>920</Width>
 					<Height>580</Height>
 					<MakeDefaultViewArea>true</MakeDefaultViewArea>
@@ -595,6 +749,62 @@
 					<FollowCamera>false</FollowCamera>
 					<NavigationType>full</NavigationType>
 					<FarClippingDistance>2000</FarClippingDistance>
+				</Control>
+				<Control Type="RadioButtons">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1525044286749</Id>
+					<Name><![CDATA[conditions]]></Name>
+					<X>80</X><Y>400</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="150" Height="120" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[if(value == 0)//default
+{
+	R = 30;
+	SetConditionBools(false);
+}
+else if(value == 1)//extraverted
+{
+	R = extraversion;
+	SetConditionBools(false);
+}
+else if(value == 2)//introverted
+{
+	R = introversion;
+	SetConditionBools(false);
+}
+else if(value == 3)//Mixed by direction
+{
+	
+	SetConditionBools(false);
+	mixedByDir = true;
+	SetConditionBools(mixedByDir);
+}
+else if(value == 4)//Mixed dispersed
+{
+	
+	SetConditionBools(false);
+	mixedDis = true;
+	SetConditionBools(mixedDis);
+}]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<Orientation>VERTICAL</Orientation>
+						<Button><![CDATA[Control]]></Button>
+						<Button><![CDATA[All Extraverted]]></Button>
+						<Button><![CDATA[All Introverted]]></Button>
+						<Button><![CDATA[Mixed by Direction]]></Button>
+						<Button><![CDATA[Mixed - dispersed]]></Button>
+						<LinkTo>false</LinkTo>
+					</ExtendedProperties>
 				</Control>
 			</Controls>
 
@@ -755,6 +965,30 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="Parameter">
+					<Id>1525047650652</Id>
+					<Name><![CDATA[localR]]></Name>
+					<X>340</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[main.R]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1525047650650</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
+				</Variable>
 			</Variables>
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
@@ -774,7 +1008,7 @@ color = red;]]></EntryAction>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1524794323279</Id>
 					<Name><![CDATA[move]]></Name>
-					<X>110</X><Y>260</Y>
+					<X>110</X><Y>190</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -783,6 +1017,9 @@ color = red;]]></EntryAction>
 						<EntryAction><![CDATA[//moveTo(1100,200);
 color = red;
 main.applyNetwork();
+
+CheckConditions(); // check the conditions before you do any calculations
+
 minWallDist = min(abs(getY() - main.wallTop), abs(getY() - main.wallBottom));
 
 if(getConnectionsNumber() == 0)
@@ -796,11 +1033,11 @@ for(Double f : forces)
 {
 	if(f < 0)
 	{
-		forcesSum -= exp(f/main.R);
+		forcesSum -= exp(f/localR);
 	}
 	else
 	{		
-		forcesSum += exp(-f/main.R);
+		forcesSum += exp(-f/localR);
 	}
 }
 
@@ -818,7 +1055,7 @@ else
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1524849773116</Id>
 					<Name><![CDATA[arrived]]></Name>
-					<X>110</X><Y>510</Y>
+					<X>110</X><Y>360</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -832,7 +1069,7 @@ moveTo(1100,200);]]></EntryAction>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1524852715393</Id>
 					<Name><![CDATA[state]]></Name>
-					<X>110</X><Y>400</Y>
+					<X>110</X><Y>290</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -863,27 +1100,13 @@ for (Agent ag : a)
 		double dist = getY() - ag.getY();
 		agentDist = dist;
 		forces.add(dist);
-		/*
-		if (dist < 0)
-		{
-			moveTo(getX(), getY() - exp(dist/main.R) * main.scaleCoeff);
-			
-		}
-		else
-		{
-			moveTo(getX(), getY() + exp(-dist/main.R) * main.scaleCoeff);
-			
-		}
-		*/
 	}
 	else
 	{
 		agentDist = 100;
 	}
 	
-}
-
-color = yellow;]]></EntryAction>
+}]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -897,7 +1120,7 @@ color = yellow;]]></EntryAction>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>100</Y></Point>
+						<Point><X>0</X><Y>30</Y></Point>
 					</Points>
 					<IconOffset>60.0</IconOffset>
 					<Properties Source="1524682662798" Target="1524794323279" Trigger="rate">
@@ -935,7 +1158,7 @@ color = yellow;]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="move" ParentStateId="1524794323279">
 					<Id>1524849750119</Id>
 					<Name><![CDATA[transition2]]></Name>
-					<X>190</X><Y>260</Y>
+					<X>190</X><Y>190</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -966,14 +1189,14 @@ color = yellow;]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1524849770295</Id>
 					<Name><![CDATA[transition3]]></Name>
-					<X>160</X><Y>290</Y>
+					<X>160</X><Y>220</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>110</Y></Point>
+						<Point><X>0</X><Y>70</Y></Point>
 					</Points>
 					<IconOffset>30.0</IconOffset>
 					<Properties Source="1524794323279" Target="1524852715393" Trigger="condition">
@@ -996,7 +1219,7 @@ color = yellow;]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1524852741532</Id>
 					<Name><![CDATA[transition4]]></Name>
-					<X>160</X><Y>430</Y>
+					<X>160</X><Y>320</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1005,7 +1228,7 @@ color = yellow;]]></EntryAction>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>20</Y></Point>
 						<Point><X>0</X><Y>40</Y></Point>
-						<Point><X>0</X><Y>80</Y></Point>
+						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1524852715393" Target="1524849773116" Trigger="condition">
@@ -1028,7 +1251,7 @@ color = yellow;]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1524853030871</Id>
 					<Name><![CDATA[transition1]]></Name>
-					<X>210</X><Y>420</Y>
+					<X>210</X><Y>310</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1036,8 +1259,8 @@ color = yellow;]]></EntryAction>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>20</X><Y>0</Y></Point>
-						<Point><X>20</X><Y>-150</Y></Point>
-						<Point><X>0</X><Y>-150</Y></Point>
+						<Point><X>20</X><Y>-110</Y></Point>
+						<Point><X>0</X><Y>-110</Y></Point>
 					</Points>
 					<IconOffset>80.0</IconOffset>
 					<Properties Source="1524852715393" Target="1524794323279" Trigger="timeout">
@@ -1060,7 +1283,7 @@ color = yellow;]]></EntryAction>
 				<StatechartElement Class="Transition" ParentState="arrived" ParentStateId="1524849773116">
 					<Id>1524883768342</Id>
 					<Name><![CDATA[transition5]]></Name>
-					<X>190</X><Y>510</Y>
+					<X>190</X><Y>360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1089,6 +1312,33 @@ color = yellow;]]></EntryAction>
 					</Properties>	
 				</StatechartElement>
 			</StatechartElements>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1525047683108</Id>
+					<Name><![CDATA[CheckConditions]]></Name>
+					<X>340</X><Y>350</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[// only change values in extraversion, introversion and the function MixTraits in main
+if(main.mixedByDir)
+{
+	localR = main.introversion;
+}
+else if(main.mixedDis)
+{
+	localR = main.MixTraits();
+}
+else
+{
+	//Set to main R
+	localR = main.R;
+}]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1524241613325</Id>
@@ -1343,7 +1593,7 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 				<Variable Class="PlainVariable">
 					<Id>1524934750885</Id>
 					<Name><![CDATA[color]]></Name>
-					<X>340</X><Y>100</Y>
+					<X>340</X><Y>120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1358,7 +1608,7 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 				<Variable Class="PlainVariable">
 					<Id>1524942810432</Id>
 					<Name><![CDATA[minWallDist]]></Name>
-					<X>340</X><Y>130</Y>
+					<X>340</X><Y>150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1370,7 +1620,7 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 				<Variable Class="PlainVariable">
 					<Id>1524942821102</Id>
 					<Name><![CDATA[agentDist]]></Name>
-					<X>340</X><Y>160</Y>
+					<X>340</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1382,7 +1632,7 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 				<Variable Class="PlainVariable">
 					<Id>1524946644229</Id>
 					<Name><![CDATA[forces]]></Name>
-					<X>340</X><Y>190</Y>
+					<X>340</X><Y>210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1397,7 +1647,7 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 				<Variable Class="PlainVariable">
 					<Id>1524946928171</Id>
 					<Name><![CDATA[forcesSum]]></Name>
-					<X>340</X><Y>220</Y>
+					<X>340</X><Y>240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1408,6 +1658,30 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 							<Code><![CDATA[0]]></Code>
 						</InitialValue>
 					</Properties>
+				</Variable>
+				<Variable Class="Parameter">
+					<Id>1525047970392</Id>
+					<Name><![CDATA[localR]]></Name>
+					<X>340</X><Y>290</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
+						<Type><![CDATA[double]]></Type>
+						<UnitType><![CDATA[NONE]]></UnitType>
+						<SdArray>false</SdArray>
+						<DefaultValue Class="CodeValue">
+							<Code><![CDATA[main.R]]></Code>
+						</DefaultValue>
+						<ParameterEditor>
+							<Id>1525047970390</Id>
+							<EditorContolType>TEXT_BOX</EditorContolType>
+							<MinSliderValue><![CDATA[0]]></MinSliderValue>
+							<MaxSliderValue><![CDATA[100]]></MaxSliderValue>
+							<DelimeterType>NO_DELIMETER</DelimeterType>
+						</ParameterEditor>
+					</Properties>                 
 				</Variable>
 			</Variables>
 			<StatechartElements>
@@ -1428,7 +1702,7 @@ color = green;]]></EntryAction>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1524793919669</Id>
 					<Name><![CDATA[move]]></Name>
-					<X>100</X><Y>230</Y>
+					<X>100</X><Y>180</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1437,6 +1711,8 @@ color = green;]]></EntryAction>
 						<EntryAction><![CDATA[//moveTo(-100,200);
 color = green;
 main.applyNetwork();
+
+CheckConditions(); // check the conditions before you do any calculations
 
 minWallDist = min(abs(getY() - main.wallTop), abs(getY() - main.wallBottom));
 
@@ -1452,11 +1728,11 @@ for(Double f : forces)
 {
 	if(f < 0)
 	{
-		forcesSum -= exp(f/main.R);
+		forcesSum -= exp(f/localR);
 	}
 	else
 	{		
-		forcesSum += exp(-f/main.R);
+		forcesSum += exp(-f/localR);
 	}
 }
 
@@ -1478,7 +1754,7 @@ else
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1524851533925</Id>
 					<Name><![CDATA[arrived]]></Name>
-					<X>100</X><Y>410</Y>
+					<X>100</X><Y>360</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1492,7 +1768,7 @@ moveTo(-100,200);]]></EntryAction>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1524934302766</Id>
 					<Name><![CDATA[state]]></Name>
-					<X>100</X><Y>320</Y>
+					<X>100</X><Y>270</Y>
 					<Label><X>10</X><Y>10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1507,16 +1783,6 @@ for (Agent ag : a)
 		double dist = getY() - ag.getY();
 		agentDist = dist;
 		forces.add(dist);
-		/*
-		if (dist <= 0)
-		{
-			moveTo(getX(), getY() - exp(dist/main.R) * main.scaleCoeff);
-		}
-		else
-		{
-			moveTo(getX(), getY() + exp(-dist/main.R) * main.scaleCoeff);
-		}
-		*/
 	}
 	else
 	{
@@ -1551,7 +1817,7 @@ for (Agent ag : a)
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>90</Y></Point>
+						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1524590556778" Target="1524793919669" Trigger="rate">
@@ -1574,7 +1840,7 @@ for (Agent ag : a)
 				<StatechartElement Class="Transition" ParentState="move" ParentStateId="1524793919669">
 					<Id>1524851514498</Id>
 					<Name><![CDATA[transition2]]></Name>
-					<X>180</X><Y>230</Y>
+					<X>180</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1605,7 +1871,7 @@ for (Agent ag : a)
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1524851542662</Id>
 					<Name><![CDATA[transition3]]></Name>
-					<X>150</X><Y>350</Y>
+					<X>150</X><Y>300</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1635,7 +1901,7 @@ for (Agent ag : a)
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1524934307116</Id>
 					<Name><![CDATA[transition1]]></Name>
-					<X>150</X><Y>260</Y>
+					<X>150</X><Y>210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1665,7 +1931,7 @@ for (Agent ag : a)
 				<StatechartElement Class="Transition" ParentState="ROOT_NODE">
 					<Id>1524934325932</Id>
 					<Name><![CDATA[transition4]]></Name>
-					<X>200</X><Y>340</Y>
+					<X>200</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1697,7 +1963,7 @@ for (Agent ag : a)
 				<StatechartElement Class="Transition" ParentState="arrived" ParentStateId="1524851533925">
 					<Id>1524935423637</Id>
 					<Name><![CDATA[transition5]]></Name>
-					<X>180</X><Y>410</Y>
+					<X>180</X><Y>360</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1726,6 +1992,33 @@ for (Agent ag : a)
 					</Properties>	
 				</StatechartElement>
 			</StatechartElements>
+			<Functions>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1525047980627</Id>
+					<Name><![CDATA[CheckConditions]]></Name>
+					<X>340</X><Y>320</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Body><![CDATA[// only change values in extraversion, introversion and the function MixTraits in main
+if(main.mixedByDir)
+{
+	localR = main.extraversion;
+}
+else if(main.mixedDis)
+{
+	localR = main.MixTraits();
+}
+else
+{
+	//Set to main R
+	localR = main.R;
+}]]></Body>
+				</Function>
+			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1524241681111</Id>
@@ -2025,6 +2318,12 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[wallCoeff]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[extraversion]]></ParameterName>
+				</Parameter>
+				<Parameter>
+					<ParameterName><![CDATA[introversion]]></ParameterName>
 				</Parameter>
 			</Parameters>			
 			<PresentationProperties 
