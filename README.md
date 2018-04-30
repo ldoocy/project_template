@@ -173,10 +173,10 @@ The final term of the modified social force model is the repulsive force of wall
 
 ![wall repulsion](images/repulsiveWall.png)
 
-Here, both constants C and W are held constant as personality type does not affect behavior towards wall avoidance.
+Here, both C and W are held constant as personality type does not affect behavior towards wall avoidance.
 
 The social force model accounts for changes in desired velocities, movements, and personal preferences, with a catch all team identified by fluctuations. 
-We propose that personality type plays a significant role in movement preferences that can be more accurateley accounted for outside of a general fluctuation term. 
+We propose that personality type plays a significant role in movement preferences that can be more accurately accounted for outside of a general fluctuation term. 
 Personality type will affect individual agents' desired velocity and personal space preferences.
 
 The social force model describes desired velocity as chosen from a random distribution. While it is true that a crowd of people will have desired velocities chosen from some distribution, we suggest that it is, in fact, related to the individual's personality.
