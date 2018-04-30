@@ -151,39 +151,35 @@ For the current study, we utilized AnyLogic simulation software to implement the
 
 ### Model Development
 
-Our model pulls much of its influence from Helbings social force model [(Helbing, 1995)](#references). As stated before, the social force model is a summation of four different types of forces, desired goal, social repulsion, social attraction, and repulsion from walls and boarders. The notion of personal space is accounted for within the Social Force Model's "flucuations" term. This type of preference may correlate with personality type. Some individuals are more likely to let strangers approach them where as others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. This would allow the more fearful individuals to react more strongly to other agents, and the agents with a less sensive personal space to react less strongly.
+Our model pulls much of its influence from Helbing's social force model [(Helbing & Molnar, 1995)](#references). As described above, the social force model is a summation of four different types of forces: desired goal, social repulsion, social attraction, and repulsion from walls and borders. The notion of preferred personal space is accounted for within the social force model's "fluctuations" term. This type of preference may correlate with personality type, with some individuals tolerating less or more distance between themselves and other people. We believe this may be accounted for within the repulsive social forces term. This would allow for agents requiring more personal space to exhibit more extreme reactions in response to other nearby agents, while agents requiring less personal space will be less affected by nearby agents.
 
-So by way of the Social Force model, we extend this idea to understand the effect of perosnality differences on movement. For simplicity, we will eliminate the attractive forces in this model and assume all entities are progressing as an individual. This leaves our model as stated by the following:
+We developed an extended social force model to understand the effect of personality differences on movement. For simplicity, we eliminated the attractive forces in this model and assumed all agents progress as individuals. This leaves our model as stated by the following:
 
 ![our model](images/ourmodel.png)
 
-The first term represents the desired movement. This will represent the force moving the agent toward their desired destination. This term depends on initial velocity, desired velocity, as well as the agent's distance from goal.
+The first term represents desired movement. This represents the force moving the agent toward their desired destination. This term depends on initial velocity, desired velocity, as well as the agent's distance from their goal.
 
-The second term represents a change in an agent's behaviors due to other agents within a certain radius. This term depends on the desired direction of the another agent and the distance from that agent. This accounts for the repulsive social force of a stranger which future behavior may be unknown. The agents within the system have an exponential relationsip with other agents in the system such that:
+The second term represents a change in an agent's behaviors due to the presence of other agents within a certain radius. This term depends on the desired direction of the another agent and the distance from that agent. 
+This accounts for the repulsive social force of a stranger whose future behavior may be unknown. The agents within the system have an exponential relationship with other agents in the system such that:
 
 ![social repulsion](images/repulsiveH.png)
 
-This term is exponential such closer agents will create a stronger repulsion force than those at long distances. As agents move away from each other, the repulsive force decays exponentially. While the social force model holds parameters A and R constant, we propose that personality difference may affect interactions with other agents. This suggests constants A and R may be defined by the personality type of the agent. A small value for R will cause less of a repulsive force for pedestrians with an extroverted personality. On the other hand, pedestrians with an introverted personality will be more likely to move way from strangers, requiring a larger value of R.
+This term is exponential such that closer agents will create a significantly stronger repulsion force than those at long distances. As agents move away from each other, repulsive force decays exponentially. While the social force model holds parameters A and R constant, we propose that personality differences may affect interactions with other agents. This suggests constants A and R may be defined by the personality type of the agent. A small value for R will cause less of a repulsive force for agents with an extroverted personality. On the other hand, agents with an introverted personality will be more likely to avoid strangers, requiring a larger value of R.
 
-The final term of the modified Social force model is the repulsive force of walls and borders. Pedestrians are less likely to walk close to a wall unless absoultely necessary. Therefore this term will be dependent on the agent's distance from the closest point on the wall or border.
+The final term of the modified social force model is the repulsive force of walls and borders. Pedestrians are less likely to walk close to a wall unless absolutely necessary. Therefore this term will be dependent on the agent's distance from the closest point on the wall or border.
 
 ![wall repulsion](images/repulsiveWall.png)
 
-<<<<<<< HEAD
-Here, both C and W are held constant as personality type does not affect behavior towards wall avoidance.
+Here, both C and W are held constant as we do not believe personality type will affect behavior towards wall avoidance.
 
-The social force model accounts for changes in desired velocities, movements, and personal preferences, with a catch all team identified by fluctuations. 
-We propose that personality type plays a significant role in movement preferences that can be more accurately accounted for outside of a general fluctuation term. 
-Personality type will affect individual agents' desired velocity and personal space preferences.
+The social force model accounts for changes in desired velocities, movements, and personal preferences, with a catch-all term identified by fluctuations. 
+We propose that personality type plays a significant role in movement preferences that can be captured more accurately outside of a general fluctuation term. 
+The social force model also describes desired velocity as chosen from a random distribution. While it is true that a crowd of people will have desired velocities chosen from some distribution, we suggest that it is, in fact, related to the individual's personality.
 
-The social force model describes desired velocity as chosen from a random distribution. While it is true that a crowd of people will have desired velocities chosen from some distribution, we suggest that it is, in fact, related to the individual's personality.
-
-On the other hand, the notion of personal space is accounted for in the fluctuations term. This is also suggested to correlate with personality type. 
+Additionally, the notion of personal space is accounted for in the fluctuations term. However, this is also suggested to correlate with personality type. 
 Some individuals are more likely to let strangers approach them whereas others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. 
 This would allow agents requiring more personal space to react more strongly to other nearby agents, while agents requiring less personal space will react less strongly.
-=======
-Here, both constants C and W are held constant. We do not believe personality type will affect behavior towards wall avoidance.
->>>>>>> 8747e856b1a28be83fbc34673bf6804e5b8d39ad
+Thus, within our model, personality type will affect individual agents' desired velocity and personal space preferences. 
 
 ### Requirements
 
