@@ -111,6 +111,7 @@ Additionally, the social force model has been validated using real human motion 
 
 <sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup>
 
+We extend this previous work by not only replicating results from prior agent based modeling approaches, but also by introducing an additional personality variable, and by doing so using different modeling software (i.e., AnyLogic).
 
 ## Fundamental Questions
 Our overarching goal is to answer several related research questions.
@@ -191,7 +192,7 @@ This would allow agents requiring more personal space to react more strongly to 
 
 ### Experiment and Model Validation
 
-To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all agents have the same personality or have mixed personality types). From this, we created the following conditions:
+To examine the effect of personality differences on collective behavior, we manipulated personality and crowd composition (i.e., whether all agents have the same personality or have mixed personality types). From this, we created the following conditions:
 
 Condition | Description
 :--- | :---
@@ -201,13 +202,17 @@ All introverted | All agents are high in introversion
 Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted (i.e., agent personality varies depending on direction of travel)
 Mixed - dispersed | Introversion/extraversion are normally distributed among all agents (i.e., most people are closer to center, with fewer people at extremes)
 
-To test the effect of condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other. In our simulations, agents entered the hallway simultaneously from both the left and right entrance.
+To test the effect of condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other while avoiding walls. In our simulations, multiple agents entered the hallway simultaneously from both the left and right entrance.
 
 ## Results
 
 ### Qualitative Analysis
 
 First, we examined agents in the control condition, which is intended to replicate the original social force model. In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed three distinct lanes, with two traveling in one direction, and one traveling in the opposite direction.
+
+Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. 
+
+
 
 **TO DO:**
 
