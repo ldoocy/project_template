@@ -20,9 +20,9 @@ Using an interdisciplinary approach to integrate agent based modeling and social
 
 Drawing from Helbing's work on pedestrian simulation, we not only further validate the original social force model using AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)), but extend it by adding a new variable to account for personality differences.
 
-![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/fig1_uber-office.jpg)
-
-<sup>*Figure 1. Uber office space designed for collaboration.*</sup>
+| ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/fig1_uber-office.jpg) |
+| :--- |
+| <sup>*Figure 1. Uber office space designed for collaboration.*</sup> |
 
 ## Introduction
 
@@ -104,21 +104,21 @@ We predict personality differences influence pedestrian behaviors. In the presen
 
 Previous research has replicated Helbing's original work in different scenarios using agent based modeling ([Helbing, Buzna, Johansson, & Werner, 2005](#references); see Figure 2). 
 
-![helb](images/fig3_helbing.png)
-
-<sup>*Figure 2. Self-organized lanes among pedestrians [(Helbing et al., 2005)](#references).*</sup>
+| ![helb](images/fig3_helbing.png) |
+| :--- |
+| <sup>*Figure 2. Self-organized lanes among pedestrians [(Helbing et al., 2005)](#references).*</sup> |
 
 Additionally, the social force model has been validated using real human motion data ([Seer, Rudloff, Matyus, & Brändle, 2014](#references); see Figure 3). 
 
-![seer](images/fig2_seer.png)
-
-<sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup>
+| ![seer](images/fig2_seer.png) |
+| :--- |
+| <sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup> |
 
 Previous research has also included various individual traits, including extraversion, in crowd simulations using the RVO2 Library.
 
-![guy](images/fig4_guy.png)
-
-<sup>*Figure 3. Individual differences within social force model [(Guy et al., 2011)](#references).*</sup>
+| ![guy](images/fig4_guy.png) |
+| :--- |
+| <sup>*Figure 4. Individual differences within social force model [(Guy et al., 2011)](#references).*</sup> |
 
 We extend this previous work by not only replicating results from prior agent based modeling approaches, but also by introducing an additional personality variable, and by doing so using different modeling software (i.e., AnyLogic).
 
