@@ -26,12 +26,12 @@ Drawing from Helbing's work on pedestrian simulation, we not only further valida
 
 ## Introduction
 
-Modeling large-scale human behavior has gained significant interest across disciplines, and 
+Modeling large-scale human behavior has gained significant interest across disciplines, and despite the complexity of cognitive processes underlying human behavior and social interactions, simplified models can be used to approximate and replicate human behavior. 
+For instance, pedestrian movement can be modeled based on movement of gases and fluids. Helbing proposed that pedestrians move based on the influence of social forces that take into account the ultimate goal of the pedestrian in combination with the idea that individuals will keep a certain distance from walls and borders as well as strange people, 
+and will also be formally attracted to other pedestrians according to degree of social relationship ([Helbing & Molnar, 1995](#references)). This causes pedestrians to form groups with friends, as well keep a predictable distance from strangers.
 
-Decades ago, people believed human behavior is unpredictable due to the unreliable behavior or humans. However, it has been shown by numerous scientists that, in fact, the movements of pedestrians can be modeled by already studied substances such as gases and fluids. Helbing took the approach that pedestrians will move with the influence of social forces. He defines such forces as the ultimate goal of the pedestrian in combination with the idea that humans will keep a certain distance from walls and boarders as well as strange people, and will be formally attracted to other pedestrians which the consider a friend<sup>[[1]](#references)</sup>. This causes pedestians to travel and pair and keep a predictable distance from strange groups of people.
-
-Humans perform tasks differently based on individual differences, such as personality type. Personality influences, along with the social force model, must determine the choice path of pedestrians within a system. With a better understanding how individuals react to their environment, we can build an environment that encourages groups of people to perform desired actions. This desired action can include preferred evacuation methods, encouragement of collaboration, or optimal user experience within a space. 
-By utilizing an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that can be used to inform the design of spaces.
+While the social force model has received considerable attention for its ability to replicate crowd behavior, humans perform tasks differently based on individual differences, such as personality type. We suggest, then, that personality influences, along with the social force model, can determine the choice path of agents within a system. 
+By utilizing an interdisciplinary approach and integrating social science and computational methods, we seek to create a model of social behavior that provides insight into how different individuals behave in different environments in order to improve the design of spaces.
 
 This project makes the following contributions:
 
@@ -43,12 +43,6 @@ This project makes the following contributions:
     * Application of findings to real-world settings to enhance social interaction among people
 
 ## Background
-
-**TO DO:**
-
-- [ ] Personality theories - OCEAN
-- [ ] Building design and human factors
-- [X] ABM and human social behavior - related work
 
 ### Social Force Model
 
