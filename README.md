@@ -115,34 +115,27 @@ Additionally, the social force model has been validated using real human motion 
 ## Fundamental Questions
 Our overarching goal is to answer several related research questions.
 
-* **Research Question 1**: What theory or theories best explain and predict human behavior?
-    * 1a. What individual parameters (e.g., OCEAN personality type, emotion, etc.) need to be included in an agent-based model to represent varying social behaviors dependent on physical structures?
-    * 1b. What *combination* of parameters is optimal for replicating and predicting real behavior patterns?
+#### **Research Question 1**: What theory or theories best explain and predict human behavior?
+* **1a.** What individual parameters (e.g., OCEAN personality type, emotion, etc.) need to be included in an agent-based model to represent varying social behaviors dependent on physical structures?
+* **1b.** What *combination* of parameters is optimal for replicating and predicting real behavior patterns?
 
-* **Research Question 2**: How can physical structures be designed to facilitate desired group behavior?
-    * 2a. What features promote/hinder actions like collaboration?
-    * 2b. How do physical structures alter collective behavior?
+#### **Research Question 2**: How can physical structures be designed to facilitate desired group behavior?
+* **2a.** What features promote/hinder actions like collaboration?
+* **2b.** How do physical structures alter collective behavior?
 
-* **Research Question 3**: To what extent and how do individual differences in people affect how physical structures influence their actions?
-    * 3a. Which individual differences are likely to result in varying reactions to physical structures designed to elicit certain behaviors?
-    * 3b. How can we optimize building design to account for individual differences in people?
+#### **Research Question 3**: To what extent and how do individual differences in people affect how physical structures influence their actions?
+* **3a.** Which individual differences are likely to result in varying reactions to physical structures designed to elicit certain behaviors?
+* **3b.** How can we optimize building design to account for individual differences in people?
 
-The present study serves as a starting point by examining a single personality variable in combination with the social force model, and how this extended model influences collective behavior differently based on the physical environment.
+The present study serves as a starting point by examining a single personality variable in combination with the social force model, and how this extended model influences collective behavior.
 
-## Expected Results
+### Expected Results
 
-We expect that given input from different theories and varying combinations of individual agent parameters, we will see patterns of collective behavior emerge<sup>[[6]](#references)</sup>. 
+We expect that given input from personality theory and varying combinations of individual agent parameters, we will see patterns of collective behavior emerge. 
 
-We also expect that design to nudge human behavior will have varying results based on individual differences.
+In particular, we expect that agents high in introversion will react to other agents in the system differently than agents high in extraversion.
 
 ![https://www.smithsonianmag.com/science-nature/crowds-are-much-smarter-we-suspected-180954868/](images/crowd.jpg)
-
-Below are examples of the type of data we expect to analyze.
-
-![Proposal Histogram](images/ProposalHistogram.png)
-
-![Proposal Bargraph](images/ProposalBargraph.png)
-
 
 ## Methods
 
@@ -208,8 +201,13 @@ All introverted | All agents are high in introversion
 Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted (i.e., agent personality varies depending on direction of travel)
 Mixed - dispersed | Introversion/extraversion are normally distributed among all agents (i.e., most people are closer to center, with fewer people at extremes)
 
+To test the effect of condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other. In our simulations, agents entered the hallway simultaneously from both the left and right entrance.
 
 ## Results
+
+### Qualitative Analysis
+
+First, we examined agents in the control condition, which is intended to replicate the original social force model. In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed three distinct lanes, with two traveling in one direction, and one traveling in the opposite direction.
 
 **TO DO:**
 
@@ -219,11 +217,6 @@ Mixed - dispersed | Introversion/extraversion are normally distributed among all
 - [ ] Data visualization
 
 ## Discussion
-(final only - remove whole section for proposal Readme) 
-(What would you have done differently) 
-
-(what is the big take away)
-(what did you learn)
 
 First, we successfully replicated the social force model in AnyLogic and observed emergent patterns of pedestrian behavior in a hallway navigation scenario. 
 Additionally, varying agent parameters based on introversion and extraversion led to significant differences in both individual agent behavior, as well as patterns of collective behavior.
@@ -240,7 +233,7 @@ In sum, this study serves as a starting point to inform future work using agent 
 
 ## Author Contributions
 All authors contributed to concept formation and study design, as well as model development. 
-All authors contributed to each stage of research, with LD leading the development of mathematical functions to inform agent behavior, JS leading social science integration and experimental design, and JV leading development of model within AnyLogic using built-in features and advanced Java functions. 
+All authors contributed to each stage of model development, with LD leading the development of mathematical functions to inform agent behavior, JS leading social science integration and experimental design, and JV leading development of model within AnyLogic using built-in features and advanced Java functions. 
 All authors contributed to the final version of the project.
 
 ## Acknowledgements
