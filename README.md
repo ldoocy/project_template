@@ -226,6 +226,10 @@ To test the effect of condition on agent behavior, we developed a hallway scenar
 
 First, we examined agents in the control condition, which is intended to replicate the original social force model. In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed three distinct lanes, with two traveling in one direction, and one traveling in the opposite direction.
 
+As agents move through a narrow hallway from both dierections, lanes of pedestrians with similar walking direction will form. In our case, we present only two types of agents, those who originate on the right with a leftward goal, and those who are initially on the left with a rightward goal. These agents are identifed by two different colors. As expected, agents of uniform distinction begin to form lanes with those who have a similar goal. The number of these lanes are said to increase linearlly with an increase in walkway width. Again, this type of behavior is seen in our control simulation, as expected. Seen in the figure below, the expected number of lanes over simulation scales linearly to the width of the defined walkway
+
+![linear lanes](images/LinearLaneFormation.png)
+
 Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. 
 
 ### Quantitative Analysis
