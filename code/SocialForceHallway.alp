@@ -7,7 +7,7 @@
 <AnyLogicWorkspace WorkspaceVersion="1.9" AnyLogicVersion="8.2.3.201712291404" AlpVersion="8.0.4">
 <Model>
 	<Id>1524240884239</Id>
-	<Name><![CDATA[HallwayUpdated]]></Name>
+	<Name><![CDATA[SocialForceHallway]]></Name>
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[hallway]]></JavaPackageName>
 	<ModelTimeUnit><![CDATA[Minute]]></ModelTimeUnit>
