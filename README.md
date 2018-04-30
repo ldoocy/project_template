@@ -51,7 +51,7 @@ This project makes the following contributions:
 - [ ] Building design and human factors
 - [ ] ABM and human social behavior - related work
 
-## Social Force Model
+### Social Force Model
 
 The social force model [(Helbing & Molnar, 1995)](#references) describes pedestrian behavior by four actions:
 
@@ -64,7 +64,7 @@ This is described by the equation:
 
 ![Social Force](images/socialforceeq.png)
 
-### Equation Terms
+#### Equation Terms
 
 Each agent will have a defined goal to reach in the shortest distance possible. This term depends on the agent's desired velocity and actual velocity. 
 Thus, the first term in the social force equation takes into account the agents' desired movement, defined as:
@@ -111,14 +111,6 @@ Additionally, the social force model has been validated using real human motion 
 
 <sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup>
 
-### Our Model
-
-##### Requirements
-
-* The model shall produce agent behavior that replicates human behavior under similar circumstances (assessed looking at real human behavior data)
-* The model shall include individual characteristics that each agent will have (e.g., personality type)
-* Agents in the model shall behave according to both individual characteristics, as well as social factors
-* The model shall simulate collective behavior in different physical environments
 
 ## Fundamental Questions
 Our overarching goal is to answer several related research questions.
@@ -197,6 +189,13 @@ On the other hand, the notion of personal space is accounted for in the fluctuat
 Some individuals are more likely to let strangers approach them whereas others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. 
 This would allow agents requiring more personal space to react more strongly to other nearby agents, while agents requiring less personal space will react less strongly.
 
+### Requirements
+
+* The model shall produce agent behavior that replicates human behavior under similar circumstances (assessed looking at real human behavior data)
+* The model shall include individual characteristics that each agent will have (e.g., personality type)
+* Agents in the model shall behave according to both individual characteristics, as well as social factors
+* The model shall simulate collective behavior in different physical environments
+
 ### Experiment and Model Validation
 
 To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all agents have the same personality or have mixed personality types). From this, we created the following conditions:
@@ -214,7 +213,7 @@ Mixed - dispersed | Introversion/extraversion are normally distributed among all
 
 **TO DO:**
 
-- [ ] Describe methods (in methods section)
+- [X] Describe methods (in methods section)
 - [ ] Add pretty video
 - [ ] Data analysis
 - [ ] Data visualization
@@ -226,33 +225,28 @@ Mixed - dispersed | Introversion/extraversion are normally distributed among all
 (what is the big take away)
 (what did you learn)
 
-
 First, we successfully replicated the social force model in AnyLogic and observed emergent patterns of pedestrian behavior in a hallway navigation scenario. 
 Additionally, varying agent parameters based on introversion and extraversion led to significant differences in both individual agent behavior, as well as patterns of collective behavior.
 Our results suggest that taking additional human traits into consideration can yield more accurate and realistic modeling and simulation of human behavior, both at the individual level, and on a larger scale.
 
 ### Limitations and Future Work
-(final only - remove whole section for proposal Readme) (if you had 6 more months what would be the next steps in this project.) (What are a few questions you have now)
 
 We sought to determine whether the social force model could be extended by defining additional variables. While there are numerous variables to consider, our initial study only focused on one personality variable (i.e., the introversion-extraversion continuum). 
-While relatively simple models can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human behavior, personality, and other factors influencing actions. 
+While relatively simple models like the one developed in this study can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human behavior, personality, and other factors influencing actions. 
 Future research should explore the degree to which the behavior of increasingly complex agents approaches that of humans, and if there are certain variables or optimal combinations of variables that improve the accuracy of an agent-based model of human social behavior.
 
-## Conclusion
+### Conclusion
 In sum, this study serves as a starting point to inform future work using agent based modeling for building design. 
 
 ## Author Contributions
-All authors contributed to concept formation and study design.
-
-JS refined research questions, JV developed conceptual models, and LD developed mathematical functions to inform agent behavior. 
-
-All authors contributed to final version of the project.
+All authors contributed to concept formation and study design, as well as model development. 
+All authors contributed to each stage of research, with LD leading the development of mathematical functions to inform agent behavior, JS leading social science integration and experimental design, and JV leading development of model within AnyLogic using built-in features and advanced Java functions. 
+All authors contributed to the final version of the project.
 
 ## Acknowledgements
 We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throughout the semester while conceptualizing and completing this project.
 
 ## Supplemental Materials
-(change the title and amount of headers as needed) (mention datasets you are going to use) (mention base code or examples you)
 
 * [AnyLogic files](code)
 
