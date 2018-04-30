@@ -154,7 +154,7 @@ To explore our research questions, we utilized agent based modeling. Our model w
 
 | ![state](images/fig6_statechart.png) |
 | :--- | 
-| <sup>*Figure 6. Statechart in AnyLogic.*</sup>
+| <sup>*Figure 6. Statechart depicting rules for agent navigation in AnyLogic.*</sup>
 
 
 First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
