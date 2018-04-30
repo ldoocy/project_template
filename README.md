@@ -40,7 +40,7 @@ This project makes the following contributions:
     * Integrating interdisciplinary research approaches to form a novel model of social behavior as a function of physical spaces and human characteristics
 2. Societal Implications
     * Improved public safety through design of spaces
-    * Application of findings to real-world settings to enhance social interaction and collaboration among people
+    * Application of findings to real-world settings to enhance social interaction among people
 
 ## Background
 
@@ -114,11 +114,11 @@ Additionally, the social force model has been validated using real human motion 
 | :--- |
 | <sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup> |
 
-Previous research has also included various individual traits, including extraversion, in crowd simulations using the RVO2 Library ([Guy, Kim, Lin, & Manocha, 2011](#references)).
+Previous research has also included various individual traits, including extraversion, in crowd simulations using the RVO2 Library ([Guy, Kim, Lin, & Manocha, 2011](#references); see Figure 4), and HiDAC ([Durupinar, Pelechano, Allbeck, Gudukbay, & Badler, 2011](#references); see Figure 5).
 
-| ![guy](images/fig4_guy.png) |
-| :--- |
-| <sup>*Figure 4. Individual differences within social force model [(Guy et al., 2011)](#references).*</sup> |
+| ![guy](images/fig4_guy.png) | ![duru](images/fig5_durupinar.png)
+| :--- | :--- |
+| <sup>*Figure 4. Individual differences within social force model [(Guy et al., 2011)](#references).*</sup> | <sup>*Figure 4. OCEAN model and crowd behavior [(Durupinar et al., 2011)](#references).*</sup>
 
 We extend this previous work by not only replicating results from prior agent based modeling approaches, but also by introducing an additional personality variable, and by doing so using different modeling software (i.e., AnyLogic).
 
@@ -183,7 +183,7 @@ The social force model accounts for changes in desired velocities, movements, an
 We propose that personality type plays a significant role in movement preferences that can be captured more accurately outside of a general fluctuation term. 
 The social force model also describes desired velocity as chosen from a random distribution. While it is true that a crowd of people will have desired velocities chosen from some distribution, we suggest that it is, in fact, related to the individual's personality.
 
-Additionally, the notion of personal space is accounted for in the fluctuations term. However, this is also suggested to correlate with personality type. 
+Additionally, the notion of personal space is accounted for in the fluctuations term. However, preferred personal space may correlate with degree of extraversion ([Durupinar, Pelechano, Allbeck, Gudukbay, & Badler, 2011](#references)). 
 Some individuals are more likely to let strangers approach them whereas others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. 
 This would allow agents requiring more personal space to react more strongly to other nearby agents, while agents requiring less personal space will react less strongly.
 Thus, within our model, personality type will affect individual agents' desired velocity and personal space preferences. 
@@ -262,7 +262,7 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 ## References
 [^](#abstract) AnyLogic [Computer software]. (2017). Retrieved from [https://www.anylogic.com](https://www.anylogic.com)
 
-[^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the ocean personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
+[^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the OCEAN personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
 
 [^](#research-methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
 
