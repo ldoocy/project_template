@@ -114,7 +114,7 @@ Additionally, the social force model has been validated using real human motion 
 | :--- |
 | <sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup> |
 
-Previous research has also included various individual traits, including extraversion, in crowd simulations using the RVO2 Library.
+Previous research has also included various individual traits, including extraversion, in crowd simulations using the RVO2 Library ([Guy, Kim, Lin, & Manocha, 2011](#references)).
 
 | ![guy](images/fig4_guy.png) |
 | :--- |
@@ -260,13 +260,13 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 - [ ] Link to raw data/results
 
 ## References
-[^](#abstract) AnyLogic [Computer software]. (2017). Retrieved from https://www.anylogic.com
+[^](#abstract) AnyLogic [Computer software]. (2017). Retrieved from [https://www.anylogic.com](https://www.anylogic.com)
 
 [^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the ocean personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
 
 [^](#research-methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
 
-[^]() Guy, S. J., Kim, S., Lin, M. C., & Manocha, D. (2011, August). Simulating heterogeneous crowd behaviors using personality trait theory. In *Proceedings of the 2011 ACM SIGGRAPH/Eurographics Symposium on Computer Animation* (pp. 43-52). ACM.
+[^](#related-work) Guy, S. J., Kim, S., Lin, M. C., & Manocha, D. (2011, August). Simulating heterogeneous crowd behaviors using personality trait theory. In *Proceedings of the 2011 ACM SIGGRAPH/Eurographics Symposium on Computer Animation* (pp. 43-52). ACM.
 
 [^](#background) Helbing, D., Buzna, L., Johansson, A., & Werner, T. (2005). Self-organized pedestrian crowd dynamics: Experiments, simulations, and design solutions. *Transportation Science, 39*(1), 1-24.
 
