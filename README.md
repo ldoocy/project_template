@@ -112,39 +112,6 @@ Additionally, the social force model has been validated using real human motion 
 <sup>*Figure 3. Navigation patterns in real human motion [(Seer et al., 2014)](#references).*</sup>
 
 ### Our Model
-Our model pulls much of its influence from Helbing's social force model [(Helbing & Molnar, 1995)](#references). 
-As described above, the social force model is a summation of four different types of forces: desired goal, social repulsion, social attraction, and repulsion from walls and borders. 
-For simplicity, we will eliminate the attractive forces in this preliminary model. This leaves our model as stated by the following:
-
-![our model](images/ourmodel.png)
-
-The first term represents the desired movement term. This force will represent the force moving the agent toward their desired destination. This term depends on initial velocity, desired velocity, as well as the agent's distance from their goal.
-
-The second term represents a change in an agent's behaviors due to other agents within a certain radius. This term depends on the desired direction of another agent and the distance from the other agent. This accounts for the repulsive social force of another agent which future behavior may be unknown. This term is a summation of individually calculated terms with respect to all agents within some defined radius.
-
-This term is where personality differences may vary. The Helbing model defines this force term as a term with exponential decay, such that
-
-![social repulsion](images/repulsiveH.png)
-
-where as the repulsion force is smaller for small distance R. As agents move away from each other, the force decays exponentially. 
-In the original social force model, the scale R is held constant. We propose that this parameter is defined by the personality type of the agent. 
-Specifically, a small value for R will reduce repulsive force for agents high in extraversion. On the other hand, highly introverted agents will be more likely to move way from strangers, requiring a larger value of R.
-
-The final term of the modified social force model is the repulsive force of walls and borders. Pedestrians are less likely to walk close to a wall, therefore this will be dependent on the agent's distance from the closest point on the wall or boarder.
-
-![wall repulsion](images/repulsiveWall.png)
-
-Here, both constants C and W are held constant as personality type does not affect behavior towards wall avoidance.
-
-The social force model accounts for changes in desired velocities, movements, and personal preferences, with a catch all team identified by fluctuations. 
-We propose that personality type plays a significant role in movement preferences that can be more accurateley accounted for outside of a general fluctuation term. 
-Personality type will affect individual agents' desired velocity and personal space preferences.
-
-The social force model describes desired velocity as chosen from a random distribution. While it is true that a crowd of people will have desired velocities chosen from some distribution, we suggest that it is, in fact, related to the individual's personality.
-
-On the other hand, the notion of personal space is accounted for in the fluctuations term. This is also suggested to correlate with personality type. 
-Some individuals are more likely to let strangers approach them whereas others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. 
-This would allow agents requiring more personal space to react more strongly to other nearby agents, while agents requiring less personal space will react less strongly.
 
 ##### Requirements
 
@@ -190,17 +157,49 @@ Below are examples of the type of data we expect to analyze.
 We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
 To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic software.
 
-First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). 
+First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
+Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). 
 For the current study, we utilized AnyLogic simulation software to implement the model. 
 
-# TODO: *Insert methods here*
+### Model Development
 
-* 
+Our model pulls much of its influence from Helbing's original social force model [(Helbing & Molnar, 1995)](#references). 
+As described above, the social force model is a summation of four different types of forces: desired goal, social repulsion, social attraction, and repulsion from walls and borders. 
+For simplicity, we eliminated the attractive forces in this preliminary model. This left our model as stated by the following:
 
+![our model](images/ourmodel.png)
 
-Then, to build upon this model, we added an additional variable to consider individual personality. 
-Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). 
-To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all pedestrians have the same personality or have mixed personality types). From this, we created the following conditions:
+The first term represents the desired movement term. This force represents the force moving the agent toward their desired destination. This term depends on initial velocity, desired velocity, as well as the agent's distance from their goal.
+
+The second term represents a change in an agent's behaviors due to other agents within a certain radius. This term depends on the desired direction of another agent and the distance from the other agent. This accounts for the repulsive social force of another agent whose future behavior may be unknown. This term is a summation of individually calculated terms with respect to all agents within some defined radius.
+
+This term is where personality differences may vary. The Helbing model defines this force term as a term with exponential decay, such that: 
+
+![social repulsion](images/repulsiveH.png)
+
+Here, the repulsion force is smaller for small distance R. As agents move away from each other, the force decays exponentially. 
+In the original social force model, the scale R is held constant. We propose that this parameter is defined by the personality type of the agent. 
+Specifically, a small value for R will reduce repulsive force for agents high in extraversion. On the other hand, highly introverted agents will be more likely to move way from strangers, requiring a larger value of R.
+
+The final term of the modified social force model is the repulsive force of walls and borders. Pedestrians are less likely to walk close to a wall, therefore this will be dependent on the agent's distance from the closest point on the wall or boarder.
+
+![wall repulsion](images/repulsiveWall.png)
+
+Here, both constants C and W are held constant as personality type does not affect behavior towards wall avoidance.
+
+The social force model accounts for changes in desired velocities, movements, and personal preferences, with a catch all team identified by fluctuations. 
+We propose that personality type plays a significant role in movement preferences that can be more accurateley accounted for outside of a general fluctuation term. 
+Personality type will affect individual agents' desired velocity and personal space preferences.
+
+The social force model describes desired velocity as chosen from a random distribution. While it is true that a crowd of people will have desired velocities chosen from some distribution, we suggest that it is, in fact, related to the individual's personality.
+
+On the other hand, the notion of personal space is accounted for in the fluctuations term. This is also suggested to correlate with personality type. 
+Some individuals are more likely to let strangers approach them whereas others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. 
+This would allow agents requiring more personal space to react more strongly to other nearby agents, while agents requiring less personal space will react less strongly.
+
+### Experiment and Model Validation
+
+To examine the effect of personality differences on collective behavior, we manipulated environment and crowd composition (i.e., whether all agents have the same personality or have mixed personality types). From this, we created the following conditions:
 
 Condition | Description
 :--- | :---
@@ -209,7 +208,6 @@ All extraverted |  All agents are high in extraversion
 All introverted | All agents are high in introversion
 Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted (i.e., agent personality varies depending on direction of travel)
 Mixed - dispersed | Introversion/extraversion are normally distributed among all agents (i.e., most people are closer to center, with fewer people at extremes)
-
 
 
 ## Results
