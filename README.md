@@ -217,6 +217,9 @@ First, we examined agents in the control condition, which is intended to replica
 
 Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. 
 
+### Quantitative Analysis
+
+
 
 
 **TO DO:**
