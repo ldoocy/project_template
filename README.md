@@ -18,7 +18,7 @@ There has been considerable interest in designing spaces to influence human beha
 Potential real-world applications include safe evacuation (e.g., stampede prevention), sustainable behavior (e.g., recycling), healthy behavior (e.g., being more physically active, preventing spread of disease), design to improve quality of life through design features like elements from nature ([Kaplan, 1995; Ulrich, 1979](#references)), and collaboration ([Pinter-Wollman, Fiore, & Theraulaz, 2017](#references); see Figure 1 for example).
 Using an interdisciplinary approach to integrate agent based modeling and social science, we seek to simulate the effect of physical spaces on human behavior as a function of personality. 
 
-Drawing from Helbing's work on pedestrian simulation, we not only further validate the original social force model, but extend it by adding a new variable to account for personality differences.
+Drawing from Helbing's work on pedestrian simulation, we not only further validate the original social force model using AnyLogic (), but extend it by adding a new variable to account for personality differences.
 
 ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/uber-office.jpg)
 
@@ -47,9 +47,8 @@ This project makes the following contributions:
 **TO DO:**
 
 - [ ] Personality theories - OCEAN
-- [ ] Social behavior - psych research
 - [ ] Building design and human factors
-- [ ] ABM and human social behavior - related work
+- [X] ABM and human social behavior - related work
 
 ### Social Force Model
 
@@ -98,6 +97,9 @@ Finally, the fourth defined term in the social force model is the attractive for
 In addition to the terms defined above, the social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
 We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extraversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
 
+### Personality
+
+
 ## Related Work
 
 Previous research has replicated Helbing's original work using agent based modeling ([Helbing, Buzna, Johansson, & Werner, 2005](#references); see Figure 2). 
@@ -141,7 +143,7 @@ In particular, we expect that agents high in introversion will react to other ag
 ## Methods
 
 We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
-To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic software.
+To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)).
 
 First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
 Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). 
@@ -255,6 +257,7 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 - [ ] Link to raw data/results
 
 ## References
+[^](#abstract) AnyLogic [Computer software]. (2017). Retrieved from https://www.anylogic.com
 
 [^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the ocean personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
 
