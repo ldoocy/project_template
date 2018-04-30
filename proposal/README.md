@@ -13,7 +13,7 @@ Our topic involves the impact of architecture on collective behavior. By integra
 * Improving quality of life through design features like elements from nature<sup>[[3]](#references)[[4]](#references)</sup>
 * Collaboration<sup>[[5]](#references)</sup>
 
-![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](../images/uber-office.jpg)
+![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](../images/fig1_uber-office.jpg)
 
 
 ## General Introduction
