@@ -212,7 +212,18 @@ The conditions were integrated into our AnyLogic model:
 | :--- | 
 | <sup>*Figure 7. Interactive controls to manipulate independent variables in AnyLogic.*</sup>
 
-To test the effect of condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other while avoiding walls. In our simulations, multiple agents entered the hallway simultaneously from both the left and right entrance.
+To test the effect of condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other while avoiding walls. In our simulations, multiple agents entered the hallway simultaneously from both the left and right entrance. 
+
+In addition to examining the effect of varying introversion/extraversion on collective behavior, we also sought to investigate the degree to which collective behavior can be altered by changing the environment. To this end, we examined how modifying the hallway's characteristics influences agent behavior. 
+To determine the effect of varying environment on behavior, we held agent parameters constant and manipulated hallway width:
+
+Hallway Width (meters) |
+:--- |
+100 | 
+150 | 
+200 |
+250 |
+300 |
 
 ## Results
 
