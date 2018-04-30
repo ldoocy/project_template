@@ -118,9 +118,9 @@ Previous research has also included various individual traits, including extrave
 
 | ![guy](images/fig4_guy.png) | ![duru](images/fig5_durupinar.png)
 | :--- | :--- |
-| <sup>*Figure 4. Individual differences within social force model [(Guy et al., 2011)](#references).*</sup> | <sup>*Figure 4. OCEAN model and crowd behavior [(Durupinar et al., 2011)](#references).*</sup>
+| <sup>*Figure 4. Individual differences within social force model [(Guy et al., 2011)](#references).*</sup> | <sup>*Figure 5. OCEAN model and crowd behavior [(Durupinar et al., 2011)](#references).*</sup>
 
-We extend this previous work by not only replicating results from prior agent based modeling approaches, but also by introducing an additional personality variable, and by doing so using different modeling software (i.e., AnyLogic).
+We extend this previous work by not only replicating results from prior agent based modeling approaches, but also by introducing an additional personality variable, and by doing so using different simulation software (i.e., AnyLogic).
 
 ## Fundamental Questions
 Our overarching goal is to answer several related research questions.
@@ -150,7 +150,12 @@ In particular, we expect that agents high in introversion will react to other ag
 ## Methods
 
 We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
-To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)).
+To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)). After testing initial prototypes, we developed our extended social model within AnyLogic using statecharts (See Figure 6). 
+
+| ![state](images/fig6_statechart.png) |
+| :--- | 
+| <sup>*Figure 6. Statechart in AnyLogic.*</sup>
+
 
 First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
 Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). 
@@ -206,6 +211,12 @@ All extraverted |  All agents are high in extraversion
 All introverted | All agents are high in introversion
 Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted (i.e., agent personality varies depending on direction of travel)
 Mixed - dispersed | Introversion/extraversion are normally distributed among all agents (i.e., most people are closer to center, with fewer people at extremes)
+
+The conditions were integrated into our AnyLogic model:
+
+| ![cond](images/fig7_conditions.png) |
+| :--- | 
+| <sup>*Figure 7. Interactive controls to manipulate independent variables in AnyLogic.*</sup>
 
 To test the effect of condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other while avoiding walls. In our simulations, multiple agents entered the hallway simultaneously from both the left and right entrance.
 
