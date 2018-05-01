@@ -8,16 +8,15 @@
 > * IDS 6145 (SimTech 2018)
 
 ## Abstract
-The social force model [(Helbing & Molnar, 1995)](#references) proposes that the list of influences on pedestrian movement extends past a desired goal. We seek to model pedestrian movements within various spaces and discuss how individual personality differences affect movements within a system. 
+The social force model [(Helbing & Molnar, 1995)](#references) offers a modeling approach that considers how factors influencing pedestrian movement extend past merely approaching a desired goal. 
+The social force model includes influences of a desired goal, other pedestrians within the system, and obstacles. We first replicate previous research on the social force model to demonstrate its utility in the development of more complex agent based modeling approaches. 
+We seek to model agent behavior to explore how individual personality differences affect movements within a system, both at the individual and crowd level. 
 Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
-The social force model includes influences of a desired goal, other pedestrians within the system, as well as boarders and walls. 
-In addition to this, individual personality traits will affect individual behaviors within a crowd. We seek to understand these individual traits and their influence on behavior within the system.
+In this preliminary study, using the social force model as a starting point, we isolate the effect of introversion and extraversion on individual and collective behavior, and examine the effect of environmental characteristics on collective behavior.
 
-This research has practical implications for building design to influence collective behavior. 
-There has been considerable interest in designing spaces to influence human behavior. 
+Ultimately, we seek to develop a model that can inform building design to influence collective behavior. 
 Potential real-world applications include safe evacuation (e.g., stampede prevention), sustainable behavior (e.g., recycling), healthy behavior (e.g., being more physically active, preventing spread of disease), design to improve quality of life through design features like elements from nature ([Kaplan, 1995; Ulrich, 1979](#references)), and collaboration ([Pinter-Wollman, Fiore, & Theraulaz, 2017](#references); see Figure 1 for example).
 Using an interdisciplinary approach to integrate agent based modeling and social science, we seek to simulate the effect of physical spaces on human behavior as a function of personality. 
-
 Drawing from Helbing's work on pedestrian simulation, we not only further validate the original social force model using AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)), but extend it by adding a new variable to account for personality differences.
 
 | ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/fig1_uber-office.jpg) |
