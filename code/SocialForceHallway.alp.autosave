@@ -77,7 +77,7 @@
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
+						<Code><![CDATA[.1]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
@@ -2378,7 +2378,7 @@ else
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
-			<MaximumMemory>512</MaximumMemory>
+			<MaximumMemory>1024</MaximumMemory>
 			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<SeedValue>1</SeedValue>
@@ -2482,7 +2482,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<CpuRatio><![CDATA[ratio_2_1]]></CpuRatio>	        
 				<Title><![CDATA[Hallway : Simulation]]></Title>	
 				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
-				<RealTimeScale>1.0</RealTimeScale>
+				<RealTimeScale>5.0</RealTimeScale>
 				<UIProperty Name="Experiment Progress" Value="false"/>
 				<UIProperty Name="Simulation Progress" Value="true"/>
 				<UIProperty Name="Statusbar Events Per Second" Value="false"/>
