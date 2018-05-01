@@ -307,7 +307,7 @@ Extrovert | 10.6 | 10.0 | 10.0 | 10.1 | 8.1 | 9.77
 
 ![bar plot deviation](images/DeviationAverage.png)
 
-Now, by implementation of introversion and extroversion parameters, it shows that path deviation differs for introverts and extroverts. 
+By implementation of introversion and extroversion parameters, it shows that path deviation differs for introverts and extroverts. As expected, introverts deviate from the intended path much more than the control and extroverted agents. It must be stated that these statistics were found under an extreme case, where all agents hold the same introversion and extroversion qualities. For each simulation, the R value was held constant. As we understand no real life scenerio would be executed this way, it is interesting to point out the differences in path deviation from the intended shortest path,
 
 **TO DO:**
 
