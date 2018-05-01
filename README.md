@@ -328,11 +328,6 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 * [AnyLogic file with extended social force model](code/SocialForceHallway.alp)
 
-**TO DO:**
-
-- [X] Sample code?
-- [X] Link to Anylogic file(s)
-- [ ] Link to raw data/results
 
 ## References
 [^](#abstract) AnyLogic [Computer software]. (2017). Retrieved from [https://www.anylogic.com](https://www.anylogic.com)
@@ -341,9 +336,9 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 [^](#research-methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
 
-[^](#related-work) Guy, S. J., Kim, S., Lin, M. C., & Manocha, D. (2011, August). Simulating heterogeneous crowd behaviors using personality trait theory. In *Proceedings of the 2011 ACM SIGGRAPH/Eurographics Symposium on Computer Animation* (pp. 43-52). ACM.
+[^](#related-work) Guy, S. J., Kim, S., Lin, M. C., & Manocha, D. (2011, August). Simulating heterogeneous crowd behaviors using personality trait theory. In *Proceedings of the 2011 ACM SIGGRAPH/Eurographics Symposium on Computer Animation* (pp. 43-52). ACM. [DOI](https://doi.org/10.1145/2019406.2019413)
 
-[^](#background) Helbing, D., Buzna, L., Johansson, A., & Werner, T. (2005). Self-organized pedestrian crowd dynamics: Experiments, simulations, and design solutions. *Transportation Science, 39*(1), 1-24.
+[^](#background) Helbing, D., Buzna, L., Johansson, A., & Werner, T. (2005). Self-organized pedestrian crowd dynamics: Experiments, simulations, and design solutions. *Transportation Science, 39*(1), 1-24. [DOI](https://doi.org/10.1287/trsc.1040.0108)
 
 [^](#abstract) Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [DOI](https://doi.org/10.1103/PhysRevE.51.4282)
 
