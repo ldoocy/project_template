@@ -301,7 +301,9 @@ Additionally, our primary objective was to replicate previous results using the 
 In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed distinct lanes. 
 Our model demonstrates that as agents move through a narrow hallway from opposite directions, lanes of pedestrians with similar walking patterns will form. 
 In our case, we present only two types of agents: those who originate on the right with a leftward goal, and those who are initially on the left with a rightward goal. These agents are identified by two different colors. 
-As expected, our model results in agents of uniform distinction forming lanes with those who have a similar goal. 
+As expected, our model results in agents of uniform distinction forming lanes with those who have a similar goal.
+
+![Lanes Photo](images/lanesExample.png)
 
 Moreover, this collective behavior changes based on the environment, where the number of lanes increases linearly with an increase in walkway width [(Helbing & Molnar, 1995)](#references). As expected, our control simulation replicates previous work demonstrating the relationship between lane formation and walkway width. 
 As shown in Figure 9, the expected number of lanes over simulation scales linearly to the width of the defined walkway. 
