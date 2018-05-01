@@ -180,10 +180,6 @@ The final term of the modified social force model is the repulsive force of wall
 
 Here, both C and W are held constant as we do not believe personality type will affect behavior towards wall avoidance.
 
-The social force model accounts for changes in desired velocities, movements, and personal preferences, with a catch-all term identified by fluctuations. 
-We propose that personality type plays a significant role in movement preferences that can be captured more accurately outside of a general fluctuation term. 
-The social force model also describes desired velocity as chosen from a random distribution. While it is true that a crowd of people will have desired velocities chosen from some distribution, we suggest that it is, in fact, related to the individual's personality.
-
 Additionally, the notion of personal space is accounted for in the fluctuations term. However, preferred personal space may correlate with degree of extraversion ([Durupinar, Pelechano, Allbeck, Gudukbay, & Badler, 2011](#references)). 
 Some individuals are more likely to let strangers approach them whereas others may be much more apprehensive. We believe this may be accounted for within the repulsive social forces term. 
 This would allow agents requiring more personal space to react more strongly to other nearby agents, while agents requiring less personal space will react less strongly.
