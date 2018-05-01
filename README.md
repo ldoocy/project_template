@@ -194,7 +194,7 @@ Agents within the hallway start with no connections to other agents.
 disconnectFromAll();
 ```
 
-Agent rules for moving within the hallway:
+Based on our extended social force model, agent rules for moving within the hallway were defined as follows:
 
 ```javascript
 main.applyNetwork();
@@ -332,7 +332,7 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 **TO DO:**
 
-- [ ] Sample code?
+- [X] Sample code?
 - [X] Link to Anylogic file(s)
 - [ ] Link to raw data/results
 
