@@ -397,6 +397,70 @@ else
 return normal(10.0,60.0,35.0,12.5);]]></Body>
 				</Function>
 			</Functions>
+			<AnalysisData>
+    			<HistogramData>
+					<Id>1525136093661</Id>
+					<Name><![CDATA[leftDistance]]></Name>
+					<X>680</X><Y>350</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1525161600000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</RecurrenceCode>
+					<Value><![CDATA[]]></Value>
+					<NumberOfIntervals>10</NumberOfIntervals>
+					<MinMaxAutodetect>true</MinMaxAutodetect>
+					<RangeMinExpression><![CDATA[0]]></RangeMinExpression>
+					<RangeMaxExpression><![CDATA[1]]></RangeMaxExpression>
+					<InitialIntervalSize><![CDATA[0.1]]></InitialIntervalSize>
+					<CalculateCDF>true</CalculateCDF>
+					<CalculatePercentiles>false</CalculatePercentiles>
+					<LowPercent>10</LowPercent>
+					<HighPercent>10</HighPercent>
+					<Title><![CDATA[]]></Title>
+				</HistogramData>
+    			<HistogramData>
+					<Id>1525136251570</Id>
+					<Name><![CDATA[rightDistance]]></Name>
+					<X>680</X><Y>390</Y>
+					<Label><X>15</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1525161600000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+					</RecurrenceCode>
+					<Value><![CDATA[]]></Value>
+					<NumberOfIntervals>10</NumberOfIntervals>
+					<MinMaxAutodetect>true</MinMaxAutodetect>
+					<RangeMinExpression><![CDATA[0]]></RangeMinExpression>
+					<RangeMaxExpression><![CDATA[1]]></RangeMaxExpression>
+					<InitialIntervalSize><![CDATA[0.1]]></InitialIntervalSize>
+					<CalculateCDF>true</CalculateCDF>
+					<CalculatePercentiles>false</CalculatePercentiles>
+					<LowPercent>10</LowPercent>
+					<HighPercent>10</HighPercent>
+					<Title><![CDATA[]]></Title>
+				</HistogramData>
+			</AnalysisData>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1524240884240</Id>
@@ -965,6 +1029,42 @@ else if(value == 4)//Mixed dispersed
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1525134595879</Id>
+					<Name><![CDATA[lastX]]></Name>
+					<X>340</X><Y>410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1525134600918</Id>
+					<Name><![CDATA[lastY]]></Name>
+					<X>340</X><Y>450</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1525134605991</Id>
+					<Name><![CDATA[distanceTraveled]]></Name>
+					<X>420</X><Y>410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1525047650652</Id>
 					<Name><![CDATA[localR]]></Name>
@@ -1001,7 +1101,10 @@ else if(value == 4)//Mixed dispersed
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
 						<EntryAction><![CDATA[disconnectFromAll();
-color = red;]]></EntryAction>
+color = red;
+
+lastX = getX();
+lastY = getY();]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -1048,7 +1151,12 @@ if(getY() < 200)
 else
 {
 	moveTo(1100, 200 + main.scaleCoeff * forcesSum - main.wallCoeff * exp(-minWallDist/main.wallR));
-}]]></EntryAction>
+}
+
+// calculate distance traveled by agent
+distanceTraveled += sqrt( Math.pow(lastX - getX(), 2) + Math.pow(lastY - getY(), 2) );
+lastX = getX();
+lastY = getY();]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -1061,8 +1169,8 @@ else
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[color = black;
-moveTo(1100,200);]]></EntryAction>
+						<EntryAction><![CDATA[moveTo(1100,200);
+main.leftDistance.add(distanceTraveled);]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -1102,7 +1210,7 @@ for (Agent ag : a)
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>30</Y></Point>
 					</Points>
-					<IconOffset>60.0</IconOffset>
+					<IconOffset>10.0</IconOffset>
 					<Properties Source="1524682662798" Target="1524794323279" Trigger="rate">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[5]]></Code>
@@ -1145,7 +1253,7 @@ for (Agent ag : a)
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>30</Y></Point>
+						<Point><X>-20</X><Y>30</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
 					<Properties Source="1524794323279" Target="1524794323279" Trigger="timeout">
@@ -1206,8 +1314,6 @@ for (Agent ag : a)
 					<ShowLabel>false</ShowLabel>
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
-						<Point><X>0</X><Y>20</Y></Point>
-						<Point><X>0</X><Y>40</Y></Point>
 						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
@@ -1639,6 +1745,48 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1525134185197</Id>
+					<Name><![CDATA[distanceTraveled]]></Name>
+					<X>420</X><Y>380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1525134211271</Id>
+					<Name><![CDATA[lastX]]></Name>
+					<X>340</X><Y>380</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1525134227264</Id>
+					<Name><![CDATA[lastY]]></Name>
+					<X>340</X><Y>410</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
 				<Variable Class="Parameter">
 					<Id>1525047970392</Id>
 					<Name><![CDATA[localR]]></Name>
@@ -1675,7 +1823,11 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
 						<EntryAction><![CDATA[disconnectFromAll();
-color = black;]]></EntryAction>
+color = black;
+
+// initial location of agent
+lastX = getX();
+lastY = getY();]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -1724,7 +1876,12 @@ if(getY() < 200)
 else
 {
 	moveTo(-100, 200 + main.scaleCoeff * forcesSum - main.wallCoeff * exp(-minWallDist/main.wallR));
-}]]></EntryAction>
+}
+
+// calculate distance traveled by agent
+distanceTraveled += sqrt( Math.pow(lastX - getX(), 2) + Math.pow(lastY - getY(), 2) );
+lastX = getX();
+lastY = getY();]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -1737,8 +1894,8 @@ else
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="100" Height="30">
-						<EntryAction><![CDATA[color = black;
-moveTo(-100,200);]]></EntryAction>
+						<EntryAction><![CDATA[moveTo(-100,200);
+main.rightDistance.add(distanceTraveled);]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
@@ -2333,8 +2490,8 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<StopOption><![CDATA[Never]]></StopOption>
 				<InitialDate><![CDATA[1524182400000]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
-				<FinalDate><![CDATA[1526774400000]]></FinalDate>	
-				<FinalTime><![CDATA[100.0]]></FinalTime>	
+				<FinalDate><![CDATA[1524182610000]]></FinalDate>	
+				<FinalTime><![CDATA[3.5]]></FinalTime>	
 			</ModelTimeProperties>
 		</SimulationExperiment>	
 	</Experiments>
