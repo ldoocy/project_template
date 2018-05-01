@@ -302,7 +302,7 @@ Extrovert | 10.6 | 10.0 | 10.0 | 10.1 | 8.1 | 9.77
 
 Through implementation of introversion and extraversion parameters, we show that path deviation will differ when these parameters are varied. As expected, introverts deviate from the intended path much more than the control (baseline) and extroverted agents.
 
-Additionally, our primary objective was to replicate previous results using the social force model. To this end, we examined agents in a control condition, which is intended to replicate the original social force model. 
+Additionally, our initial objective was to replicate previous results using the social force model. To this end, we examined agents in a control condition, which is intended to replicate the original social force model. 
 In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed distinct lanes. 
 Our model demonstrates that as agents move through a narrow hallway from opposite directions, lanes of pedestrians with similar walking patterns will form. 
 In our case, we present only two types of agents: those who originate on the right with a leftward goal, and those who are initially on the left with a rightward goal. These agents are identified by two different colors. 
