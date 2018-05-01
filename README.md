@@ -243,7 +243,7 @@ First, we examined agents in the control condition, which is intended to replica
 
 Our model demonstrates that as agents move through a narrow hallway from opposite directions, lanes of pedestrians with similar walking patterns will form. In our case, we present only two types of agents: those who originate on the right with a leftward goal, and those who are initially on the left with a rightward goal. These agents are identified by two different colors. 
 As expected, agents of uniform distinction begin to form lanes with those who have a similar goal. 
-Moreover, this collective behavior changes based on the environment, where the number of lanes increases linearly with an increase in walkway width ([CITE]). As expected, our control simulation replicates previous work demonstrating the relationship between lane formation and walkway width. 
+Moreover, this collective behavior changes based on the environment, where the number of lanes increases linearly with an increase in walkway width [(Helbing & Molnar, 1995)](#references). As expected, our control simulation replicates previous work demonstrating the relationship between lane formation and walkway width. 
 Seen in the figure below, the expected number of lanes over simulation scales linearly to the width of the defined walkway. 
 This demonstrates how manipulating the environment does not merely alter individual behavior, but also leads to significant differences in emergent collective behavior.
 
