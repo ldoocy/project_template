@@ -289,7 +289,7 @@ Hallway Width (meters) | T1 | T2 | T3 | Average
 
 Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents.
 
-Each agent's point of entry is selected at random, therefore the exact distance from each agent's target may not be uniform. But barying only by initial location, each eagent will travel at minimum 750 and maximum 756 meters to reach its final destination. For simplicity we will assume the shortest, uninterrupted path for any given agent will be 753 meters. Because each agent obeys social forces, each agent will inevitably its own path. Given the 753 meter shortest path, a constant hallway width of 200 meters, and agent population of apporximately 110 agents, we see how small changes to an agent's path due to personality type can nontrivially increase the net distance an agent must travel. Below is a summary of average path deviation in meters taken by agents within the system
+Each agent's point of entry is selected at random, therefore the exact distance from each agent's target may not be uniform. But varying only by initial location, each agent will travel a minimum of 750 and maximum of 756 meters to reach its final destination. For simplicity we will assume the shortest, uninterrupted path for any given agent will be 753 meters. Because each agent obeys social forces, each agent will inevitably alter its path before reaching the goal. Given the 753 meter shortest path, a constant hallway width of 200 meters, and agent population of approximately 110 agents, we see how small changes due to personality type can nontrivially increase the net distance an agent must travel. Below is a summary of average path deviation in meters taken by agents within the system.
 
 Agent Personality | T1 | T2 | T3 | T4 | T5 | Average
 :---: | :---: | :---: | :---: | :---: | :---: | :---:
@@ -299,7 +299,7 @@ Extrovert | 10.6 | 10.0 | 10.0 | 10.1 | 8.1 | 9.77
 
 ![bar plot deviation](images/DeviationAverage.png)
 
-By implementation of introversion and extroversion parameters, it shows that path deviation differs for introverts and extroverts. As expected, introverts deviate from the intended path much more than the control and extroverted agents. It must be stated that these statistics were found under an extreme case, where all agents hold the same introversion and extroversion qualities. For each simulation, the R value was held constant. As we understand no real life scenerio would be executed this way, it is interesting to point out the differences in path deviation from the intended shortest path,
+By implementation of introversion and extroversion parameters, it shows that path deviation will differ depending on their slight differences in interation. As expected, introverts deviate from the intended path much more than the control and extroverted agents. It must be stated that these statistics were taken under an extreme case that all agents hold the same introversion and extroversion qualities. For each simulation, the R value was held constant for all agents within the system, whether they all be introverted, control agents, or extroverted. As we understand no real life scenerio would be executed this way, it is interesting to point out the differences in path deviation from the intended shortest path.
 
 **TO DO:**
 
