@@ -334,6 +334,8 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 ## Supplemental Materials
 
 * [AnyLogic file with extended social force model](code/SocialForceHallway.alp)
+* [Object diagram demonstrating potential application of this research](images/ProposalObjectDiagram.png)
+* [Behavior diagram demonstrating potential application of this research](images/ProposalBehaviorDiagram.png)
 
 
 ## References
