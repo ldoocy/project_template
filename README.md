@@ -300,7 +300,7 @@ Extrovert | 10.6 | 10.0 | 10.0 | 10.1 | 8.1 | 9.77
 :--- | 
 <sup>*Figure 9. Path deviation as a function of varying personality.*</sup> |
 
-Through implementation of introversion and extroversion parameters, we show that path deviation will differ when these parameters are varied. As expected, introverts deviate from the intended path much more than the control (baseline) and extroverted agents.
+Through implementation of introversion and extraversion parameters, we show that path deviation will differ when these parameters are varied. As expected, introverts deviate from the intended path much more than the control (baseline) and extroverted agents.
 
 Additionally, our primary objective was to replicate previous results using the social force model. To this end, we examined agents in a control condition, which is intended to replicate the original social force model. 
 In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed distinct lanes. 
