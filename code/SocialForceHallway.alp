@@ -1055,10 +1055,10 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				<Camera3D>
 					<Id>1525188164767</Id>
 					<Name><![CDATA[DefaultView]]></Name>
-					<X>500</X><Y>340</Y><Z>450</Z>
+					<X>500</X><Y>420</Y><Z>250</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ShowLabel>false</ShowLabel>
-					<RotationX>53.0</RotationX>
+					<RotationX>40.0</RotationX>
 					<RotationZ>-90.0</RotationZ>
 				</Camera3D>
 			</Shapes>
@@ -1122,7 +1122,7 @@ else if(value == 4)//Mixed dispersed
 				<Control Type="Window3D">
 					<Id>1525186406349</Id>
 					<Name><![CDATA[window3d]]></Name>
-					<X>50</X><Y>700</Y>
+					<X>80</X><Y>700</Y>
 					<Width>900</Width>
 					<Height>350</Height>
 					<MakeDefaultViewArea>true</MakeDefaultViewArea>
@@ -1136,7 +1136,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525187465092</Id>
 					<Name><![CDATA[button1]]></Name>
-					<X>650</X><Y>1060</Y>
+					<X>680</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1158,7 +1158,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525187465095</Id>
 					<Name><![CDATA[button2]]></Name>
-					<X>550</X><Y>1060</Y>
+					<X>580</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1180,7 +1180,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525187465098</Id>
 					<Name><![CDATA[button4]]></Name>
-					<X>450</X><Y>1060</Y>
+					<X>480</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1202,7 +1202,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525187787361</Id>
 					<Name><![CDATA[button3]]></Name>
-					<X>350</X><Y>1060</Y>
+					<X>380</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1224,7 +1224,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525188218802</Id>
 					<Name><![CDATA[button5]]></Name>
-					<X>250</X><Y>1060</Y>
+					<X>280</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
