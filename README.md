@@ -376,7 +376,7 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 [^](#model-development) Garibay, I., Gunaratne, C., Yousefi, N., & Scheinert, S. (2018). *The agent-based modeling canvas: A modeling lingua franca for computational social science.* Unpublished manuscript, Complex Adaptive Systems Laboratory, University of Central Florida, Orlando, Florida. [PDF link](other/Garibay%20agent-based-modeling-canvas.pdf)
 
-[^](#social-behavior-and-personality) Goldberg, L. R. (1990). An alternative description of personality: The big-five factor structure. *Journal of Personality and Social Psychology, 59*(6), 1216.
+[^](#social-behavior-and-personality) Goldberg, L. R. (1990). An alternative description of personality: The big-five factor structure. *Journal of Personality and Social Psychology, 59*(6), 1216. [DOI](http://psycnet.apa.org/doi/10.1037/0022-3514.59.6.1216)
 
 [^](#related-work) Guy, S. J., Kim, S., Lin, M. C., & Manocha, D. (2011, August). Simulating heterogeneous crowd behaviors using personality trait theory. In *Proceedings of the 2011 ACM SIGGRAPH/Eurographics Symposium on Computer Animation* (pp. 43-52). ACM. [DOI](https://doi.org/10.1145/2019406.2019413)
 
