@@ -263,6 +263,10 @@ The conditions were integrated into our AnyLogic model (see Figure 8).
 | :--- | 
 | <sup>*Figure 8. Interactive controls to manipulate independent variables in AnyLogic.*</sup>
 
+| ![3d](images/sim3d_0.png) |
+| :--- | 
+| <sup>*3D view of simulation in AnyLogic.*</sup>
+
 To test the effect of personality condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other while avoiding walls. In our simulations, multiple agents entered the hallway simultaneously from both the left and right entrance. 
 
 In addition to examining the effect of varying introversion/extraversion on collective behavior, we also sought to investigate the degree to which collective behavior can be altered by changing the environment. To this end, we examined how modifying the hallway's characteristics influences agent behavior. 
