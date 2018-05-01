@@ -317,7 +317,7 @@ Future research should explore the degree to which the behavior of increasingly 
 Much of the current model depends on the simplicity of a narrow hallway. Future work should investigate the degree to which our findings generalize to other environments that involve more complex geometry as well as variations in agent destinations.
 
 ### Conclusion
-In sum, this study serves as a starting point to inform future work using agent based modeling for building design. 
+In sum, this study serves as a starting point to inform future work using agent based modeling for building design. Continued research to investigate factors that improve agent based models of collective behavior not only supports agent based modeling itself, but also offers potential societal benefits when applied to real-world problems.
 
 ## Author Contributions
 All authors contributed to concept formation and study design, as well as model development. 
