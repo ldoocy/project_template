@@ -153,9 +153,9 @@ Specifically, for this preliminary study, we focused on introversion and extrave
 We chose this dimension of personality because introversion and extraversion relate directly to social interactions and how individuals behave around others. 
 
 ### Model Development
-We relied on an interdisciplinary research approach to develop our model, drawing from the social sciences, mathematics, and computer science. To support this integration and to build a shared mental model, we utilized a novel framework to conceptualize ABM for interdisciplinary teams ([Garibay, Gunaratne, Yousefi, & Scheinert, 2018](#references)). The result is an ABM canvas based on this framework:
+We relied on an interdisciplinary research approach to develop our model, drawing from the social sciences, mathematics, and computer science. To support this integration and to build a shared mental model, we utilized a novel framework to conceptualize ABM for interdisciplinary teams ([Garibay, Gunaratne, Yousefi, & Scheinert, 2018](#references)). The result is an ABM canvas based on this framework, shown in Figure 6.
 
-![canvas](images/abm_canvas.png) |
+![canvas](images/fig6_abm_canvas.png) |
 :--- |
  <sup>*Figure 6. Agent-based modeling canvas based on Garibay et al. [(2018)](#references).*</sup> |
 
@@ -192,11 +192,11 @@ Thus, within our model, personality type will affect individual agents' desired 
 ### Model Implementation in AnyLogic
 
 For the current study, we utilized AnyLogic simulation software to implement the model. 
-After testing initial prototypes, we developed our extended social model within AnyLogic using statecharts (See Figure 6). 
+After testing initial prototypes, we developed our extended social model within AnyLogic using statecharts (See Figure 7). 
 
-| ![state](images/fig6_statechart.png) |
+| ![state](images/fig7_statechart.png) |
 | :--- | 
-| <sup>*Figure 6. Statechart depicting rules for agent navigation in AnyLogic.*</sup>
+| <sup>*Figure 7. Statechart depicting rules for agent navigation in AnyLogic.*</sup>
 
 Based on our extended social force model, agent rules for moving within the hallway were defined as follows:
 
@@ -261,11 +261,11 @@ All introverted | All agents are high in introversion
 Mixed by direction | All agents from the left are introverted; all agents from the right are extraverted (i.e., agent personality varies depending on direction of travel)
 Mixed - dispersed | Introversion/extraversion are normally distributed among all agents (i.e., most people are closer to center, with fewer people at extremes)
 
-The conditions were integrated into our AnyLogic model:
+The conditions were integrated into our AnyLogic model (see Figure 8).
 
-| ![conditions](images/fig7_conditions.png) |
+| ![conditions](images/fig8_conditions.png) |
 | :--- | 
-| <sup>*Figure 7. Interactive controls to manipulate independent variables in AnyLogic.*</sup>
+| <sup>*Figure 8. Interactive controls to manipulate independent variables in AnyLogic.*</sup>
 
 To test the effect of personality condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other while avoiding walls. In our simulations, multiple agents entered the hallway simultaneously from both the left and right entrance. 
 
@@ -287,7 +287,7 @@ When examining the effect of personality on agent behavior, we observed that whe
 Each agent's point of entry was selected at random; therefore, the exact distance from each agent's target may not be uniform. 
 But varying only by initial location, each agent will travel a minimum of 750 and maximum of 756 meters to reach its final destination. 
 For simplicity we assume the shortest, uninterrupted path for any given agent will be 753 meters. Because each agent obeys social forces, each agent inevitably alters its path before reaching the goal. 
-Given the 753 meter shortest path, a constant hallway width of 200 meters, and agent population of approximately 110 agents, we see how small changes due to personality type can significantly increase the net distance an agent must travel (see Figure 8). 
+Given the 753 meter shortest path, a constant hallway width of 200 meters, and agent population of approximately 110 agents, we see how small changes due to personality type can significantly increase the net distance an agent must travel (see Figure 9). 
 Below is a summary of average path deviation in meters taken by agents within the system.
 
 Agent Personality | T1 | T2 | T3 | T4 | T5 | Average
@@ -298,7 +298,7 @@ Extrovert | 10.6 | 10.0 | 10.0 | 10.1 | 8.1 | 9.77
 
 ![bar plot deviation](images/DeviationAverage.png) |
 :--- | 
-<sup>*Figure 8. Path deviation as a function of varying personality.*</sup> |
+<sup>*Figure 9. Path deviation as a function of varying personality.*</sup> |
 
 Through implementation of introversion and extroversion parameters, we show that path deviation will differ when these parameters are varied. As expected, introverts deviate from the intended path much more than the control (baseline) and extroverted agents.
 
@@ -306,12 +306,14 @@ Additionally, our primary objective was to replicate previous results using the 
 In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed distinct lanes. 
 Our model demonstrates that as agents move through a narrow hallway from opposite directions, lanes of pedestrians with similar walking patterns will form. 
 In our case, we present only two types of agents: those who originate on the right with a leftward goal, and those who are initially on the left with a rightward goal. These agents are identified by two different colors. 
-As expected, our model results in agents of uniform distinction forming lanes with those who have a similar goal.
+As expected, our model results in agents of uniform distinction forming lanes with those who have a similar goal (see Figure 10).
 
-![Lanes Photo](images/lanesExample.png)
+![Lanes Photo](images/lanesExample.png) |
+:--- |
+<sup>*Figure 10. Formation of lanes in simulation.*</sup> |
 
 Moreover, this collective behavior changes based on the environment, where the number of lanes increases linearly with an increase in walkway width [(Helbing & Molnar, 1995)](#references). As expected, our control simulation replicates previous work demonstrating the relationship between lane formation and walkway width. 
-As shown in Figure 9, the expected number of lanes over simulation scales linearly to the width of the defined walkway. 
+As shown in Figure 11, the expected number of lanes over simulation scales linearly to the width of the defined walkway. 
 This demonstrates how manipulating the environment does not merely alter individual behavior, but also leads to significant differences in emergent collective behavior.
 
 Hallway Width (meters) | T1 | T2 | T3 | Average
@@ -324,7 +326,7 @@ Hallway Width (meters) | T1 | T2 | T3 | Average
 
 ![linear lanes](images/LinearLaneFormation.png) |
 :--- | 
-<sup>*Figure 9. Lane formation as a function of varying hallway width.*</sup> |
+<sup>*Figure 11. Lane formation as a function of varying hallway width.*</sup> |
 
 ## Discussion
 
