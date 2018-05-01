@@ -187,6 +187,10 @@ Thus, within our model, personality type will affect individual agents' desired 
 
 ### Model Implementation in AnyLogic
 
+![3d](images/sim3d_1.png) |
+| :--- | 
+| <sup>*Simulation in progress.*</sup>
+
 For the current study, we utilized AnyLogic simulation software to implement the model. 
 After testing initial prototypes, we developed our extended social model within AnyLogic using statecharts (See Figure 7). 
 
