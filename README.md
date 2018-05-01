@@ -148,7 +148,8 @@ In particular, we expect that agents high in introversion will react to other ag
 
 We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
 To explore our research questions, we utilized ABM and AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)). First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
-Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). Extraversion is generally associated with *out*going behavior (hence *extra*) and high need for social interactions, whereas introversion lies on the other end of the spectrum and is associated with more reserved behavior.
+Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). Extraversion is generally associated with *out*going behavior (hence *extra*) and high need for social interactions, whereas introversion lies on the other end of the spectrum and is associated with more reserved behavior. 
+We focus on this dimension of personality because introversion and extraversion relate directly to social interactions and how individuals behave around others. 
 
 For the current study, we utilized AnyLogic simulation software to implement the model. 
 
