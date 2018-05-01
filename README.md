@@ -352,7 +352,7 @@ In sum, this study serves as a starting point to inform future work using ABM fo
 
 ## Author Contributions
 All authors contributed to concept formation and study design, as well as model development. 
-All authors contributed to each stage of model development, with LD leading the development of mathematical functions to inform agent behavior, JS leading social science integration and experimental design, and JV leading development of model within AnyLogic using built-in features and advanced Java functions. 
+All authors contributed to each stage of this project, with LD leading the development of mathematical functions to inform agent behavior, statistical analysis, and data visualization, JS leading social science integration, experimental design, and editorial tasks, and JV leading development of model within AnyLogic using built-in features and advanced Java functions. 
 All authors contributed to the final version of the project.
 
 ## Acknowledgements
