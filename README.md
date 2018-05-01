@@ -312,6 +312,10 @@ As expected, our model results in agents of uniform distinction forming lanes wi
 :--- |
 <sup>*Figure 10. Formation of lanes in simulation.*</sup> |
 
+| ![3d](images/sim3d_2.png) | ![3d](images/sim3d_3.png)
+| :--- | :---
+| <sup>*Lane formation: left view.*</sup> | <sup>*Lane formation: right view.*</sup>
+
 Moreover, this collective behavior changes based on the environment, where the number of lanes increases linearly with an increase in walkway width [(Helbing & Molnar, 1995)](#references). As expected, our control simulation replicates previous work demonstrating the relationship between lane formation and walkway width. 
 As shown in Figure 11, the expected number of lanes over simulation scales linearly to the width of the defined walkway. 
 This demonstrates how manipulating the environment does not merely alter individual behavior, but also leads to significant differences in emergent collective behavior.
