@@ -265,14 +265,6 @@ To test the effect of personality condition on agent behavior, we developed a ha
 In addition to examining the effect of varying introversion/extraversion on collective behavior, we also sought to investigate the degree to which collective behavior can be altered by changing the environment. To this end, we examined how modifying the hallway's characteristics influences agent behavior. 
 To determine the effect of varying environment on behavior, we held agent parameters constant and manipulated hallway width:
 
-Hallway Width (meters) | 
-:--- | 
-100 | 
-150 | 
-200 | 
-250 | 
-300 | 
-
 ## Results
 
 First, we examined agents in the control condition, which is intended to replicate the original social force model. In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed three distinct lanes, with two traveling in one direction, and one traveling in the opposite direction.
