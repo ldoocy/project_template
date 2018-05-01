@@ -77,7 +77,7 @@
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
+						<Code><![CDATA[.1]]></Code>
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
@@ -127,6 +127,21 @@
 						<Type><![CDATA[boolean]]></Type>        
 						<InitialValue Class="CodeValue">
 							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1525187624391</Id>
+					<Name><![CDATA[selectedViewArea]]></Name>
+					<X>180</X><Y>-80</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[ViewArea]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[view2D]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -395,6 +410,24 @@ else
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[//normal(min,max,mean,std)
 return normal(10.0,60.0,35.0,12.5);]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1525187624388</Id>
+					<Name><![CDATA[navigate]]></Name>
+					<X>180</X><Y>-50</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[viewArea]]></Name>
+						<Type><![CDATA[ViewArea]]></Type>
+					</Parameter>
+					<Body><![CDATA[selectedViewArea = viewArea;
+viewArea.navigateTo();
+groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				</Function>
 			</Functions>
 			<AnalysisData>
@@ -799,6 +832,226 @@ return normal(10.0,60.0,35.0,12.5);]]></Body>
 					</Font>
 					<Alignment>LEFT</Alignment>
 				</Text>
+				<Group>
+					<Id>1525187096771</Id>
+					<Name><![CDATA[groupMainMenu]]></Name>
+					<X>-40</X><Y>490</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+
+			<Shapes>
+				<Text>
+					<Id>1525187096773</Id>
+					<Name><![CDATA[text2]]></Name>
+					<X>50</X><Y>20</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<Text><![CDATA[Extended Social Force Model]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>22</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1525187096775</Id>
+					<Name><![CDATA[rectangle2]]></Name>
+					<X>880</X><Y>10</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<OnClickCode><![CDATA[navigate(view3D);]]></OnClickCode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>80</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Rectangle>
+					<Id>1525187096777</Id>
+					<Name><![CDATA[rectangle1]]></Name>
+					<X>800</X><Y>10</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<OnClickCode><![CDATA[navigate(view2D);]]></OnClickCode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>80</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1525187096779</Id>
+					<Name><![CDATA[text1]]></Name>
+					<X>820</X><Y>20</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<ColorCode><![CDATA[selectedViewArea == view2D ?
+	darkGray : royalBlue]]></ColorCode>
+					<Text><![CDATA[2D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>22</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Text>
+					<Id>1525187096781</Id>
+					<Name><![CDATA[text5]]></Name>
+					<X>900</X><Y>20</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<ColorCode><![CDATA[selectedViewArea == view3D ?
+	darkGray : royalBlue]]></ColorCode>
+					<Text><![CDATA[3D]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>22</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1525187096783</Id>
+					<Name><![CDATA[rectangle5]]></Name>
+					<X>960</X><Y>10</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<OnClickCode><![CDATA[navigate(viewAll);]]></OnClickCode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>70</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1525187096785</Id>
+					<Name><![CDATA[text11]]></Name>
+					<X>980</X><Y>20</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<ColorCode><![CDATA[selectedViewArea == viewAll ?
+	darkGray : royalBlue]]></ColorCode>
+					<Text><![CDATA[All]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>22</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+			</Shapes>
+
+				</Group>
+				<Camera3D>
+					<Id>1525187273481</Id>
+					<Name><![CDATA[midView]]></Name>
+					<X>500</X><Y>300</Y><Z>15</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>6.0</RotationX>
+					<RotationZ>-90.0</RotationZ>
+				</Camera3D>
+				<Camera3D>
+					<Id>1525187322803</Id>
+					<Name><![CDATA[rightCam]]></Name>
+					<X>910</X><Y>270</Y><Z>90</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>30.0</RotationX>
+					<RotationZ>-160.0</RotationZ>
+				</Camera3D>
+				<Camera3D>
+					<Id>1525187399918</Id>
+					<Name><![CDATA[TopView]]></Name>
+					<X>500</X><Y>190</Y><Z>600</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>90.0</RotationX>
+					<RotationZ>-90.0</RotationZ>
+				</Camera3D>
+				<Camera3D>
+					<Id>1525187699569</Id>
+					<Name><![CDATA[leftCam]]></Name>
+					<X>90</X><Y>270</Y><Z>90</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>30.0</RotationX>
+					<RotationZ>-20.0</RotationZ>
+				</Camera3D>
 			</Shapes>
 			<Controls>
 				<Control Type="RadioButtons">
@@ -860,8 +1113,8 @@ else if(value == 4)//Mixed dispersed
 				<Control Type="Window3D">
 					<Id>1525186406349</Id>
 					<Name><![CDATA[window3d]]></Name>
-					<X>60</X><Y>700</Y>
-					<Width>860</Width>
+					<X>50</X><Y>700</Y>
+					<Width>900</Width>
 					<Height>350</Height>
 					<MakeDefaultViewArea>true</MakeDefaultViewArea>
 					<Label><X>0</X><Y>-10</Y></Label>
@@ -870,19 +1123,131 @@ else if(value == 4)//Mixed dispersed
 					<NavigationType>full</NavigationType>
 					<FarClippingDistance>2000</FarClippingDistance>
 				</Control>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1525187465092</Id>
+					<Name><![CDATA[button1]]></Name>
+					<X>500</X><Y>1070</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[window3d.setCamera(rightCam, false, 500);]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[Right]]></LabelText>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1525187465095</Id>
+					<Name><![CDATA[button2]]></Name>
+					<X>600</X><Y>1070</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[window3d.setCamera(midView, false, 500);]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[Mid View]]></LabelText>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1525187465098</Id>
+					<Name><![CDATA[button4]]></Name>
+					<X>400</X><Y>1070</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[window3d.setCamera(TopView, false, 500);]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[Top View]]></LabelText>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1525187787361</Id>
+					<Name><![CDATA[button3]]></Name>
+					<X>300</X><Y>1070</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[window3d.setCamera(leftCam, false, 500);]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[Left]]></LabelText>
+					</ExtendedProperties>
+				</Control>
 			</Controls>
 			<Areas>
 				<Area>
 					<Id>1525186371877</Id>
-					<Name><![CDATA[viewArea]]></Name>
+					<Name><![CDATA[view3D]]></Name>
 					<X>0</X><Y>600</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
-					<Title><![CDATA[]]></Title>
+					<Title><![CDATA[3D view]]></Title>
 					<Width>1000</Width>
 					<Height>600</Height>
+				</Area>
+				<Area>
+					<Id>1525187199969</Id>
+					<Name><![CDATA[view2D]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Title><![CDATA[2D view]]></Title>
+					<Width>1000</Width>
+					<Height>600</Height>
+				</Area>
+				<Area>
+					<Id>1525187219743</Id>
+					<Name><![CDATA[viewAll]]></Name>
+					<X>0</X><Y>0</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Title><![CDATA[View all]]></Title>
+					<Width>1000</Width>
+					<Height>1200</Height>
 				</Area>
 			</Areas>
 
@@ -2378,7 +2743,7 @@ else
 			<PresentationTopGroupPersistent>true</PresentationTopGroupPersistent>
 			<IconTopGroupPersistent>true</IconTopGroupPersistent>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
-			<MaximumMemory>512</MaximumMemory>
+			<MaximumMemory>1024</MaximumMemory>
 			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<SeedValue>1</SeedValue>
@@ -2482,7 +2847,7 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<CpuRatio><![CDATA[ratio_2_1]]></CpuRatio>	        
 				<Title><![CDATA[Hallway : Simulation]]></Title>	
 				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
-				<RealTimeScale>1.0</RealTimeScale>
+				<RealTimeScale>5.0</RealTimeScale>
 				<UIProperty Name="Experiment Progress" Value="false"/>
 				<UIProperty Name="Simulation Progress" Value="true"/>
 				<UIProperty Name="Statusbar Events Per Second" Value="false"/>
