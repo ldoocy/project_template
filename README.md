@@ -295,7 +295,7 @@ Hallway Width (meters) | T1 | T2 | T3 | Average
 :--- | 
 <sup>*Figure 8. Lane formation as a function of varying hallway width.*</sup> |
 
-Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. 
+Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. This supports previous work investigating behavioral differences between introverts and extraverts
 
 **TO DO:**
 
