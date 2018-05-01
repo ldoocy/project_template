@@ -1019,7 +1019,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				<Camera3D>
 					<Id>1525187273481</Id>
 					<Name><![CDATA[midView]]></Name>
-					<X>500</X><Y>300</Y><Z>15</Z>
+					<X>500</X><Y>310</Y><Z>15</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ShowLabel>false</ShowLabel>
 					<RotationX>6.0</RotationX>
@@ -1037,7 +1037,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				<Camera3D>
 					<Id>1525187399918</Id>
 					<Name><![CDATA[TopView]]></Name>
-					<X>500</X><Y>190</Y><Z>600</Z>
+					<X>500</X><Y>200</Y><Z>400</Z>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<ShowLabel>false</ShowLabel>
 					<RotationX>90.0</RotationX>
@@ -1051,6 +1051,15 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 					<ShowLabel>false</ShowLabel>
 					<RotationX>30.0</RotationX>
 					<RotationZ>-20.0</RotationZ>
+				</Camera3D>
+				<Camera3D>
+					<Id>1525188164767</Id>
+					<Name><![CDATA[DefaultView]]></Name>
+					<X>500</X><Y>340</Y><Z>450</Z>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<ShowLabel>false</ShowLabel>
+					<RotationX>53.0</RotationX>
+					<RotationZ>-90.0</RotationZ>
 				</Camera3D>
 			</Shapes>
 			<Controls>
@@ -1127,7 +1136,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525187465092</Id>
 					<Name><![CDATA[button1]]></Name>
-					<X>500</X><Y>1070</Y>
+					<X>650</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1149,7 +1158,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525187465095</Id>
 					<Name><![CDATA[button2]]></Name>
-					<X>600</X><Y>1070</Y>
+					<X>550</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1171,7 +1180,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525187465098</Id>
 					<Name><![CDATA[button4]]></Name>
-					<X>400</X><Y>1070</Y>
+					<X>450</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1193,7 +1202,7 @@ else if(value == 4)//Mixed dispersed
 				 	<EmbeddedIcon>false</EmbeddedIcon>				
 					<Id>1525187787361</Id>
 					<Name><![CDATA[button3]]></Name>
-					<X>300</X><Y>1070</Y>
+					<X>350</X><Y>1060</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1209,6 +1218,28 @@ else if(value == 4)//Mixed dispersed
 					<ExtendedProperties>
 						<Font Name="Dialog" Size="11" Style="0"/>
 						<LabelText><![CDATA[Left]]></LabelText>
+					</ExtendedProperties>
+				</Control>
+				<Control Type="Button">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1525188218802</Id>
+					<Name><![CDATA[button5]]></Name>
+					<X>250</X><Y>1060</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="100" Height="30" 
+				AsObject="true">
+                        <EmbeddedIcon>false</EmbeddedIcon>				
+						<FillColor/>
+						<TextColor/>
+						<Enabled>true</Enabled>
+						<ActionCode><![CDATA[window3d.setCamera(DefaultView, false, 500);]]></ActionCode>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Dialog" Size="11" Style="0"/>
+						<LabelText><![CDATA[Default View]]></LabelText>
 					</ExtendedProperties>
 				</Control>
 			</Controls>
