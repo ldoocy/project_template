@@ -305,8 +305,8 @@ By implementation of introversion and extroversion parameters, it shows that pat
 
 - [X] Describe methods (in methods section)
 - [ ] Add pretty video (stretch goal)
-- [ ] Data analysis
-- [ ] Data visualization
+- [X] Data analysis
+- [X] Data visualization
 
 ## Discussion
 
