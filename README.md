@@ -261,13 +261,13 @@ To test the effect of personality condition on agent behavior, we developed a ha
 In addition to examining the effect of varying introversion/extraversion on collective behavior, we also sought to investigate the degree to which collective behavior can be altered by changing the environment. To this end, we examined how modifying the hallway's characteristics influences agent behavior. 
 To determine the effect of varying environment on behavior, we held agent parameters constant and manipulated hallway width:
 
-Hallway Width (meters) | T1 | T2 | T3 | Average
-:---: | :---: | :---: | :---: | :---:
-100 | 2 | 3 | 3 | 2.67
-150 | 4 | 3 | 4 | 3.67
-200 | 4 | 5 | 4 | 4.33
-250 | 5 | 5 | 5 | 5
-300 | 5 | 5 | 6 | 5.33
+Hallway Width (meters) | 
+:--- | 
+100 | 
+150 | 
+200 | 
+250 | 
+300 | 
 
 ## Results
 
@@ -279,7 +279,17 @@ Moreover, this collective behavior changes based on the environment, where the n
 Seen in the figure below, the expected number of lanes over simulation scales linearly to the width of the defined walkway. 
 This demonstrates how manipulating the environment does not merely alter individual behavior, but also leads to significant differences in emergent collective behavior.
 
-![linear lanes](images/LinearLaneFormation.png)
+Hallway Width (meters) | T1 | T2 | T3 | Average
+:---: | :---: | :---: | :---: | :---:
+100 | 2 | 3 | 3 | 2.67
+150 | 4 | 3 | 4 | 3.67
+200 | 4 | 5 | 4 | 4.33
+250 | 5 | 5 | 5 | 5
+300 | 5 | 5 | 6 | 5.33
+
+![linear lanes](images/LinearLaneFormation.png) |
+:--- | 
+<sup>*Figure 8. Lane formation as a function of varying hallway width.*</sup> |
 
 Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. 
 
