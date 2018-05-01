@@ -249,7 +249,7 @@ Mixed - dispersed | Introversion/extraversion are normally distributed among all
 
 The conditions were integrated into our AnyLogic model:
 
-| ![cond](images/fig7_conditions.png) |
+| ![conditions](images/fig7_conditions.png) |
 | :--- | 
 | <sup>*Figure 7. Interactive controls to manipulate independent variables in AnyLogic.*</sup>
 
