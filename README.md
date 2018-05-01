@@ -289,7 +289,7 @@ Hallway Width (meters) | T1 | T2 | T3 | Average
 
 Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents.
 
-Varying only by initial location, each agent has between 750 and 756 meters to travel to reach its final destination. The agent's point of entry is selected at random. For simplicity we will assume the shortest, uninterrupted path for any given agent will be 753 meters. Because each agent obeys the social force model, a large population of agents will inevitably alter each agent's path. Given the 753 meter shortest path, a constant hallway width of 200 meters, and agent population of apporximately 110 agents, we see the different behaviors based on inflicted agent personality types. Below is a summary of average 
+Varying only by initial location, each agent has between 750 and 756 meters to travel to reach its final destination. The agent's point of entry is selected at random. For simplicity we will assume the shortest, uninterrupted path for any given agent will be 753 meters. Because each agent obeys the social force model, a large population of agents will inevitably alter each agent's path. Given the 753 meter shortest path, a constant hallway width of 200 meters, and agent population of apporximately 110 agents, we see the different behaviors based on inflicted agent personality types. Below is a summary of average path deviations taken by agents within the system
 
 Agent Personality | T1 | T2 | T3 | T4 | T5 | Average
 :---: | :---: | :---: | :---: | :---:
