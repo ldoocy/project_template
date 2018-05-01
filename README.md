@@ -287,12 +287,9 @@ Hallway Width (meters) | T1 | T2 | T3 | Average
 :--- | 
 <sup>*Figure 8. Lane formation as a function of varying hallway width.*</sup> |
 
-<<<<<<< HEAD
-Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. This supports previous work investigating behavioral differences between introverts and extraverts
-=======
-Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents.
+Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. This supports previous work investigating behavioral differences between introverts and extraverts.
 
-Each agent's point of entry is selected at random, therefore the exact distance from each agent's target may not be uniform. But varying only by initial location, each agent will travel a minimum of 750 and maximum of 756 meters to reach its final destination. For simplicity we will assume the shortest, uninterrupted path for any given agent will be 753 meters. Because each agent obeys social forces, each agent will inevitably alter its path before reaching the goal. Given the 753 meter shortest path, a constant hallway width of 200 meters, and agent population of approximately 110 agents, we see how small changes due to personality type can nontrivially increase the net distance an agent must travel. Below is a summary of average path deviation in meters taken by agents within the system.
+Each agent's point of entry was selected at random; therefore, the exact distance from each agent's target may not be uniform. But varying only by initial location, each agent will travel a minimum of 750 and maximum of 756 meters to reach its final destination. For simplicity we assume the shortest, uninterrupted path for any given agent will be 753 meters. Because each agent obeys social forces, each agent inevitably alters its path before reaching the goal. Given the 753 meter shortest path, a constant hallway width of 200 meters, and agent population of approximately 110 agents, we see how small changes due to personality type can significantly increase the net distance an agent must travel. Below is a summary of average path deviation in meters taken by agents within the system.
 
 Agent Personality | T1 | T2 | T3 | T4 | T5 | Average
 :---: | :---: | :---: | :---: | :---: | :---: | :---:
@@ -302,15 +299,7 @@ Extrovert | 10.6 | 10.0 | 10.0 | 10.1 | 8.1 | 9.77
 
 ![bar plot deviation](images/DeviationAverage.png)
 
-By implementation of introversion and extroversion parameters, it shows that path deviation will differ depending on their slight differences in interation. As expected, introverts deviate from the intended path much more than the control and extroverted agents. It must be stated that these statistics were taken under an extreme case that all agents hold the same introversion and extroversion qualities. For each simulation, the R value was held constant for all agents within the system, whether they all be introverted, control agents, or extroverted. As we understand no real life scenerio would be executed this way, it is interesting to point out the differences in path deviation from the intended shortest path.
->>>>>>> 4ca2f92ab667aa07eb86b50dde76b3961dc4c9a9
-
-**TO DO:**
-
-- [X] Describe methods (in methods section)
-- [ ] Add pretty video (stretch goal)
-- [X] Data analysis
-- [X] Data visualization
+Through implementation of introversion and extroversion parameters, we show that path deviation will differ when these parameters are varied. As expected, introverts deviate from the intended path much more than the control (baseline) and extroverted agents.
 
 ## Discussion
 
@@ -326,7 +315,10 @@ In response to RQ 2, we found that varying the size of a hallway led to signific
 We sought to determine whether the social force model could be extended by defining additional variables. While there are numerous variables to consider, our initial study only focused on one dimension of personality (i.e., the introversion-extraversion continuum). 
 While relatively simple models like the one developed in this study can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human behavior, personality, and other factors influencing actions. 
 Future research should explore the degree to which the behavior of increasingly complex agents approaches that of humans, and if there are certain variables or optimal combinations of variables that improve the accuracy of an agent-based model of human social behavior.
-Much of the current model depends on the simplicity of a narrow hallway. Future work should investigate the degree to which our findings generalize to other environments that involve more complex geometry as well as variations in agent destinations.
+
+Additionally, we note that our analyses were conduced using an extreme case in which all agents hold the same introversion and extroversion qualities. For each simulation, the R value was held constant for all agents within the system, whether they were introverted, control agents, or extraverted. 
+Furthermore, much of the current model depends on the simplicity of a narrow hallway, and this scenario does not capture potential issues crowds face in real environments that are more complex. While these issues limit ecological validity, it is nonetheless interesting to point out the differences in path deviation from the intended shortest path as a result of variations in introversion/extraversion. 
+ Future work should investigate the degree to which our findings generalize to other environments that involve more complex geometry as well as variations in agent destinations. 
 
 ### Conclusion
 In sum, this study serves as a starting point to inform future work using ABM for building design. Continued research to investigate factors that improve models of collective behavior not only supports ABM itself, but also offers potential societal benefits when applied to real-world problems.
