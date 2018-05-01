@@ -153,7 +153,7 @@ Specifically, for this preliminary study, we focused on introversion and extrave
 We chose this dimension of personality because introversion and extraversion relate directly to social interactions and how individuals behave around others. 
 
 ### Model Development
-We relied on an interdisciplinary research approach to develop our model, drawing from the social sciences, mathematics, and computer science. To support this integration and to build a shared mental model, we utilized a novel framework to conceptualize ABM for interdisciplinary teams ([Garibay, Gunaratne, Yousefi, & Scheinert, 2018](#references)). The result is an ABM canvas based on this framework, shown in Figure 6.
+We relied on an interdisciplinary research approach to develop our model, drawing from the social sciences, mathematics, and computer science. To support this integration and to build a shared mental model, we utilized a novel framework to conceptualize ABM and build a shared mental model within interdisciplinary teams ([Garibay, Gunaratne, Yousefi, & Scheinert, 2018](#references)). The result is an ABM canvas based on this framework, shown in Figure 6.
 
 ![canvas](images/fig6_abm_canvas.png) |
 :--- |
