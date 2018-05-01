@@ -87,7 +87,11 @@ Finally, the fourth defined term in the social force model is the attractive for
 In addition to the terms defined above, the social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
 We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extraversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
 
-### Personality
+### Social Behavior and Personality
+
+Humans are social animals, and our survival depends on our ability to navigate social interactions successfully. 
+Even when seeking distinctiveness, human behavior tends to converge to form observable patterns within groups, and this tendency to conform has been well-documented in psychology research (e.g., [Asch, 1951]). 
+Formal models have also demonstrated the strong tendency for agents to conform despite a desire for distinctiveness ([Smaldino & Epstein, 2015](#references)). 
 
 
 ## Related Work
@@ -331,6 +335,8 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 ## References
 [^](#abstract) AnyLogic [Computer software]. (2017). Retrieved from [https://www.anylogic.com](https://www.anylogic.com)
+
+[^](#social-behavior-and-personality) Asch, S. E., & Guetzkow, H. (1951). Effects of group pressure upon the modification and distortion of judgments. *Groups, Leadership, and Men*, 222-236.
 
 [^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the OCEAN personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
 
