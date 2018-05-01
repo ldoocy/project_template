@@ -151,8 +151,6 @@ To explore our research questions, we utilized ABM and AnyLogic (Personal Learni
 Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). Extraversion is generally associated with *out*going behavior (hence *extra*) and high need for social interactions, whereas introversion lies on the other end of the spectrum and is associated with more reserved behavior. 
 We focus on this dimension of personality because introversion and extraversion relate directly to social interactions and how individuals behave around others. 
 
-For the current study, we utilized AnyLogic simulation software to implement the model. 
-
 ### Model Development
 
 Our model pulls much of its influence from Helbing's social force model [(Helbing & Molnar, 1995)](#references). As described above, the social force model is a summation of four different types of forces: desired goal, social repulsion, social attraction, and repulsion from walls and borders. The notion of preferred personal space is accounted for within the social force model's "fluctuations" term. This type of preference may correlate with personality type, with some individuals tolerating less or more distance between themselves and other people. We believe this may be accounted for within the repulsive social forces term. This would allow for agents requiring more personal space to exhibit more extreme reactions in response to other nearby agents, while agents requiring less personal space will be less affected by nearby agents.
@@ -187,6 +185,7 @@ Thus, within our model, personality type will affect individual agents' desired 
 
 ### Model Implementation in AnyLogic
 
+For the current study, we utilized AnyLogic simulation software to implement the model. 
 After testing initial prototypes, we developed our extended social model within AnyLogic using statecharts (See Figure 6). 
 
 | ![state](images/fig6_statechart.png) |
