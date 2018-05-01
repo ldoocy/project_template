@@ -274,6 +274,7 @@ Our results suggest that taking additional human traits into consideration can y
 We sought to determine whether the social force model could be extended by defining additional variables. While there are numerous variables to consider, our initial study only focused on one personality variable (i.e., the introversion-extraversion continuum). 
 While relatively simple models like the one developed in this study can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human behavior, personality, and other factors influencing actions. 
 Future research should explore the degree to which the behavior of increasingly complex agents approaches that of humans, and if there are certain variables or optimal combinations of variables that improve the accuracy of an agent-based model of human social behavior.
+Much of the current model depends on the simpilty of a narrow hallway. Future work will include generalizing agent behavior to account for more complex geometry as well as varying agent destinations.
 
 ### Conclusion
 In sum, this study serves as a starting point to inform future work using agent based modeling for building design. 
