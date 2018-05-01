@@ -370,9 +370,9 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 [^](#social-behavior-and-personality) Asch, S. E., & Guetzkow, H. (1951). Effects of group pressure upon the modification and distortion of judgments. *Groups, Leadership, and Men*, 222-236.
 
-[^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the OCEAN personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
+[^](#related-work) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the OCEAN personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
 
-[^](#research-methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
+[^](#methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
 
 [^](#model-development) Garibay, I., Gunaratne, C., Yousefi, N., & Scheinert, S. (2018). *The agent-based modeling canvas: A modeling lingua franca for computational social science.* Unpublished manuscript, Complex Adaptive Systems Laboratory, University of Central Florida, Orlando, Florida. [PDF link](other/Garibay%20agent-based-modeling-canvas.pdf)
 
@@ -380,7 +380,7 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 [^](#related-work) Guy, S. J., Kim, S., Lin, M. C., & Manocha, D. (2011, August). Simulating heterogeneous crowd behaviors using personality trait theory. In *Proceedings of the 2011 ACM SIGGRAPH/Eurographics Symposium on Computer Animation* (pp. 43-52). ACM. [DOI](https://doi.org/10.1145/2019406.2019413)
 
-[^](#background) Helbing, D., Buzna, L., Johansson, A., & Werner, T. (2005). Self-organized pedestrian crowd dynamics: Experiments, simulations, and design solutions. *Transportation Science, 39*(1), 1-24. [DOI](https://doi.org/10.1287/trsc.1040.0108)
+[^](#related-work) Helbing, D., Buzna, L., Johansson, A., & Werner, T. (2005). Self-organized pedestrian crowd dynamics: Experiments, simulations, and design solutions. *Transportation Science, 39*(1), 1-24. [DOI](https://doi.org/10.1287/trsc.1040.0108)
 
 [^](#abstract) Helbing, D., & Molnar, P. (1995). Social force model for pedestrian dynamics. *Physical Review E, 51*(5), 4282. [DOI](https://doi.org/10.1103/PhysRevE.51.4282)
 
@@ -388,7 +388,7 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 [^](#abstract) Pinter-Wollman, N., Fiore, S. M., & Theraulaz, G. (2017). The impact of architecture on collective behaviour. *Nature Ecology & Evolution, 1*(5), s41. [DOI](https://doi.org/10.1038/s41559-017-0111)
 
-[^](#background) Seer, S., Rudloff, C., Matyus, T., & Brändle, N. (2014). Validating social force based models with comprehensive real world motion data. *Transportation Research Procedia, 2*, 724-732. [DOI](https://doi.org/10.1016/j.trpro.2014.09.080)
+[^](#related-work) Seer, S., Rudloff, C., Matyus, T., & Brändle, N. (2014). Validating social force based models with comprehensive real world motion data. *Transportation Research Procedia, 2*, 724-732. [DOI](https://doi.org/10.1016/j.trpro.2014.09.080)
 
 [^](#social-behavior-and-personality) Smaldino, P. E., & Epstein, J. M. (2015). Social conformity despite individual preferences for distinctiveness. *Royal Society Open Science, 2*(3), 140437. [DOI](https://doi.org/10.1098/rsos.140437)
 
