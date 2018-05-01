@@ -194,6 +194,45 @@ Agents within the hallway start with no connections to other agents.
 disconnectFromAll();
 ```
 
+Agent rules for moving within the hallway:
+
+```javascript
+main.applyNetwork();
+CheckConditions(); // check the conditions before you do any calculations
+
+minWallDist = min(abs(getY() - main.wallTop), abs(getY() - main.wallBottom));
+
+// reset forces to none if other agents have passed
+if(getConnectionsNumber() == 0)
+{
+	forces = new ArrayList<>();
+}
+
+forcesSum = 0;
+if (forces.size() > 0)
+{
+	for(Double f : forces)
+	{
+		if(f < 0)
+		{
+			forcesSum -= exp(f/localR);
+		}
+		else
+		{		
+			forcesSum += exp(-f/localR);
+		}
+	}
+}
+
+if(getY() < 200)
+{
+	moveTo(1100, 200 + main.scaleCoeff * forcesSum + main.wallCoeff * exp(-minWallDist/main.wallR));
+}
+else
+{
+	moveTo(1100, 200 + main.scaleCoeff * forcesSum - main.wallCoeff * exp(-minWallDist/main.wallR));
+}
+```
 
 
 
