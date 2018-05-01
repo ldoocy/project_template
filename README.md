@@ -297,16 +297,19 @@ Generally, when introverted agents and extraverted agents approached each other,
 
 ## Discussion
 
-First, we successfully replicated the social force model in AnyLogic and observed emergent patterns of pedestrian behavior in a hallway navigation scenario. 
-Additionally, varying agent parameters based on introversion and extraversion led to significant differences in both individual agent behavior, as well as patterns of collective behavior.
-Our results suggest that taking additional human traits into consideration can yield more accurate and realistic modeling and simulation of human behavior, both at the individual level, and on a larger scale.
+In the present study, we primarily focused on addressing Research Questions 1 and 2 at a high level. 
+First, we successfully replicated the social force model in AnyLogic and observed emergent patterns of pedestrian behavior in a hallway navigation scenario, which validated the original model and provided a starting point to investigate additional factors influencing agent behavior. 
+Next, we found that varying agent parameters based on introversion and extraversion led to significant differences in both individual agent behavior, as well as patterns of collective behavior. Our findings suggest that, in response to RQ 1, introversion/extraversion can play a significant role in agent behavior. 
+Overall, our results suggest that taking additional human traits into consideration can support accurate and realistic modeling and simulation of human behavior, both at the individual level, and on a larger scale. 
+
+In response to RQ 2, we found that varying the size of a hallway led to significant changes in self-organized lane formation. While this manipulation was relatively simple, our results suggest that agent based modeling can offer insight into the design of spaces based on how groups of people are likely to behave in response to their environment.
 
 ### Limitations and Future Work
 
-We sought to determine whether the social force model could be extended by defining additional variables. While there are numerous variables to consider, our initial study only focused on one personality variable (i.e., the introversion-extraversion continuum). 
+We sought to determine whether the social force model could be extended by defining additional variables. While there are numerous variables to consider, our initial study only focused on one dimension of personality (i.e., the introversion-extraversion continuum). 
 While relatively simple models like the one developed in this study can replicate human social behavior with significant accuracy, future work should seek to add additional parameters to account for the complexity of human behavior, personality, and other factors influencing actions. 
 Future research should explore the degree to which the behavior of increasingly complex agents approaches that of humans, and if there are certain variables or optimal combinations of variables that improve the accuracy of an agent-based model of human social behavior.
-Much of the current model depends on the simpilty of a narrow hallway. Future work will include generalizing agent behavior to account for more complex geometry as well as varying agent destinations.
+Much of the current model depends on the simplicity of a narrow hallway. Future work should investigate the degree to which our findings generalize to other environments that involve more complex geometry as well as variations in agent destinations.
 
 ### Conclusion
 In sum, this study serves as a starting point to inform future work using agent based modeling for building design. 
