@@ -6,14 +6,14 @@
 
 ## Abstract
 The social force model [(Helbing & Molnar, 1995)](#references) offers a modeling approach that considers how factors influencing pedestrian movement extend past merely approaching a desired goal. 
-The social force model includes influences of a desired goal, other pedestrians within the system, and obstacles. We first replicate previous research on the social force model to demonstrate its utility in the development of more complex agent based modeling approaches. 
-We seek to model agent behavior to explore how individual personality differences affect movements within a system, both at the individual and crowd level. 
+The social force model includes influences of a desired goal, other pedestrians within the system, and obstacles. We first replicate previous research on the social force model to demonstrate its utility in the development of more complex modeling approaches. 
+We turn to agent-based modeling (ABM) to explore how individual personality differences affect movements within a system, both at the individual and crowd level. 
 Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
 In this preliminary study, using the social force model as a starting point, we isolate the effect of introversion and extraversion on individual and collective behavior, and examine the effect of environmental characteristics on collective behavior.
 
 Ultimately, we seek to develop a model that can inform building design to influence collective behavior. 
 Potential real-world applications include safe evacuation (e.g., stampede prevention), sustainable behavior (e.g., recycling), healthy behavior (e.g., being more physically active, preventing spread of disease), design to improve quality of life through design features like elements from nature ([Kaplan, 1995; Ulrich, 1979](#references)), and collaboration ([Pinter-Wollman, Fiore, & Theraulaz, 2017](#references); see Figure 1 for example).
-Using an interdisciplinary approach to integrate agent based modeling and social science, we seek to simulate the effect of physical spaces on human behavior as a function of personality. 
+Using an interdisciplinary approach to integrate ABM and social science, we seek to simulate the effect of physical spaces on human behavior as a function of personality. 
 Drawing from Helbing's work on pedestrian simulation, we not only further validate the original social force model using AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)), but extend it by adding a new variable to account for personality differences.
 
 | ![https://www.officelovin.com/2015/08/16/a-tour-of-ubers-new-san-francisco-office-expansion/](images/fig1_uber-office.jpg) |
@@ -92,7 +92,7 @@ We predict personality differences influence pedestrian behaviors. In the presen
 
 ## Related Work
 
-Previous research has replicated Helbing's original work in different scenarios using agent based modeling ([Helbing, Buzna, Johansson, & Werner, 2005](#references); see Figure 2). 
+Previous research has replicated Helbing's original work in different scenarios using ABM ([Helbing, Buzna, Johansson, & Werner, 2005](#references); see Figure 2). 
 
 | ![helb](images/fig3_helbing.png) |
 | :--- |
@@ -110,7 +110,7 @@ Previous research has also included various individual traits, including extrave
 | :--- | :--- |
 | <sup>*Figure 4. Individual differences within social force model [(Guy et al., 2011)](#references).*</sup> | <sup>*Figure 5. OCEAN model and crowd behavior [(Durupinar et al., 2011)](#references).*</sup>
 
-We extend this previous work by not only replicating results from prior agent based modeling approaches, but also by introducing an additional personality variable, and by doing so using different simulation software (i.e., AnyLogic).
+We extend this previous work by not only replicating results from prior ABM approaches, but also by introducing an additional personality variable, and by doing so using different simulation software (i.e., AnyLogic).
 
 ## Fundamental Questions
 Our overarching goal is to answer several related research questions.
@@ -140,7 +140,7 @@ In particular, we expect that agents high in introversion will react to other ag
 ## Methods
 
 We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
-To explore our research questions, we utilized agent based modeling and AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)). First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
+To explore our research questions, we utilized ABM and AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)). First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
 Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). 
 For the current study, we utilized AnyLogic simulation software to implement the model. 
 
@@ -304,7 +304,7 @@ First, we successfully replicated the social force model in AnyLogic and observe
 Next, we found that varying agent parameters based on introversion and extraversion led to significant differences in both individual agent behavior, as well as patterns of collective behavior. Our findings suggest that, in response to RQ 1, introversion/extraversion can play a significant role in agent behavior. 
 Overall, our results suggest that taking additional human traits into consideration can support accurate and realistic modeling and simulation of human behavior, both at the individual level, and on a larger scale. 
 
-In response to RQ 2, we found that varying the size of a hallway led to significant changes in self-organized lane formation. While this manipulation was relatively simple, our results suggest that agent based modeling can offer insight into the design of spaces based on how groups of people are likely to behave in response to their environment.
+In response to RQ 2, we found that varying the size of a hallway led to significant changes in self-organized lane formation. While this manipulation was relatively simple, our results suggest that ABM can offer insight into the design of spaces based on how groups of people are likely to behave in response to their environment.
 
 ### Limitations and Future Work
 
@@ -314,7 +314,7 @@ Future research should explore the degree to which the behavior of increasingly 
 Much of the current model depends on the simplicity of a narrow hallway. Future work should investigate the degree to which our findings generalize to other environments that involve more complex geometry as well as variations in agent destinations.
 
 ### Conclusion
-In sum, this study serves as a starting point to inform future work using agent based modeling for building design. Continued research to investigate factors that improve agent based models of collective behavior not only supports agent based modeling itself, but also offers potential societal benefits when applied to real-world problems.
+In sum, this study serves as a starting point to inform future work using ABM for building design. Continued research to investigate factors that improve models of collective behavior not only supports ABM itself, but also offers potential societal benefits when applied to real-world problems.
 
 ## Author Contributions
 All authors contributed to concept formation and study design, as well as model development. 
