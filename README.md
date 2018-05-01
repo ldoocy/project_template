@@ -5,7 +5,7 @@
 > * IDS 6145 (SimTech 2018)
 
 ## Abstract
-The social force model [(Helbing & Molnar, 1995)](#references) offers a modeling approach that considers how factors influencing pedestrian movement extend past merely approaching a desired goal. 
+The social force model [(Helbing & Molnar, 1995)](#references) offers a modeling approach that considers how factors influencing pedestrian movement extend past merely pursuing a desired destination. 
 The social force model includes influences of a desired goal, other pedestrians within the system, and obstacles. We first replicate previous research on the social force model to demonstrate its utility in the development of more complex modeling approaches. 
 We turn to agent-based modeling (ABM) to explore how individual personality differences affect movements within a system, both at the individual and crowd level. 
 Additionally, we seek to model how manipulating the environment (e.g., by designing buildings in a certain way) can lead to varying changes in collective behavior as a function of individual differences and social interactions. 
@@ -41,7 +41,7 @@ This project makes the following contributions:
 ## Background
 ### Social Behavior and Personality
 
-Humans are social animals, and our survival depends on our ability to navigate social interactions successfully. 
+Humans are social animals by nature, and our survival depends on our ability to navigate social interactions successfully. 
 Even when seeking distinctiveness, human behavior tends to converge to form observable patterns within groups, and this tendency to conform has been well-documented in psychology research (e.g., [Asch, 1951](#references)). 
 Formal models have also demonstrated the strong tendency for agents to conform despite a desire for distinctiveness ([Smaldino & Epstein, 2015](#references)).
 
@@ -96,9 +96,6 @@ Finally, the fourth defined term in the social force model is the attractive for
 #### Other Influences
 In addition to the terms defined above, the social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
 We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extraversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
-
-
-
 
 ## Related Work
 
