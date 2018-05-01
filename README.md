@@ -260,7 +260,7 @@ In addition to examining the effect of varying introversion/extraversion on coll
 To determine the effect of varying environment on behavior, we held agent parameters constant and manipulated hallway width:
 
 Hallway Width (meters) | T1 | T2 | T3 | Average
-:--- |
+:---: | :---: | :---: | :---: | :---:
 100 | 2 | 3 | 3 | 2.67
 150 | 4 | 3 | 4 | 3.67
 200 | 4 | 5 | 4 | 4.33
