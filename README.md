@@ -39,6 +39,16 @@ This project makes the following contributions:
     * Application of findings to real-world settings to enhance social interaction among people
 
 ## Background
+### Social Behavior and Personality
+
+Humans are social animals, and our survival depends on our ability to navigate social interactions successfully. 
+Even when seeking distinctiveness, human behavior tends to converge to form observable patterns within groups, and this tendency to conform has been well-documented in psychology research (e.g., [Asch, 1951](#references)). 
+Formal models have also demonstrated the strong tendency for agents to conform despite a desire for distinctiveness ([Smaldino & Epstein, 2015](#references)).
+
+Personality theories have persisted as a major topic of interest in the field of psychology, with numerous approaches attempting to explain and describe the features that compose personality over decades of research. 
+More recently, personality theories have gained attention within ABM, with the big-five, or OCEAN  model ([Goldberg, 1990](#references)) being of particular interest. 
+The OCEAN model describes basic dimensions of human personality based on where individuals fall on five major continua: openness, conscientiousness, extraversion, agreeableness, and neuroticism. Combinations of varying degrees of these traits result in different personality types, which then influence behavior and interpersonal relationships. 
+This relatively new approach to ABM builds upon earlier formal models of human behavior in an attempt to create more realistic models that take complex personality traits into account when determining how agents behave.
 
 ### Social Force Model
 
@@ -87,11 +97,7 @@ Finally, the fourth defined term in the social force model is the attractive for
 In addition to the terms defined above, the social force model takes into account random behaviors with a fluctuation term. This could include desired velocities, movements, or personal space preferences based on factors like personality, or random behaviors based on individual decisions to avoid obstacles. 
 We predict personality differences influence pedestrian behaviors. In the present study, we draw from the OCEAN model, focusing specifically on the effect of introversion and extraversion on agent behaviors within a simulation. While influences like personality are broadly covered by the fluctuation term, we seek to extend the social force model by identifying and integrating individual variables that influence real human behavior.
 
-### Social Behavior and Personality
 
-Humans are social animals, and our survival depends on our ability to navigate social interactions successfully. 
-Even when seeking distinctiveness, human behavior tends to converge to form observable patterns within groups, and this tendency to conform has been well-documented in psychology research (e.g., [Asch, 1951]). 
-Formal models have also demonstrated the strong tendency for agents to conform despite a desire for distinctiveness ([Smaldino & Epstein, 2015](#references)). 
 
 
 ## Related Work
@@ -341,6 +347,8 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 [^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the OCEAN personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
 
 [^](#research-methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
+
+[^](#social-behavior-and-personality) Goldberg, L. R. (1990). An alternative description of personality: The big-five factor structure. *Journal of Personality and Social Psychology, 59*(6), 1216.
 
 [^](#related-work) Guy, S. J., Kim, S., Lin, M. C., & Manocha, D. (2011, August). Simulating heterogeneous crowd behaviors using personality trait theory. In *Proceedings of the 2011 ACM SIGGRAPH/Eurographics Symposium on Computer Animation* (pp. 43-52). ACM. [DOI](https://doi.org/10.1145/2019406.2019413)
 
