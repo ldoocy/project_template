@@ -144,14 +144,7 @@ In particular, we expect that agents high in introversion will react to other ag
 ## Methods
 
 We developed an extended social force and personality model based on the Helbing's social force model, as well as real data from observed human motion. 
-To explore our research questions, we utilized agent based modeling. Our model was implemented using AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)). After testing initial prototypes, we developed our extended social model within AnyLogic using statecharts (See Figure 6). 
-
-| ![state](images/fig6_statechart.png) |
-| :--- | 
-| <sup>*Figure 6. Statechart depicting rules for agent navigation in AnyLogic.*</sup>
-
-
-First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
+To explore our research questions, we utilized agent based modeling and AnyLogic (Personal Learning Edition 8.2.3; [AnyLogic, 2017](#references)). First, we created a simplified simulation of a hallway pedestrian scenario to replicate previous research on the social force model ([Helbing & Molnar, 1995](#references)). Then, to build upon this model, we added an additional variable to consider individual personality. 
 Specifically, for this preliminary study, we focused on introversion and extraversion, two diametrically opposed constructs that influence social behavior and interpersonal interactions ([Eysenck, 1952](#references)). 
 For the current study, we utilized AnyLogic simulation software to implement the model. 
 
@@ -187,6 +180,23 @@ Some individuals are more likely to let strangers approach them whereas others m
 This would allow agents requiring more personal space to react more strongly to other nearby agents, while agents requiring less personal space will react less strongly.
 Thus, within our model, personality type will affect individual agents' desired velocity and personal space preferences. 
 
+### Model Implementation in AnyLogic
+
+After testing initial prototypes, we developed our extended social model within AnyLogic using statecharts (See Figure 6). 
+
+| ![state](images/fig6_statechart.png) |
+| :--- | 
+| <sup>*Figure 6. Statechart depicting rules for agent navigation in AnyLogic.*</sup>
+
+Agents within the hallway start with no connections to other agents.
+
+```javascript
+disconnectFromAll();
+```
+
+
+
+
 ### Requirements
 
 * The model shall produce agent behavior that replicates human behavior under similar circumstances (assessed looking at real human behavior data)
@@ -212,7 +222,7 @@ The conditions were integrated into our AnyLogic model:
 | :--- | 
 | <sup>*Figure 7. Interactive controls to manipulate independent variables in AnyLogic.*</sup>
 
-To test the effect of condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other while avoiding walls. In our simulations, multiple agents entered the hallway simultaneously from both the left and right entrance. 
+To test the effect of personality condition on agent behavior, we developed a hallway scenario in which agents navigate from one end of the hallway to the other while avoiding walls. In our simulations, multiple agents entered the hallway simultaneously from both the left and right entrance. 
 
 In addition to examining the effect of varying introversion/extraversion on collective behavior, we also sought to investigate the degree to which collective behavior can be altered by changing the environment. To this end, we examined how modifying the hallway's characteristics influences agent behavior. 
 To determine the effect of varying environment on behavior, we held agent parameters constant and manipulated hallway width:
