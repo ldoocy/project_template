@@ -153,6 +153,11 @@ Specifically, for this preliminary study, we focused on introversion and extrave
 We chose this dimension of personality because introversion and extraversion relate directly to social interactions and how individuals behave around others. 
 
 ### Model Development
+We relied on an interdisciplinary research approach to develop our model, drawing from the social sciences, mathematics, and computer science. To support this integration and to build a shared mental model, we utilized a novel framework to conceptualize ABM for interdisciplinary teams ([Garibay, Gunaratne, Yousefi, & Scheinert, 2018](#references)). The result is an ABM canvas based on this framework:
+
+![canvas](images/abm_canvas.png) |
+:--- |
+ <sup>*Figure 6. Agent-based modeling canvas based on Garibay et al. [(2018)](#references).*</sup> |
 
 Our model pulls much of its influence from Helbing's social force model [(Helbing & Molnar, 1995)](#references). As described above, the social force model is a summation of four different types of forces: desired goal, social repulsion, social attraction, and repulsion from walls and borders. The notion of preferred personal space is accounted for within the social force model's "fluctuations" term. This type of preference may correlate with personality type, with some individuals tolerating less or more distance between themselves and other people. We believe this may be accounted for within the repulsive social forces term. This would allow for agents requiring more personal space to exhibit more extreme reactions in response to other nearby agents, while agents requiring less personal space will be less affected by nearby agents.
 
@@ -364,6 +369,8 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 [^](#abstract) Durupinar, F., Pelechano, N., Allbeck, J., Gudukbay, U., & Badler, N. I. (2011). How the OCEAN personality model affects the perception of crowds. *IEEE Computer Graphics and Applications, 31*(3), 22-31. [DOI](https://doi.org/10.1109/MCG.2009.105)
 
 [^](#research-methods) Eysenck, H. J. (1952). *The scientific study of personality.* Oxford, England: Macmillan.
+
+[^](#model-development) Garibay, I., Gunaratne, C., Yousefi, N., & Scheinert, S. (2018). *The agent-based modeling canvas: A modeling lingua franca for computational social science.* Unpublished manuscript, Complex Adaptive Systems Laboratory, University of Central Florida, Orlando, Florida. [PDF link](other/Garibay%20agent-based-modeling-canvas.pdf)
 
 [^](#social-behavior-and-personality) Goldberg, L. R. (1990). An alternative description of personality: The big-five factor structure. *Journal of Personality and Social Psychology, 59*(6), 1216.
 
