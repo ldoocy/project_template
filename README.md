@@ -188,12 +188,6 @@ After testing initial prototypes, we developed our extended social model within 
 | :--- | 
 | <sup>*Figure 6. Statechart depicting rules for agent navigation in AnyLogic.*</sup>
 
-Agents within the hallway start with no connections to other agents.
-
-```javascript
-disconnectFromAll();
-```
-
 Based on our extended social force model, agent rules for moving within the hallway were defined as follows:
 
 ```javascript
@@ -234,7 +228,7 @@ else
 }
 ```
 
-
+This model was then used to simulate agent behavior while manipulating introversion/extraversion, crowd composition, and environment.
 
 ### Requirements
 
@@ -328,7 +322,7 @@ We thank Joe<sup>2</sup> {Kider, del Rocco} for their guidance and advice throug
 
 ## Supplemental Materials
 
-* [AnyLogic files](code)
+* [AnyLogic file with extended social force model](code/SocialForceHallway.alp)
 
 **TO DO:**
 
