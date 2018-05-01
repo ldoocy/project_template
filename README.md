@@ -231,6 +231,8 @@ This model was then used to simulate agent behavior while manipulating introvers
 
 ### Requirements
 
+Our general model requirements are as follows:
+
 * The model shall produce agent behavior that replicates human behavior under similar circumstances (assessed looking at real human behavior data)
 * The model shall include individual characteristics that each agent will have (e.g., personality type)
 * Agents in the model shall behave according to both individual characteristics, as well as social factors
@@ -269,8 +271,6 @@ Hallway Width (meters) | T1 | T2 | T3 | Average
 
 ## Results
 
-### Qualitative Analysis
-
 First, we examined agents in the control condition, which is intended to replicate the original social force model. In the control condition, all agents behaved according to the same rules. We observed the emergence of collective navigation behavior--specifically, agents demonstrated self organization and formed three distinct lanes, with two traveling in one direction, and one traveling in the opposite direction.
 
 Our model demonstrates that as agents move through a narrow hallway from opposite directions, lanes of pedestrians with similar walking patterns will form. In our case, we present only two types of agents: those who originate on the right with a leftward goal, and those who are initially on the left with a rightward goal. These agents are identified by two different colors. 
@@ -282,11 +282,6 @@ This demonstrates how manipulating the environment does not merely alter individ
 ![linear lanes](images/LinearLaneFormation.png)
 
 Generally, when introverted agents and extraverted agents approached each other, introverted agents demonstrated more extreme deviation from their original path, while extraverted agents did not yield as much to other oncoming agents. 
-
-### Quantitative Analysis
-
-
-
 
 **TO DO:**
 
