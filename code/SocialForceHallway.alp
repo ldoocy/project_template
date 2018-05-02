@@ -10,7 +10,7 @@
 	<Name><![CDATA[SocialForceHallway]]></Name>
 	<EngineVersion>6</EngineVersion>
 	<JavaPackageName><![CDATA[hallway]]></JavaPackageName>
-	<ModelTimeUnit><![CDATA[Minute]]></ModelTimeUnit>
+	<ModelTimeUnit><![CDATA[Second]]></ModelTimeUnit>
 	<ActiveObjectClasses>
 		<!--   =========   Active Object Class   ========  -->
 		<ActiveObjectClass>
@@ -41,7 +41,7 @@
 				<RotateAnimationTowardsMovement>false</RotateAnimationTowardsMovement>
 				<RotateAnimationVertically>false</RotateAnimationVertically>
 				<VelocityCode Class="CodeUnitValue">
-					<Code><![CDATA[1]]></Code>
+					<Code><![CDATA[10]]></Code>
 					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 				</VelocityCode>
 				<AfterStepCode><![CDATA[applyNetwork();]]></AfterStepCode>
@@ -74,11 +74,11 @@
 					<OccurrenceDate>1524297600000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
 						<Code><![CDATA[.1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -148,7 +148,7 @@
 				<Variable Class="Parameter">
 					<Id>1524684358602</Id>
 					<Name><![CDATA[arrival]]></Name>
-					<X>80</X><Y>20</Y>
+					<X>330</X><Y>500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -174,7 +174,7 @@
 				<Variable Class="Parameter">
 					<Id>1524932556609</Id>
 					<Name><![CDATA[R]]></Name>
-					<X>170</X><Y>20</Y>
+					<X>420</X><Y>500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -198,7 +198,7 @@
 				<Variable Class="Parameter">
 					<Id>1524936853908</Id>
 					<Name><![CDATA[scaleCoeff]]></Name>
-					<X>170</X><Y>50</Y>
+					<X>410</X><Y>-20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -222,7 +222,7 @@
 				<Variable Class="Parameter">
 					<Id>1524938960369</Id>
 					<Name><![CDATA[wallR]]></Name>
-					<X>280</X><Y>20</Y>
+					<X>530</X><Y>500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -246,7 +246,7 @@
 				<Variable Class="Parameter">
 					<Id>1524939131496</Id>
 					<Name><![CDATA[wallTop]]></Name>
-					<X>390</X><Y>20</Y>
+					<X>640</X><Y>500</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -270,7 +270,7 @@
 				<Variable Class="Parameter">
 					<Id>1524939134500</Id>
 					<Name><![CDATA[wallBottom]]></Name>
-					<X>390</X><Y>50</Y>
+					<X>630</X><Y>-20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -294,7 +294,7 @@
 				<Variable Class="Parameter">
 					<Id>1524941665989</Id>
 					<Name><![CDATA[wallCoeff]]></Name>
-					<X>280</X><Y>50</Y>
+					<X>520</X><Y>-20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -444,11 +444,11 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 					<OccurrenceDate>1525161600000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Code><![CDATA[.1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</RecurrenceCode>
 					<Value><![CDATA[]]></Value>
 					<NumberOfIntervals>10</NumberOfIntervals>
@@ -475,11 +475,11 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 					<OccurrenceDate>1525161600000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Code><![CDATA[.1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</RecurrenceCode>
 					<Value><![CDATA[]]></Value>
 					<NumberOfIntervals>10</NumberOfIntervals>
@@ -520,7 +520,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				<EmbeddedObject>
 					<Id>1524531021999</Id>
 					<Name><![CDATA[leftAgents]]></Name>
-					<X>590</X><Y>50</Y>
+					<X>840</X><Y>530</Y>
 					<Label><X>-30</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -549,7 +549,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
 					<InitialSpeedCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
+						<Code><![CDATA[10]]></Code>
 						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 					</InitialSpeedCode>
 					<InitialLocationType>NODE</InitialLocationType>
@@ -590,7 +590,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				<EmbeddedObject>
 					<Id>1524531030572</Id>
 					<Name><![CDATA[rightAgents]]></Name>
-					<X>680</X><Y>50</Y>
+					<X>930</X><Y>530</Y>
 					<Label><X>-35</X><Y>-25</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -619,7 +619,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<InEnvironment>true</InEnvironment>	
 					<InitialSpeedCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
+						<Code><![CDATA[10]]></Code>
 						<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 					</InitialSpeedCode>
 					<InitialLocationType>NODE</InitialLocationType>
@@ -835,7 +835,7 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 				<Group>
 					<Id>1525187096771</Id>
 					<Name><![CDATA[groupMainMenu]]></Name>
-					<X>-40</X><Y>490</Y>
+					<X>-40</X><Y>20</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1006,6 +1006,54 @@ groupMainMenu.setPos( viewArea.getX(), viewArea.getY() );]]></Body>
 					<ColorCode><![CDATA[selectedViewArea == viewAll ?
 	darkGray : royalBlue]]></ColorCode>
 					<Text><![CDATA[All]]></Text>
+					<Font>
+						<Name>SansSerif</Name>
+						<Size>22</Size>
+						<Style>0</Style>
+					</Font>
+					<Alignment>LEFT</Alignment>
+				</Text>
+				<Rectangle>
+					<Id>1525193404929</Id>
+					<Name><![CDATA[rectangle4]]></Name>
+					<X>690</X><Y>10</Y>
+					<Label><X>10</X><Y>10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
+					<OnClickCode><![CDATA[navigate(viewGraph);]]></OnClickCode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<ZHeight>10</ZHeight>
+					<LineWidth>1</LineWidth>
+					<LineColor/>
+					<LineMaterial>null</LineMaterial>
+					<LineStyle>SOLID</LineStyle>
+					<Width>110</Width>
+					<Height>50</Height>
+					<Rotation>0.0</Rotation>
+					<FillColor>-1</FillColor>
+					<FillMaterial>null</FillMaterial>
+				</Rectangle>
+				<Text>
+					<Id>1525193404931</Id>
+					<Name><![CDATA[text10]]></Name>
+					<X>710</X><Y>20</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<DrawMode>SHAPE_DRAW_2D</DrawMode>
+					<AsObject>true</AsObject>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Z>0</Z>
+					<Rotation>0.0</Rotation>
+					<Color>-12490271</Color>
+					<ColorCode><![CDATA[selectedViewArea == viewGraph ?
+	darkGray : royalBlue]]></ColorCode>
+					<Text><![CDATA[Graphs]]></Text>
 					<Font>
 						<Name>SansSerif</Name>
 						<Size>22</Size>
@@ -1243,6 +1291,134 @@ else if(value == 4)//Mixed dispersed
 					</ExtendedProperties>
 				</Control>
 			</Controls>
+			<Charts>
+    			<Histogram>
+					<Id>1525192968093</Id>
+					<Name><![CDATA[chart]]></Name>
+					<X>1050</X><Y>650</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1525248000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>500</Width>
+					<Height>340</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>420</Width>
+						<Height>250</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<ShowPDF>true</ShowPDF>
+					<ShowCDF>true</ShowCDF>
+					<ShowMean>true</ShowMean>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+					<HistogramDataExpression>
+					<Expression><![CDATA[leftDistance]]></Expression>
+						<ColorPDF>-65536</ColorPDF>
+						<ColorCDF>-10496</ColorCDF>
+						<ColorLowPercent>-12799119</ColorLowPercent>
+						<ColorHighPercent>-9807155</ColorHighPercent>
+						<ColorMean>-8388608</ColorMean>
+						<LineWidth>2</LineWidth>						
+						<Title><![CDATA[leftDistance]]></Title>							
+					</HistogramDataExpression>
+    			</Histogram>
+    			<Histogram>
+					<Id>1525192978860</Id>
+					<Name><![CDATA[chart1]]></Name>
+					<X>1600</X><Y>650</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<AutoUpdate>true</AutoUpdate>
+					<OccurrenceAtTime>true</OccurrenceAtTime>
+					<OccurrenceDate>1525248000000</OccurrenceDate>
+					<OccurrenceTime Class="CodeUnitValue">
+						<Code><![CDATA[0]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</OccurrenceTime>
+					<RecurrenceCode Class="CodeUnitValue">
+						<Code><![CDATA[1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
+					</RecurrenceCode>
+					<EmbeddedIcon>false</EmbeddedIcon>
+					<Width>500</Width>
+					<Height>340</Height>
+					<BackgroundColor/>
+					<BorderColor/>
+					<ChartArea>
+						<XOffset>50</XOffset>
+						<YOffset>30</YOffset>
+						<Width>420</Width>
+						<Height>250</Height>
+						<BackgroundColor>-1</BackgroundColor>
+						<BorderColor>-16777216</BorderColor>
+						<GridColor>-12566464</GridColor>
+					</ChartArea>
+					<Legend>
+						<Place>SOUTH</Place>
+						<TextColor>-16777216</TextColor>
+						<Size>30</Size>
+					</Legend>
+					<Labels>
+						<HorLabelsPosition>DEFAULT</HorLabelsPosition>
+						<VerLabelsPosition>DEFAULT</VerLabelsPosition>
+						<TextColor>-12566464</TextColor>
+					</Labels>
+					<Persistent>true</Persistent>
+					<ShowLegend>true</ShowLegend>
+					<ShowPDF>true</ShowPDF>
+					<ShowCDF>true</ShowCDF>
+					<ShowMean>true</ShowMean>
+					<Bars>
+						<Direction>UP</Direction>
+						<RelativeWidth>0.8</RelativeWidth>
+					</Bars>
+					<HistogramDataExpression>
+					<Expression><![CDATA[rightDistance]]></Expression>
+						<ColorPDF>-16744448</ColorPDF>
+						<ColorCDF>-10496</ColorCDF>
+						<ColorLowPercent>-32944</ColorLowPercent>
+						<ColorHighPercent>-13447886</ColorHighPercent>
+						<ColorMean>-8388608</ColorMean>
+						<LineWidth>2</LineWidth>						
+						<Title><![CDATA[rightDistance]]></Title>							
+					</HistogramDataExpression>
+    			</Histogram>
+			</Charts>
 			<Areas>
 				<Area>
 					<Id>1525186371877</Id>
@@ -1280,6 +1456,18 @@ else if(value == 4)//Mixed dispersed
 					<Width>1000</Width>
 					<Height>1200</Height>
 				</Area>
+				<Area>
+					<Id>1525193323556</Id>
+					<Name><![CDATA[viewGraph]]></Name>
+					<X>1000</X><Y>600</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<Title><![CDATA[Graphs]]></Title>
+					<Width>1150</Width>
+					<Height>710</Height>
+				</Area>
 			</Areas>
 
 		</ActiveObjectClass>
@@ -1313,7 +1501,7 @@ else if(value == 4)//Mixed dispersed
 				<RotateAnimationTowardsMovement>false</RotateAnimationTowardsMovement>
 				<RotateAnimationVertically>false</RotateAnimationVertically>
 				<VelocityCode Class="CodeUnitValue">
-					<Code><![CDATA[0.25]]></Code>
+					<Code><![CDATA[10]]></Code>
 					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 				</VelocityCode>
 			</AgentProperties>
@@ -1345,11 +1533,11 @@ else if(value == 4)//Mixed dispersed
 					<OccurrenceDate>1524297600000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Code><![CDATA[.1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -2029,7 +2217,7 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 				<RotateAnimationTowardsMovement>false</RotateAnimationTowardsMovement>
 				<RotateAnimationVertically>false</RotateAnimationVertically>
 				<VelocityCode Class="CodeUnitValue">
-					<Code><![CDATA[0.25]]></Code>
+					<Code><![CDATA[10]]></Code>
 					<Unit Class="SpeedUnits"><![CDATA[MPS]]></Unit>
 				</VelocityCode>
 			</AgentProperties>
@@ -2061,11 +2249,11 @@ System.out.println("y coord: " + getY());]]></OnClickCode>
 					<OccurrenceDate>1524297600000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
 						<Code><![CDATA[0]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</OccurrenceTime>
 					<RecurrenceCode Class="CodeUnitValue">
-						<Code><![CDATA[1]]></Code>
-						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
+						<Code><![CDATA[.1]]></Code>
+						<Unit Class="TimeUnits"><![CDATA[SECOND]]></Unit>
 					</RecurrenceCode>
 			</DatasetsCreationProperties>
 			<ScaleRuler>
@@ -2840,6 +3028,10 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 			<Parameters>			
 				<Parameter>
 					<ParameterName><![CDATA[arrival]]></ParameterName>
+					<ParameterValue Class="CodeUnitValue">
+						<Code><![CDATA[240]]></Code>
+						<Unit Class="RateUnits"><![CDATA[PER_HOUR]]></Unit>
+					</ParameterValue>
 				</Parameter>
 				<Parameter>
 					<ParameterName><![CDATA[R]]></ParameterName>
@@ -2875,26 +3067,26 @@ getPresentation().setPresentable( getEngine().getRoot() );]]></ActionCode>
 				<CloseConfirmation>false</CloseConfirmation>
 				<EnableZoomAndPanning>true</EnableZoomAndPanning>
 				<ExecutionMode><![CDATA[realTimeScaled]]></ExecutionMode>
-				<CpuRatio><![CDATA[ratio_2_1]]></CpuRatio>	        
+				<CpuRatio><![CDATA[ratio_4_1]]></CpuRatio>	        
 				<Title><![CDATA[Hallway : Simulation]]></Title>	
 				<FramesPerSecond><![CDATA[20.0]]></FramesPerSecond>
-				<RealTimeScale>5.0</RealTimeScale>
+				<RealTimeScale>1.0</RealTimeScale>
 				<UIProperty Name="Experiment Progress" Value="false"/>
 				<UIProperty Name="Simulation Progress" Value="true"/>
 				<UIProperty Name="Statusbar Events Per Second" Value="false"/>
 				<UIProperty Name="Statusbar Frames Per Second" Value="false"/>
-				<UIProperty Name="Statusbar Memory" Value="true"/>
+				<UIProperty Name="Statusbar Memory" Value="false"/>
 				<UIProperty Name="Statusbar Model Date" Value="true"/>
 				<UIProperty Name="Statusbar Model Step" Value="false"/>
 				<UIProperty Name="Statusbar Model Time" Value="true"/>
-				<UIProperty Name="Statusbar Real Time Of Simulation" Value="false"/>
+				<UIProperty Name="Statusbar Real Time Of Simulation" Value="true"/>
 				<UIProperty Name="Statusbar Status" Value="true"/>
 				<UIProperty Name="Toolbar Animation setup" Value="true"/>
 				<UIProperty Name="Toolbar Execution control" Value="true"/>
 				<UIProperty Name="Toolbar File" Value="false"/>
 				<UIProperty Name="Toolbar Model navigation" Value="true"/>
 				<UIProperty Name="Toolbar Time scale setup" Value="true"/>
-				<UIProperty Name="Toolbar View" Value="false"/>
+				<UIProperty Name="Toolbar View" Value="true"/>
 			</PresentationProperties>
 			<ModelTimeProperties>
 				<StopOption><![CDATA[Never]]></StopOption>
